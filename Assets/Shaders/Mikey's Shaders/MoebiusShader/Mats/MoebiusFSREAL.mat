@@ -73,19 +73,19 @@ Material:
     - _ColorThreshold: 0.228
     - _DepthStrength: 150
     - _DepthThickness: 1
-    - _DepthThreshold: 0.941
-    - _NormalMultiply: 1.62
-    - _NormalStrength: 3.62
-    - _NormalThickness: 2.11
-    - _NormalThreshold: 0.064
+    - _DepthThreshold: 0
+    - _NormalMultiply: 1.69
+    - _NormalStrength: 0.92
+    - _NormalThickness: 1.66
+    - _NormalThreshold: 0.09
     - _PerturbationFactor: 1
     - _ShadePower: 0.5
-    - _ShadeStrength: 0.8
+    - _ShadeStrength: 0
     - _ShadowPower: 0.5
     - _ShadowRemap: 0.239
     - _ShadowScroll: 1324715
     - _ShadowScrollSpeed: 0
-    - _ShadowStrength: 1
+    - _ShadowStrength: 0
     - _T1: 0.000005
     - _TDepthMax: 2.58
     - _TDepthMin: 0.228
