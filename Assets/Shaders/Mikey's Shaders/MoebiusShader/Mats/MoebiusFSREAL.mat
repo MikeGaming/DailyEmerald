@@ -71,17 +71,17 @@ Material:
     - _ColorStrength: 0
     - _ColorThickness: 0.91
     - _ColorThreshold: 0.228
-    - _DepthStrength: 150
+    - _DepthStrength: 5
     - _DepthThickness: 1
     - _DepthThreshold: 0
     - _MaxDepthDO: 5000
-    - _MaxThicknessDO: 1
+    - _MaxThicknessDO: 0.5
     - _MinThicknessDO: 1
     - _MinThicknessNO: 1
-    - _NormalMultiply: 0.75
+    - _NormalMultiply: 1.5
     - _NormalStrength: 10
-    - _NormalThickness: 1.97
-    - _NormalThreshold: 0
+    - _NormalThickness: 0.2
+    - _NormalThreshold: 0.185
     - _PerturbationFactor: 1
     - _ShadePower: 0.5
     - _ShadeStrength: 0
