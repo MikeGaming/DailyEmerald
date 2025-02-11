@@ -82,7 +82,7 @@ void NormalSobel_float(float2 UV, float Thickness, out float Out)
 	[unroll]
     for (int i = 0; i < 9; i++)
     {
-        float normal = mul(SHADERGRAPH_SAMPLE_SCENE_NORMAL(UV + sobelSamplePoints[i] * Thickness), (float3x3) UNITY_MATRIX_I_V);
+        float normal = SHADERGRAPH_SAMPLE_SCENE_NORMAL(UV + sobelSamplePoints[i] * Thickness).r;
         sobel += normal * float2(sobelX[i], sobelY[i]);
     }
 	

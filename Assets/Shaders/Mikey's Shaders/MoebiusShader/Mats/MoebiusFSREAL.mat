@@ -78,9 +78,9 @@ Material:
     - _MaxThicknessDO: 1
     - _MinThicknessDO: 1
     - _MinThicknessNO: 1
-    - _NormalMultiply: 1
-    - _NormalStrength: 1
-    - _NormalThickness: 4
+    - _NormalMultiply: 0.75
+    - _NormalStrength: 10
+    - _NormalThickness: 1.97
     - _NormalThreshold: 0
     - _PerturbationFactor: 1
     - _ShadePower: 0.5
