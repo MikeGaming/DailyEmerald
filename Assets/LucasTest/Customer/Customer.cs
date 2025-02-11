@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
+using System.Collections;
 
 [System.Serializable]
 public class Customer : MonoBehaviour
@@ -16,12 +18,26 @@ public class Customer : MonoBehaviour
     [SerializeField]
     private Image imageObj;
 
+    public Transform startPoint;
+    public Transform orderPoint;
+
     private int orderIndex;
     private string wantedMagic;
 
+    private NavMeshAgent navMeshAgent;
+
     private void Start()
     {
-        Order();
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent.SetDestination(orderPoint.position);
+    }
+
+    private void Update()
+    {
+        if(!navMeshAgent.pathPending && Mathf.Abs(Vector3.Distance(transform.position, orderPoint.position)) < 1f)
+        {
+            Order();
+        }
     }
 
     private void Order()
@@ -31,6 +47,7 @@ public class Customer : MonoBehaviour
         imageObj.sprite = imageList[orderIndex];
         canvasObj.SetActive(true);
         wantedMagic = magicList[Random.Range(0, magicList.Length)];
+        Debug.Log("Going to Order");
     }
 
     public string[] GetOrder()
@@ -39,10 +56,11 @@ public class Customer : MonoBehaviour
     }
 
     public void ServeCustomer()
-    {
+    {   
         Debug.Log("Served!");
-        canvasObj.setActive(false);
+        canvasObj.SetActive(false);
         //walk away
-        Destroy(this.gameObject);
+        navMeshAgent.SetDestination(startPoint.transform.position);
+        Destroy(this.gameObject, 5f);
     }
 }
