@@ -221,6 +221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826ccf1036c2c064094fe4e40de84ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitPoint: {fileID: 2452015802546756056}
+  swordFull: {fileID: 6989011373947898984, guid: 234cb5ca04335b44cabb05c36362850a, type: 3}
 --- !u!1 &5673266834718459743
 GameObject:
   m_ObjectHideFlags: 0
