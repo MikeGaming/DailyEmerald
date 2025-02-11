@@ -405,6 +405,20 @@
             },
             "m_InputSlot": {
                 "m_Node": {
+                    "m_Id": "f9d3424791834e87a4d9dc4512b63bf9"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "732957c563be4934a2df4c95e221b5a3"
+                },
+                "m_SlotId": 2
+            },
+            "m_InputSlot": {
+                "m_Node": {
                     "m_Id": "fce64646f9d84d1aa8d34fd0cf920fb0"
                 },
                 "m_SlotId": 0
@@ -633,20 +647,6 @@
                 },
                 "m_SlotId": 1
             }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "fce64646f9d84d1aa8d34fd0cf920fb0"
-                },
-                "m_SlotId": 2
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "f9d3424791834e87a4d9dc4512b63bf9"
-                },
-                "m_SlotId": 0
-            }
         }
     ],
     "m_VertexContext": {
@@ -807,8 +807,8 @@
     "m_ObjectId": "04d5e9cd76004af084800e93abf339ad",
     "m_Title": "Gamma",
     "m_Position": {
-        "x": 1734.400146484375,
-        "y": -831.2000122070313
+        "x": 1734.4000244140625,
+        "y": -831.199951171875
     }
 }
 
@@ -1430,8 +1430,8 @@
     "m_ObjectId": "28536bc0ba1c41d3a5951e7d75f6d67d",
     "m_Title": "Brightness",
     "m_Position": {
-        "x": 320.8000793457031,
-        "y": -508.00006103515627
+        "x": 320.7999267578125,
+        "y": -507.99993896484377
     }
 }
 
@@ -1661,7 +1661,7 @@
     "m_Title": "Film Grain",
     "m_Position": {
         "x": -3358.39990234375,
-        "y": 333.5999755859375
+        "y": 333.60009765625
     }
 }
 
@@ -3138,8 +3138,8 @@
     "m_ObjectId": "8371e9b88e8048f7a63aa4ea5981c112",
     "m_Title": "Contrast",
     "m_Position": {
-        "x": -448.8000183105469,
-        "y": -275.1999816894531
+        "x": -448.7999267578125,
+        "y": -275.199951171875
     }
 }
 
@@ -3766,7 +3766,7 @@
     "m_ObjectId": "b9fd3ad1e86e48dcb9839b66ba87a81e",
     "m_Title": "Saturation",
     "m_Position": {
-        "x": 859.1998901367188,
+        "x": 859.2000732421875,
         "y": -875.199951171875
     }
 }

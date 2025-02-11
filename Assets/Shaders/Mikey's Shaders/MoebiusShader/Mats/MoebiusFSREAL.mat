@@ -74,10 +74,14 @@ Material:
     - _DepthStrength: 150
     - _DepthThickness: 1
     - _DepthThreshold: 0
-    - _NormalMultiply: 1.69
-    - _NormalStrength: 0.92
-    - _NormalThickness: 1.66
-    - _NormalThreshold: 0.09
+    - _MaxDepthDO: 5000
+    - _MaxThicknessDO: 1
+    - _MinThicknessDO: 1
+    - _MinThicknessNO: 1
+    - _NormalMultiply: 1
+    - _NormalStrength: 1
+    - _NormalThickness: 4
+    - _NormalThreshold: 0
     - _PerturbationFactor: 1
     - _ShadePower: 0.5
     - _ShadeStrength: 0
@@ -90,14 +94,14 @@ Material:
     - _TDepthMax: 2.58
     - _TDepthMin: 0.228
     - _TDepthPow: 8.8
-    - _Thickness: 5
-    - _ThicknessNoise: 0
-    - _ThicknessNoiseScale: 42.6
+    - _Thickness: 10
+    - _ThicknessNoise: 1
+    - _ThicknessNoiseScale: 1
     - _UVMapAngle: 11.4
     - _UVMapDepthFactor: 1.41
     - _UVMapOffset: 14.43
     - _Wiggle: 0.001
-    - _WiggleScale: 30
+    - _WiggleScale: 50
     m_Colors:
     - _CrosshatchTiling: {r: 1.505, g: 1, b: 0, a: 0}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}

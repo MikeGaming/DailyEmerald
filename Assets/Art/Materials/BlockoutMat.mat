@@ -13,7 +13,6 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _TOGGLEGRADIENT
-  - _TOGGLESPECULAR
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -134,12 +133,12 @@ Material:
     - _SpecularHighlights: 1
     - _SpecularIntensity: 1
     - _SpecularSize: 150
-    - _SpecularStep: 0.993
+    - _SpecularStep: 0.907
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _TOGGLEGRADIENT: 1
-    - _TOGGLESPECULAR: 1
+    - _TOGGLESPECULAR: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:

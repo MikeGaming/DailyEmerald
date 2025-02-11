@@ -344,9 +344,6 @@
             "m_Id": "d09e70cbf40d469e89080e374a08e804"
         },
         {
-            "m_Id": "a76989e2ee2a426fa903149fd9f970ec"
-        },
-        {
             "m_Id": "a72f21b4a63e45fe9f0d4f4c67c683ad"
         },
         {
@@ -3535,8 +3532,8 @@
     "m_ObjectId": "311257c487be45eca2a7052235e0388f",
     "m_Title": "Normals",
     "m_Position": {
-        "x": -5434.400390625,
-        "y": 486.3996276855469
+        "x": -5434.39990234375,
+        "y": 486.4000244140625
     }
 }
 
@@ -3783,7 +3780,7 @@
     "m_ObjectId": "372efcc61ae448669457c85a2ff9f73a",
     "m_Title": "Crosshatch",
     "m_Position": {
-        "x": -3823.2001953125,
+        "x": -3823.199951171875,
         "y": 4117.60009765625
     }
 }
@@ -5087,8 +5084,8 @@
     "m_ObjectId": "584e1be9c0014a76bf71fa942de00144",
     "m_Title": "MySpecular",
     "m_Position": {
-        "x": -5292.7998046875,
-        "y": 1491.19970703125
+        "x": -5292.79931640625,
+        "y": 1491.199951171875
     }
 }
 
@@ -6308,7 +6305,7 @@
     "m_ObjectId": "71dca01e8a8f4a86b07a97602ba6d117",
     "m_Title": "YoutuberSpecular",
     "m_Position": {
-        "x": -3466.400390625,
+        "x": -3466.400146484375,
         "y": 2509.599609375
     }
 }
@@ -6754,31 +6751,6 @@
     "m_NormalDropOffSpace": 1,
     "m_ClearCoat": false,
     "m_BlendModePreserveSpecular": true
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
-    "m_ObjectId": "7c56f893748d4b9e95028cbbf583db75",
-    "m_Id": 0,
-    "m_DisplayName": "Out",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_Labels": []
 }
 
 {
@@ -8824,50 +8796,6 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
-    }
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.ColorNode",
-    "m_ObjectId": "a76989e2ee2a426fa903149fd9f970ec",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Color",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -1033.1302490234375,
-            "y": 613.269775390625,
-            "width": 208.0,
-            "height": 124.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "7c56f893748d4b9e95028cbbf583db75"
-        }
-    ],
-    "synonyms": [
-        "rgba"
-    ],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Color": {
-        "color": {
-            "r": 0.0,
-            "g": 0.0,
-            "b": 0.0,
-            "a": 1.0
-        },
-        "mode": 0
     }
 }
 
@@ -12184,8 +12112,8 @@
     "m_ObjectId": "ed956e6f09064877b1b6eaa12dd45f78",
     "m_Title": "Diffuse",
     "m_Position": {
-        "x": -3840.00048828125,
-        "y": -885.6006469726563
+        "x": -3840.000244140625,
+        "y": -885.5999145507813
     }
 }
 
