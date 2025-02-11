@@ -5,6 +5,7 @@ public class ShopItem : MonoBehaviour
 {
     [SerializeField]
     private string objName;
+    [SerializeField]
     private string magic;
 
     public void SetMagic(string mag)

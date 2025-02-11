@@ -41,5 +41,8 @@ public class Customer : MonoBehaviour
     public void ServeCustomer()
     {
         Debug.Log("Served!");
+        canvasObj.setActive(false);
+        //walk away
+        Destroy(this.gameObject);
     }
 }

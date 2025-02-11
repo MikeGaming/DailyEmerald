@@ -705,6 +705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objName: Sword
+  magic: None
 --- !u!1 &8546001474542084325
 GameObject:
   m_ObjectHideFlags: 0
