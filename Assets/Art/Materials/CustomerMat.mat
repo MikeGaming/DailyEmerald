@@ -118,6 +118,9 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
+    - _FresnelIntensity: 1
+    - _FresnelMultiply: 0
+    - _FresnelPower: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -153,7 +156,7 @@ Material:
     - _CrosshatchTiling: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MainColor: {r: 0.9843137, g: 1, b: 0, a: 1}
-    - _ScreenColorRange: {r: 1.14, g: 2.39, b: 0, a: 0}
+    - _ScreenColorRange: {r: 0.32, g: 2.39, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}

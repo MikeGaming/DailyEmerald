@@ -52,6 +52,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _CrosshatchTile: 15
+    - _FresnelIntensity: 10
+    - _FresnelMultiply: 0
+    - _FresnelPower: 3.5
     - _HueChange: 0
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -64,9 +67,9 @@ Material:
     - _TOGGLESPECULAR: 0
     m_Colors:
     - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
-    - _MainColor: {r: 1, g: 1, b: 1, a: 0}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
     - _ScreenColorRange: {r: 0, g: 1, b: 0, a: 0}
-    - _SpecularColor: {r: 0, g: 0, b: 0, a: 0}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

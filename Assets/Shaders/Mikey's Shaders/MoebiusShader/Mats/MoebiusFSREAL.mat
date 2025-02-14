@@ -11,9 +11,9 @@ Material:
   m_Shader: {fileID: -6465566751694194690, guid: 04e76bc20fe1bd84cbfb4cbd35dee083, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _COLORS
-  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -70,7 +70,7 @@ Material:
     - _COLORS: 1
     - _ColorStrength: 0
     - _ColorThickness: 0.91
-    - _ColorThreshold: 0.228
+    - _ColorThreshold: 1
     - _DepthMultiply: 1
     - _DepthStrength: 5
     - _DepthThickness: 1
@@ -84,7 +84,7 @@ Material:
     - _NormalMultiply: 1.5
     - _NormalStrength: 10
     - _NormalThickness: 0.2
-    - _NormalThreshold: 0.185
+    - _NormalThreshold: 1
     - _PerturbationFactor: 1
     - _ShadePower: 0.5
     - _ShadeStrength: 0

@@ -53,6 +53,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _CrosshatchTile: 0.25
+    - _FresnelIntensity: 10
+    - _FresnelPower: 2.5
     - _HueChange: 0
     - _QueueControl: 0
     - _QueueOffset: 0
