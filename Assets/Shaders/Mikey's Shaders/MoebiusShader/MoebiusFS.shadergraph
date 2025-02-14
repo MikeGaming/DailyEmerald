@@ -7835,8 +7835,8 @@
     "m_ObjectId": "9bcff1decd0f49adb55be892a5291bf9",
     "m_Title": "Sobel Convolution (Normals)",
     "m_Position": {
-        "x": -2016.0001220703125,
-        "y": -1532.8001708984375
+        "x": -2015.0,
+        "y": -1532.0
     }
 }
 
@@ -8577,8 +8577,8 @@
     "m_ObjectId": "b56d336c065746f19235e7bc1d3b359a",
     "m_Title": "Sobel Convolution (Depth)",
     "m_Position": {
-        "x": -2013.6002197265625,
-        "y": -2033.6002197265625
+        "x": -2013.0,
+        "y": -2033.0
     }
 }
 
@@ -8760,8 +8760,8 @@
     "m_ObjectId": "b79ec193dc3d44ecacf6b7de510572e4",
     "m_Title": "Wiggle Noise",
     "m_Position": {
-        "x": -5198.400390625,
-        "y": -1867.2003173828125
+        "x": -5198.0,
+        "y": -1866.0
     }
 }
 
@@ -9121,8 +9121,8 @@
     "m_ObjectId": "c1aab8c8b2a3418ea9047510e72a922d",
     "m_Title": "LineThicknessNoise",
     "m_Position": {
-        "x": -4806.400390625,
-        "y": -2858.400634765625
+        "x": -4806.0,
+        "y": -2857.0
     }
 }
 

@@ -13,6 +13,7 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _TOGGLECROSSHATCH
+  - _TOGGLESPECULAR
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -51,22 +52,22 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _CrosshatchTile: 1
+    - _CrosshatchTile: 0.25
     - _HueChange: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ShadowPower: 0.75
     - _ShadowScroll: 0
     - _ShadowScrollSpeed: 1
-    - _SpecularStep: 0
+    - _SpecularStep: 0.998
     - _TOGGLECROSSHATCH: 1
     - _TOGGLEGRADIENT: 0
-    - _TOGGLESPECULAR: 0
+    - _TOGGLESPECULAR: 1
     m_Colors:
     - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
     - _MainColor: {r: 1, g: 1, b: 1, a: 0}
     - _ScreenColorRange: {r: 0, g: 1, b: 0, a: 0}
-    - _SpecularColor: {r: 0, g: 0, b: 0, a: 0}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
