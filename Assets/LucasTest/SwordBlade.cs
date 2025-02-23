@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 [System.Serializable]
 public class SwordBlade : MonoBehaviour
@@ -10,26 +11,52 @@ public class SwordBlade : MonoBehaviour
 
     private int hitCount;
 
+    private List<Collider> handleList;
+
+    private GameObject realHandle;
+
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Hammer")
         {
-            Collider[] cols = Physics.OverlapSphere(hitPoint.position, 5f);
+            Collider[] cols = Physics.OverlapSphere(hitPoint.position, 2f);
             if(cols.Length > 0f)
             {
                 Debug.Log("pears"); 
+
+                //collect all handles in a list
                 foreach (Collider col in cols)
                 {
                     if(col.tag == "Handle")
                     {
-                        Instantiate(swordFull, transform.position + new Vector3(0, 0.25f, 0), Quaternion.Euler(0, 0, 0));
-                        //would be neat to sort by distance and destroy the closest
-                        //I have a custom sorter for distance already I can port over
-                        Destroy(col.transform.parent.gameObject);
-                        Destroy(this.gameObject);
-
-                        return;
+                        handleList.Add(col);
                     }
+                }
+
+                //sorts entries by distance to the blade's hitpoint
+                handleList.Sort((x, y) => { return (hitPoint.position - x.transform.position).sqrMagnitude.CompareTo((hitPoint.position - y.transform.position).sqrMagnitude); });
+
+                if(handleList.Count > 0)
+                {
+                    if(handleList[0].gameObject == realHandle)
+                    {
+                        hitCount++;
+                    }
+                    else
+                    {
+                        realHandle = handleList[0].gameObject;
+                        hitCount = 1;
+                    }
+                }
+
+                //clear the handeList in case some messy things with multiple blades happens
+                handleList.Clear();
+
+                if (hitCount >= 3)
+                {
+                    Instantiate(swordFull, transform.position + new Vector3(0, 0.25f, 0), Quaternion.Euler(0, 0, 0));
+                    Destroy(realHandle);
+                    Destroy(this.gameObject);
                 }
             }
         }

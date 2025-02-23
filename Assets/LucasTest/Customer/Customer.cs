@@ -42,7 +42,6 @@ public class Customer : MonoBehaviour
 
     private void Order()
     {
-        Debug.Log(itemList.Length);
         orderIndex = Random.Range(0, itemList.Length);
         imageObj.sprite = imageList[orderIndex];
         canvasObj.SetActive(true);
