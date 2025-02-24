@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MortarSystem : MonoBehaviour
@@ -30,7 +31,8 @@ public class MortarSystem : MonoBehaviour
             crystals[0].transform.localScale = Vector3.Lerp(crystals[0].transform.localScale, Vector3.zero, Time.deltaTime / crystalGrindTime);
             if (timer >= crystalBitsRate)
             {
-                Instantiate(crystalBitsPrefab, crystals[0].transform.position, Quaternion.identity);
+                GameObject temp = Instantiate(crystalBitsPrefab, crystals[0].transform.position, Quaternion.identity);
+                temp.GetComponentInChildren<MeshRenderer>().material = crystals[0].GetComponent<MeshRenderer>().material;
                 timer = 0;
                 counter++;
             }
