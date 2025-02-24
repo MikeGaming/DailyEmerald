@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8384436844136108679}
   - component: {fileID: 6280306232023829458}
   - component: {fileID: 8072425972803426826}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Pestle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,9 +137,9 @@ GameObject:
   - component: {fileID: 770266081829557030}
   - component: {fileID: 8444391972430751453}
   - component: {fileID: 4187229976182899132}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Pestle
-  m_TagString: Handle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,7 +152,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861770287078063821}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.0000029802318, w: -1}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: -1}
   m_LocalPosition: {x: 12.976, y: 1.44, z: 8.126}
   m_LocalScale: {x: 0.23768622, y: 0.23768622, z: 0.23768622}
   m_ConstrainProportionsScale: 0
@@ -274,12 +274,12 @@ MonoBehaviour:
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
   m_SmoothPosition: 1
-  m_SmoothPositionAmount: 5
-  m_TightenPosition: 0.5
+  m_SmoothPositionAmount: 8
+  m_TightenPosition: 0.1
   m_TrackRotation: 1
   m_SmoothRotation: 1
-  m_SmoothRotationAmount: 5
-  m_TightenRotation: 0.5
+  m_SmoothRotationAmount: 8
+  m_TightenRotation: 0.1
   m_TrackScale: 1
   m_SmoothScale: 0
   m_SmoothScaleAmount: 8

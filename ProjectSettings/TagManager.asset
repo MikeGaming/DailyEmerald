@@ -8,6 +8,8 @@ TagManager:
   - Handle
   - Customer
   - Flame
+  - Crystal
+  - Pestle
   layers:
   - Default
   - TransparentFX

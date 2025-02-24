@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -9,10 +11,15 @@ public class MortarSystem : MonoBehaviour
     [SerializeField] private float crystalGrindTime = 10f;
     [SerializeField] private int maxCrystalBits = 100;
     [SerializeField] private float crystalBitsRate = 0.1f;
+    [SerializeField] private Transform pestle;
 
     private bool isPestleColliding;
     private float timer;
     private int counter;
+
+    Collider[] crystals;
+    List<Collider> crystalList = new List<Collider>();
+
 
     private void Start()
     {
@@ -22,33 +29,56 @@ public class MortarSystem : MonoBehaviour
     private void Update()
     {
         
-        Collider[] crystals = Physics.OverlapSphere(transform.position, 0.5f, crystalLayer);
-        
-        if(crystals.Length > 0 && isPestleColliding)
+        crystals = Physics.OverlapSphere(transform.position, 0.5f);
+
+        foreach (Collider crystal in crystals)
+        {
+            if (crystal.CompareTag("Crystal"))
+            {
+                crystalList.Add(crystal);
+            }
+        }
+
+        crystalList.Sort((x, y) => { return (transform.position - x.transform.position).sqrMagnitude.CompareTo((transform.position - y.transform.position).sqrMagnitude); });
+
+        if (crystalList.Count > 0 && isPestleColliding)
         {
             timer += Time.deltaTime;
             // scale crystals[0] down by lerping over a set period of time
-            crystals[0].transform.localScale = Vector3.Lerp(crystals[0].transform.localScale, Vector3.zero, Time.deltaTime / crystalGrindTime);
+            crystalList[0].transform.localScale = Vector3.Lerp(crystalList[0].transform.localScale, Vector3.zero, Time.deltaTime / crystalGrindTime);
             if (timer >= crystalBitsRate)
             {
-                GameObject temp = Instantiate(crystalBitsPrefab, crystals[0].transform.position, Quaternion.identity);
-                temp.GetComponentInChildren<MeshRenderer>().material = crystals[0].GetComponent<MeshRenderer>().material;
+                GameObject temp = Instantiate(crystalBitsPrefab, crystalList[0].transform.position, Quaternion.identity);
+                temp.GetComponentInChildren<MeshRenderer>().material = crystalList[0].GetComponent<MeshRenderer>().material;
                 timer = 0;
                 counter++;
             }
             else if (timer >= crystalGrindTime || counter >= maxCrystalBits)
             {
-                Destroy(crystals[0].gameObject);
-                crystals = new Collider[0];
+                Destroy(crystalList[0].gameObject);
+                crystalList.Clear();
                 timer = 0;
             }
         }
 
     }
 
-    public void TogglePestleCollision(bool state)
+    private void OnTriggerEnter(Collider other)
     {
-        isPestleColliding = state;
+        if (other.CompareTag("Pestle"))
+        {
+            isPestleColliding = true;
+        }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Pestle"))
+        {
+            isPestleColliding = false;
+        }
+    }
+
+
 
 }
