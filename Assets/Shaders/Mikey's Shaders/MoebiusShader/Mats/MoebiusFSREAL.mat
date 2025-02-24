@@ -70,7 +70,7 @@ Material:
     - _COLORS: 1
     - _ColorStrength: 0
     - _ColorThickness: 0.91
-    - _ColorThreshold: 5
+    - _ColorThreshold: 1.13
     - _DepthMultiply: 1
     - _DepthStrength: 5
     - _DepthThickness: 1
