@@ -7,6 +7,7 @@ TagManager:
   - Hammer
   - Handle
   - Customer
+  - Flame
   layers:
   - Default
   - TransparentFX

@@ -1760,22 +1760,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SwordBlade (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 5143650663368752372, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-      propertyPath: m_MovementType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5143650663368752372, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-      propertyPath: m_SmoothPosition
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5143650663368752372, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-      propertyPath: m_SmoothRotation
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5143650663368752372, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-      propertyPath: m_UseDynamicAttach
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8890168971762945090, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.808
@@ -1819,38 +1803,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4830135633858816530, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 332305041}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
---- !u!1 &332305040 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4830135633858816530, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-  m_PrefabInstance: {fileID: 332305039}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &332305041
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332305040}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8197304807375812786, guid: 4f5ada3d8f1ee044fa9db8395a2e1412, type: 3}
 --- !u!1 &334932338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,22 +2203,6 @@ PrefabInstance:
     - target: {fileID: 4953013946837580882, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
       propertyPath: m_TagString
       value: Handle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6397279471463064035, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
-      propertyPath: m_MovementType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6397279471463064035, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
-      propertyPath: m_SmoothPosition
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6397279471463064035, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
-      propertyPath: m_SmoothRotation
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6397279471463064035, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
-      propertyPath: m_UseDynamicAttach
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6686759102772512022, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
       propertyPath: m_Name
@@ -3379,30 +3317,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1537697979214269714, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953013946837580882, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
-      propertyPath: m_TagString
-      value: Handle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6397279471463064035, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
-      propertyPath: m_MovementType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6397279471463064035, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
-      propertyPath: m_SmoothPosition
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6397279471463064035, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
-      propertyPath: m_SmoothRotation
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6397279471463064035, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
-      propertyPath: m_UseDynamicAttach
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6686759102772512022, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
       propertyPath: m_Name
       value: SwordHandle (1)
@@ -6389,22 +6303,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Handle
       objectReference: {fileID: 0}
-    - target: {fileID: 6397279471463064035, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
-      propertyPath: m_MovementType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6397279471463064035, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
-      propertyPath: m_SmoothPosition
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6397279471463064035, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
-      propertyPath: m_SmoothRotation
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6397279471463064035, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
-      propertyPath: m_UseDynamicAttach
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6686759102772512022, guid: b0080e1da2b753c4593d4aceba8e5d4f, type: 3}
       propertyPath: m_Name
       value: SwordHandle
@@ -8831,22 +8729,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SwordBlade
       objectReference: {fileID: 0}
-    - target: {fileID: 5143650663368752372, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-      propertyPath: m_MovementType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5143650663368752372, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-      propertyPath: m_SmoothPosition
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5143650663368752372, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-      propertyPath: m_SmoothRotation
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5143650663368752372, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-      propertyPath: m_UseDynamicAttach
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8890168971762945090, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.808
@@ -10005,22 +9887,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SwordBlade (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 5143650663368752372, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-      propertyPath: m_MovementType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5143650663368752372, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-      propertyPath: m_SmoothPosition
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5143650663368752372, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-      propertyPath: m_SmoothRotation
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5143650663368752372, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-      propertyPath: m_UseDynamicAttach
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8890168971762945090, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.272
@@ -10064,38 +9930,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4830135633858816530, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1600585411}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
---- !u!1 &1600585410 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4830135633858816530, guid: 0469760eba713fa438eeadfe485777b0, type: 3}
-  m_PrefabInstance: {fileID: 1600585409}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1600585411
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1600585410}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8197304807375812786, guid: 4f5ada3d8f1ee044fa9db8395a2e1412, type: 3}
 --- !u!1 &1626989671
 GameObject:
   m_ObjectHideFlags: 0

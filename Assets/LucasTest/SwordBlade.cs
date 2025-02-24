@@ -11,7 +11,7 @@ public class SwordBlade : MonoBehaviour
 
     private int hitCount;
 
-    private List<Collider> handleList;
+    private List<GameObject> handleList = new List<GameObject>();
 
     private GameObject realHandle;
 
@@ -29,7 +29,7 @@ public class SwordBlade : MonoBehaviour
                 {
                     if(col.tag == "Handle")
                     {
-                        handleList.Add(col);
+                        handleList.Add(col.transform.parent.gameObject);
                     }
                 }
 

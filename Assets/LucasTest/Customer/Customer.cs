@@ -1,16 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.AI;
-using System.Collections;
+using System;
 
 [System.Serializable]
 public class Customer : MonoBehaviour
 {
     [SerializeField]
-    private string[] itemList;
-    [SerializeField]
-    private string[] magicList;
-    [SerializeField]
+    [Tooltip("Ensure this array's length is the same as the length of Enums.ItemType")]
     private Sprite[] imageList;
 
     [SerializeField]
@@ -22,9 +19,25 @@ public class Customer : MonoBehaviour
     public Transform orderPoint;
 
     private int orderIndex;
-    private string wantedMagic;
+    private int magicIndex;
 
     private NavMeshAgent navMeshAgent;
+
+    private bool orderPending;
+
+    public struct CustOrder
+    {
+        public Enums.ItemType orderItem;
+        public Enums.MagicType orderMagic;
+
+        public CustOrder(Enums.ItemType item, Enums.MagicType magic)
+        {
+            orderItem = item;
+            orderMagic = magic;
+        }
+    }
+
+    private CustOrder order;
 
     private void Start()
     {
@@ -36,22 +49,23 @@ public class Customer : MonoBehaviour
     {
         if(!navMeshAgent.pathPending && Mathf.Abs(Vector3.Distance(transform.position, orderPoint.position)) < 1f)
         {
-            Order();
+            if(!orderPending) Order();
         }
     }
 
     private void Order()
     {
-        orderIndex = Random.Range(0, itemList.Length);
+        orderIndex = UnityEngine.Random.Range(0, Enum.GetNames(typeof(Enums.ItemType)).Length);
+        magicIndex = UnityEngine.Random.Range(0, Enum.GetNames(typeof(Enums.MagicType)).Length);
         imageObj.sprite = imageList[orderIndex];
         canvasObj.SetActive(true);
-        wantedMagic = magicList[Random.Range(0, magicList.Length)];
-        Debug.Log("Going to Order");
+        order = new CustOrder((Enums.ItemType)orderIndex, (Enums.MagicType)magicIndex);
+        orderPending = true;
     }
 
-    public string[] GetOrder()
+    public CustOrder GetOrder()
     {
-        return new string[] {itemList[orderIndex], wantedMagic};
+        return order;
     }
 
     public void ServeCustomer()
