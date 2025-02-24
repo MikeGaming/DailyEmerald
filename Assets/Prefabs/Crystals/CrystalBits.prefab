@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2787728250822549676}
   - component: {fileID: 4189786342075264439}
   - component: {fileID: 5360497179688084660}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ Rigidbody:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
@@ -145,7 +145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2800090733666685351}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CrystalBits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
