@@ -219,10 +219,8 @@ GameObject:
   - component: {fileID: 4162318566542974557}
   - component: {fileID: 2637068325036246285}
   - component: {fileID: 6911699497979677636}
-  - component: {fileID: 4203990276584224904}
   - component: {fileID: 522937760060800792}
   - component: {fileID: 4532112921127622275}
-  - component: {fileID: 6786921135948836922}
   m_Layer: 0
   m_Name: Mortar
   m_TagString: Untagged
@@ -298,28 +296,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4203990276584224904
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3561412522860591269}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1749398012767899704, guid: 6e71999d91b4b0340bab39115d05103e, type: 3}
 --- !u!114 &522937760060800792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,24 +337,3 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.006494597
   m_Center: {x: 0.0000000010757218, y: 0.0000000010757218, z: 0.003929802}
---- !u!65 &6786921135948836922
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3561412522860591269}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.0103815915, y: 0.010044233, z: 0.0024853924}
-  m_Center: {x: -0.00007159897, y: -0.0003892322, z: -0.004043446}
