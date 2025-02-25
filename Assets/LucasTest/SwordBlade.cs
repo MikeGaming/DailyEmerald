@@ -29,6 +29,7 @@ public class SwordBlade : MonoBehaviour
                 {
                     if(col.tag == "Handle")
                     {
+
                         handleList.Add(col.transform.parent.gameObject);
                     }
                 }

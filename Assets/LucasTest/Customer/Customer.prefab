@@ -414,14 +414,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11337e7a759b7164da035238cbb26672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemList:
-  - Sword
-  magicList:
-  - None
   imageList:
   - {fileID: 21300000, guid: 075cb17fc2061cf408366ca72adb4127, type: 3}
+  - {fileID: 21300000, guid: 93f67efda3039cd40ba1c1a4250672d6, type: 3}
   canvasObj: {fileID: 3523801646497136110}
   imageObj: {fileID: 6226601992872035328}
+  startPoint: {fileID: 0}
+  orderPoint: {fileID: 0}
 --- !u!65 &5810199533606284274
 BoxCollider:
   m_ObjectHideFlags: 0

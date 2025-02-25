@@ -6,8 +6,8 @@ public class Enums
 
     public enum ItemType
     {
-        SWORD//,
-        //MACE
+        SWORD,
+        AXE
     }
 
     public enum MaterialType

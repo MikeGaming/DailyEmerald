@@ -58,6 +58,7 @@ public class MortarSystem : MonoBehaviour
                 Destroy(crystalList[0].gameObject);
                 crystalList.Clear();
                 timer = 0;
+                counter = 0;
             }
         }
 
