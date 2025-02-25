@@ -11,7 +11,8 @@ Material:
   m_Shader: {fileID: -6465566751694194690, guid: 04e76bc20fe1bd84cbfb4cbd35dee083, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _TOGGLEGRAZINGANGLE
   m_InvalidKeywords:
   - _COLORS
   m_LightmapFlags: 4
@@ -70,18 +71,24 @@ Material:
     - _COLORS: 1
     - _ColorStrength: 0
     - _ColorThickness: 0.91
-    - _ColorThreshold: 1.13
+    - _ColorThreshold: 0.25
     - _DepthMultiply: 1
     - _DepthStrength: 5
     - _DepthThickness: 1
     - _DepthThreshold: 0.8
     - _DepthThreshold_1: 0.11
-    - _MaxDepthDO: 5000
-    - _MaxDepthNO: 5000
-    - _MaxThicknessDO: 0.5
+    - _FresnelPower: 5
+    - _GrazingAngelModulationFactor: 100
+    - _GrazingAngleMaskPower: 1
+    - _MaxDepthCO: 2000
+    - _MaxDepthDO: 2000
+    - _MaxDepthNO: 2000
+    - _MaxThicknessCO: 0.5
+    - _MaxThicknessDO: 1
     - _MaxThicknessNO: 1
-    - _MinThicknessDO: 1
-    - _MinThicknessNO: 1
+    - _MinThicknessCO: 0.19
+    - _MinThicknessDO: 0.51
+    - _MinThicknessNO: 0.51
     - _NormalMultiply: 1.5
     - _NormalStrength: 10
     - _NormalThickness: 0.2
@@ -98,7 +105,8 @@ Material:
     - _TDepthMax: 2.58
     - _TDepthMin: 0.228
     - _TDepthPow: 8.8
-    - _Thickness: 10
+    - _TOGGLEGRAZINGANGLE: 1
+    - _Thickness: 1
     - _ThicknessNoise: 1
     - _ThicknessNoiseScale: 1
     - _UVMapAngle: 11.4

@@ -4,8 +4,6 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class HandColliderController : MonoBehaviour
 {
-
-    XRGrabInteractable grabInteractable;
     MeshCollider handCollider;
 
     void Start()
@@ -20,11 +18,17 @@ public class HandColliderController : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        other.transform.parent.TryGetComponent<XRGrabInteractable>(out grabInteractable);
-        if (grabInteractable.isGrabbed)
+        if(other.transform.parent)
         {
-            handCollider.enabled = false;
-            Debug.Log(other.name);
+            other.transform.parent.TryGetComponent<XRGrabInteractable>(out XRGrabInteractable grabInteractable);
+            if(grabInteractable)
+            {
+                if (grabInteractable.isGrabbed)
+                {
+                    handCollider.enabled = false;
+                    Debug.Log(other.name);
+                }
+            }
         }
     }
 
@@ -32,7 +36,6 @@ public class HandColliderController : MonoBehaviour
     {
 
             handCollider.enabled = true;
-            Debug.Log("skibidi " + other.name);
     }
 
 
