@@ -5451,34 +5451,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hammer
       objectReference: {fileID: 0}
-    - target: {fileID: 942288284830614000, guid: c197164ce87c3c74cb7d5673c242e23c, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 4a3857a41f6c62b41a4b39953d054f8a, type: 2}
-    - target: {fileID: 953407846800371905, guid: c197164ce87c3c74cb7d5673c242e23c, type: 3}
-      propertyPath: m_TrackScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 953407846800371905, guid: c197164ce87c3c74cb7d5673c242e23c, type: 3}
-      propertyPath: m_UseDynamicAttach
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 953407846800371905, guid: c197164ce87c3c74cb7d5673c242e23c, type: 3}
-      propertyPath: m_ForceGravityOnDetach
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2531809119981454955, guid: c197164ce87c3c74cb7d5673c242e23c, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 9bc29b828c2d26f4aabbc721eb82afe5, type: 2}
-    - target: {fileID: 3044890290035425865, guid: c197164ce87c3c74cb7d5673c242e23c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3044890290035425865, guid: c197164ce87c3c74cb7d5673c242e23c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6615611469265992593, guid: c197164ce87c3c74cb7d5673c242e23c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.489
@@ -8328,7 +8300,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 2be0544b44ae08e4d8ad08a71ffaf5c1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
