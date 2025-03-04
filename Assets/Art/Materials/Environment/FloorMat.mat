@@ -7,12 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TestStone
+  m_Name: FloorMat
   m_Shader: {fileID: -6465566751694194690, guid: 5b7961c505422d34ba32dc3bea58ff2a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _TOGGLECROSSHATCH
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -30,11 +29,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: d22887f03933f934cb21a9b9fd066aee, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture:
-        m_Texture: {fileID: 2800000, guid: cd64aa20e7e557d40a7c0df3fce37eb1, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -52,7 +51,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _CrosshatchTile: 15
-    - _FresnelIntensity: 10
+    - _FresnelIntensity: 0
     - _FresnelMultiply: 0
     - _FresnelPower: 3.5
     - _HueChange: 0
@@ -62,13 +61,14 @@ Material:
     - _ShadowScroll: 0
     - _ShadowScrollSpeed: 1
     - _SpecularStep: 0
-    - _TOGGLECROSSHATCH: 1
+    - _TOGGLECROSSHATCH: 0
     - _TOGGLEGRADIENT: 0
     - _TOGGLESPECULAR: 0
     m_Colors:
     - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
     - _MainColor: {r: 1, g: 1, b: 1, a: 1}
     - _ScreenColorRange: {r: 0, g: 1, b: 0, a: 0}
+    - _ShadowColor: {r: 0.08, g: 0.058947366, b: 0.03368421, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
