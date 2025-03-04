@@ -10,6 +10,7 @@ TagManager:
   - Flame
   - Crystal
   - Pestle
+  - CrystalBit
   layers:
   - Default
   - TransparentFX

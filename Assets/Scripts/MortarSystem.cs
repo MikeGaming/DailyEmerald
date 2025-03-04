@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class MortarSystem : MonoBehaviour
 {
@@ -11,7 +12,6 @@ public class MortarSystem : MonoBehaviour
     [SerializeField] private float crystalGrindTime = 10f;
     [SerializeField] private int maxCrystalBits = 100;
     [SerializeField] private float crystalBitsRate = 0.1f;
-    [SerializeField] private Transform pestle;
 
     private bool isPestleColliding;
     private float timer;
@@ -71,6 +71,14 @@ public class MortarSystem : MonoBehaviour
         {
             isPestleColliding = true;
         }
+
+        if (other.transform.GetComponentInParent<XRGrabInteractable>())
+        {
+            Vector3 baseScale = other.transform.parent.lossyScale;
+            other.transform.parent.parent = transform.parent;
+            other.transform.parent.localScale = baseScale;
+        }
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -78,6 +86,13 @@ public class MortarSystem : MonoBehaviour
         if (other.CompareTag("Pestle"))
         {
             isPestleColliding = false;
+        }
+
+        if(other.transform.GetComponentInParent<XRGrabInteractable>())
+        {
+            Vector3 baseScale = other.transform.parent.lossyScale;
+            other.transform.parent.parent = null;
+            other.transform.parent.localScale = baseScale;
         }
     }
 

@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class HammerParticles : MonoBehaviour
 {
-
+    [SerializeField] XRGrabInteractable hammer;
     ParticleSystem particle;
 
     private void Start()
@@ -12,7 +13,10 @@ public class HammerParticles : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        particle.Emit(50);
-        Debug.Log("pomegranate");
+        if (hammer.isGrabbed)
+        {
+            particle.Emit(50);
+            Debug.Log("pomegranate");
+        }
     }
 }

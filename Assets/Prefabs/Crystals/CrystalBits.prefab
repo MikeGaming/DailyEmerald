@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 774582100677124416}
   m_Layer: 10
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: CrystalBit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 2800090733666685351}
   m_Layer: 10
   m_Name: CrystalBits
-  m_TagString: Untagged
+  m_TagString: CrystalBit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
