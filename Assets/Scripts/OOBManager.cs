@@ -4,6 +4,9 @@ using UnityEngine;
 public class OOBManager : MonoBehaviour
 {
 
+    bool isOutOfBounds;
+    Rigidbody rb;
+
     [SerializeField] Transform landingPoint;
 
     private void OnTriggerExit(Collider other)
@@ -11,11 +14,16 @@ public class OOBManager : MonoBehaviour
         // Reset velocity of object and send it along a curve towards the landing point
         if (other.transform.GetComponentInParent<Rigidbody>())
         {
-            Rigidbody rb = other.transform.GetComponentInParent<Rigidbody>();
+            rb = other.transform.GetComponentInParent<Rigidbody>();
             rb.linearVelocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
             StartCoroutine(MoveObject(rb.transform, landingPoint.position, 1f));
         }
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        StopAllCoroutines();
     }
 
     private IEnumerator MoveObject(Transform objectToMove, Vector3 toPosition, float duration)

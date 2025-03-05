@@ -1854,8 +1854,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 43.027866, y: 15.58502, z: 42.416275}
-  m_Center: {x: 15.46216, y: 6.0462637, z: 3.5510635}
+  m_Size: {x: 43.027866, y: 18.775257, z: 42.416275}
+  m_Center: {x: 15.46216, y: 5.808634, z: 3.5510635}
 --- !u!4 &299709945
 Transform:
   m_ObjectHideFlags: 0
@@ -5497,6 +5497,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3000096641947294480, guid: 17702bd911ea4524fac3f05938c24d86, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570703802470773784, guid: 17702bd911ea4524fac3f05938c24d86, type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
