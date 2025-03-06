@@ -22,7 +22,7 @@ public class HammerableButton : MonoBehaviour
         // If the button is hammered, then move the button down
         if (!isHammered)
         {
-            rb.Move(originPosition, transform.rotation);
+            rb.Move(originPosition, transform.rotation);    
         }
     }
 
