@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6615611469265992593}
   - component: {fileID: 7075585877913366114}
   - component: {fileID: 953407846800371905}
-  - component: {fileID: 5510818503549195048}
+  - component: {fileID: 4754238668084115545}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: Hammer
@@ -79,8 +79,8 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
-  m_FocusMode: 1
+  m_SelectMode: 1
+  m_FocusMode: 2
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
   m_AllowGazeSelect: 0
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
---- !u!114 &5510818503549195048
+--- !u!114 &4754238668084115545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,20 +194,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 285237622829075535}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Script: {fileID: 11500000, guid: 162b4e5a3d1fcd043afbc6bf71ab2e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PermittedDisplacementAxes: -1
-  m_ConstrainedAxisDisplacementMode: 1
-  m_TwoHandedRotationMode: 1
-  m_AllowOneHandedScaling: 1
-  m_AllowTwoHandedScaling: 0
-  m_OneHandedScaleSpeed: 0.5
-  m_ThresholdMoveRatioForScale: 0.05
-  m_ClampScaling: 1
-  m_MinimumScaleRatio: 0.25
-  m_MaximumScaleRatio: 2
-  m_ScaleMultiplier: 0.25
+  m_MultiSelectPosition: 2
+  m_MultiSelectRotation: 2
 --- !u!1 &1590705545067159589
 GameObject:
   m_ObjectHideFlags: 0

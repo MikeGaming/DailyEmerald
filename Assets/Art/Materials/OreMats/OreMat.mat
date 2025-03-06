@@ -13,7 +13,7 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _TOGGLECROSSHATCH
-  - _TOGGLESPECULAR
+  - _TOGGLEGRADIENT
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -35,7 +35,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: c509357ef65276a48908bcd0c1596dd9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -63,12 +63,13 @@ Material:
     - _ShadowScrollSpeed: 1
     - _SpecularStep: 0.998
     - _TOGGLECROSSHATCH: 1
-    - _TOGGLEGRADIENT: 0
-    - _TOGGLESPECULAR: 1
+    - _TOGGLEGRADIENT: 1
+    - _TOGGLESPECULAR: 0
     m_Colors:
     - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
-    - _MainColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 0}
     - _ScreenColorRange: {r: 0, g: 1, b: 0, a: 0}
+    - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
