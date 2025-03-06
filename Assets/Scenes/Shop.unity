@@ -1073,6 +1073,9 @@ MonoBehaviour:
   startPoint: {fileID: 1363266397}
   endPoint: {fileID: 339325588}
   custObj: {fileID: 5694805953530543562, guid: 965776969fe420b418d1ac71177da3ac, type: 3}
+  orderList:
+  - {fileID: 11400000, guid: f9b38f0eb14172243b6b00220802d57b, type: 2}
+  - {fileID: 11400000, guid: 8c362405b73d6134a9dd42078be5601f, type: 2}
 --- !u!4 &124400758
 Transform:
   m_ObjectHideFlags: 0
@@ -13427,8 +13430,8 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  isGrabbed: 0
   m_AttachTransform: {fileID: 0}
+  isGrabbed: 0
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
@@ -13831,8 +13834,8 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  isGrabbed: 0
   m_AttachTransform: {fileID: 0}
+  isGrabbed: 0
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
