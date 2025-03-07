@@ -9,6 +9,8 @@ public class HandAnimator : MonoBehaviour
     XRInputValueReader<float> m_GripInput = new XRInputValueReader<float>("Grip");
     [SerializeField]
     XRInputValueReader<float> m_TriggerInput = new XRInputValueReader<float>("Trigger");
+    [SerializeField]
+    XRInputValueReader<float> m_ThumbstickInput = new XRInputValueReader<float>("thumbstickTouched");
 
     public Animator handAnimator;
 
@@ -19,9 +21,9 @@ public class HandAnimator : MonoBehaviour
 
     private void Update()
     {
-
         if (!handAnimator) return;
         handAnimator.SetFloat("Grip", m_GripInput.ReadValue());
         handAnimator.SetFloat("Trigger", m_TriggerInput.ReadValue());
+        handAnimator.SetFloat("Thumbstick", m_ThumbstickInput.ReadValue());
     }
 }

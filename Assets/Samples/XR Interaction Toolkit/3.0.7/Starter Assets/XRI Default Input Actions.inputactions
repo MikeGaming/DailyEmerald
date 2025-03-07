@@ -890,7 +890,7 @@
                     "name": "Activate",
                     "type": "Button",
                     "id": "0c0991c5-d329-4afc-8892-1076b440477c",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -975,6 +975,33 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "LeftGripValue",
+                    "type": "Value",
+                    "id": "1323c748-de28-430c-a2f1-9f09483c57fa",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LeftTriggerValue",
+                    "type": "Value",
+                    "id": "f6f24a70-e32e-4108-84e9-91f941352d7c",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LeftThumbstickValue",
+                    "type": "Value",
+                    "id": "7f37e60a-bd19-4e31-84eb-ae077b061691",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -1035,17 +1062,6 @@
                 },
                 {
                     "name": "",
-                    "id": "49a23327-a116-48c0-8af9-0d2c50c15a88",
-                    "path": "<XRController>{LeftHand}/{Grip}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Select Value",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "304be843-4b23-45d9-89fa-005ac163d9b9",
                     "path": "<MetaAimHand>{LeftHand}/pinchStrengthIndex",
                     "interactions": "",
@@ -1096,17 +1112,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Activate",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3b8b1b59-2fdc-4998-8259-50341075d9a2",
-                    "path": "<XRController>{LeftHand}/{Trigger}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Activate Value",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1261,6 +1266,39 @@
                     "processors": "ScaleVector2(x=0),StickDeadzone",
                     "groups": "",
                     "action": "Translate Manipulation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "49a23327-a116-48c0-8af9-0d2c50c15a88",
+                    "path": "<XRController>{LeftHand}/{Grip}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftGripValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3b8b1b59-2fdc-4998-8259-50341075d9a2",
+                    "path": "<XRController>{LeftHand}/{Trigger}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftTriggerValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "96d273cf-c5f5-4bd3-bf05-e5d0e1d4ccb5",
+                    "path": "<XRController>{LeftHand}/thumbstickTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftThumbstickValue",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -2046,6 +2084,33 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "RightGripValue",
+                    "type": "Value",
+                    "id": "62d6480a-1f40-4cf7-85cd-6fb4f0d694dc",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "RightTriggerValue",
+                    "type": "Value",
+                    "id": "a0e841eb-69ad-4bc4-9b2f-993f26344891",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "RightThumbstickValue",
+                    "type": "Value",
+                    "id": "75b9a8fa-cd0f-4b90-8d5d-1856a36cc476",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -2106,17 +2171,6 @@
                 },
                 {
                     "name": "",
-                    "id": "dd433817-216c-46b9-8dd3-f3a4ea1767b9",
-                    "path": "<XRController>{RightHand}/{Grip}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Select Value",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "770a07b5-a199-4342-b4a5-b3baafbe2bcb",
                     "path": "<MetaAimHand>{RightHand}/pinchStrengthIndex",
                     "interactions": "",
@@ -2167,17 +2221,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Activate",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "150f414f-61bf-47b1-b4f8-f772a2a40565",
-                    "path": "<XRController>{RightHand}/{Trigger}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Activate Value",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -2332,6 +2375,50 @@
                     "processors": "ScaleVector2(x=0),StickDeadzone",
                     "groups": "",
                     "action": "Translate Manipulation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6543a6a2-b1d5-4d9c-8729-0b25d9725c5f",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightGripValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dd433817-216c-46b9-8dd3-f3a4ea1767b9",
+                    "path": "<XRController>{RightHand}/{Grip}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightGripValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "150f414f-61bf-47b1-b4f8-f772a2a40565",
+                    "path": "<XRController>{RightHand}/{Trigger}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightTriggerValue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4c2fde10-8de5-4369-a43f-7ae516347e68",
+                    "path": "<XRController>{RightHand}/thumbstickTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightThumbstickValue",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
