@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8316161660025059895}
   - component: {fileID: 754288895843887588}
   - component: {fileID: 3067010674835912466}
+  - component: {fileID: 7288953029919953015}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -4927,6 +4928,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hammer: {fileID: 3313305916639441452}
+--- !u!114 &7288953029919953015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2785890684738186800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Untagged
+  EventReference:
+    Guid:
+      Data1: 1964989427
+      Data2: 1209401472
+      Data3: -1139960181
+      Data4: 248506706
+    Path: event:/HammerBonk
+  Event: 
+  EventPlayTrigger: 3
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params:
+  - Name: HammeredMaterial
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &7024225859682030412
 GameObject:
   m_ObjectHideFlags: 0
