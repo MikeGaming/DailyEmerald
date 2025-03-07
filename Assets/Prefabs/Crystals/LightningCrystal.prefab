@@ -117,6 +117,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 995672303590001087, guid: 696de600f11924948aa247249fb37547, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/LightningCrystalLoop
+      objectReference: {fileID: 0}
+    - target: {fileID: 995672303590001087, guid: 696de600f11924948aa247249fb37547, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -1640997051
+      objectReference: {fileID: 0}
+    - target: {fileID: 995672303590001087, guid: 696de600f11924948aa247249fb37547, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1329479879
+      objectReference: {fileID: 0}
+    - target: {fileID: 995672303590001087, guid: 696de600f11924948aa247249fb37547, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -365299042
+      objectReference: {fileID: 0}
+    - target: {fileID: 995672303590001087, guid: 696de600f11924948aa247249fb37547, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 35069904
+      objectReference: {fileID: 0}
     - target: {fileID: 4237235548306797060, guid: 696de600f11924948aa247249fb37547, type: 3}
       propertyPath: m_Name
       value: LightningCrystal

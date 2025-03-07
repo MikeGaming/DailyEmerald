@@ -117,6 +117,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 995672303590001087, guid: 696de600f11924948aa247249fb37547, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/FlameCrystalLoop
+      objectReference: {fileID: 0}
+    - target: {fileID: 995672303590001087, guid: 696de600f11924948aa247249fb37547, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: 301966967
+      objectReference: {fileID: 0}
+    - target: {fileID: 995672303590001087, guid: 696de600f11924948aa247249fb37547, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1331489955
+      objectReference: {fileID: 0}
+    - target: {fileID: 995672303590001087, guid: 696de600f11924948aa247249fb37547, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 1835434153
+      objectReference: {fileID: 0}
+    - target: {fileID: 995672303590001087, guid: 696de600f11924948aa247249fb37547, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 657994145
+      objectReference: {fileID: 0}
     - target: {fileID: 2166868607682615489, guid: 696de600f11924948aa247249fb37547, type: 3}
       propertyPath: centerOfMass.x
       value: -0.04
