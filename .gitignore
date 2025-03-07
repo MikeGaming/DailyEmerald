@@ -8,11 +8,16 @@
 /[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
-/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
+
+# Never ignore Asset meta data
+!/[Aa]ssets/**/*.meta
+
+# TextMesh Pro files
+[Aa]ssets/TextMesh*Pro/
 
 # Recordings can get excessive in size
 /[Rr]ecordings/
@@ -70,3 +75,8 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# FMOD files
+Assets/Plugins/FMOD/Resources/FMODStudioCache.asset
+Assets/StreamingAssets/*.bank
+fmod_editor.log
