@@ -1,9 +1,5 @@
 using UnityEngine;
 
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
-
 public class CenterOfMass : MonoBehaviour
 {
     [SerializeField] Vector3 centerOfMass;
@@ -23,13 +19,9 @@ public class CenterOfMass : MonoBehaviour
         #endif
     }
 
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawSphere(transform.position + transform.rotation * centerOfMass, 0.05f);
-
-        #if UNITY_EDITOR
-        centerOfMass = Handles.PositionHandle(centerOfMass, Quaternion.identity);
-        #endif
     }
 }

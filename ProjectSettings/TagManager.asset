@@ -11,6 +11,7 @@ TagManager:
   - Crystal
   - Pestle
   - CrystalBit
+  - Button
   layers:
   - Default
   - TransparentFX

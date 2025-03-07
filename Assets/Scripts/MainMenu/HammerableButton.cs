@@ -1,45 +1,45 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class HammerableButton : MonoBehaviour
 {
-    // Script that will be attached to the button that will be hammered
-    // It will be hammerable by always trying to lerp to it's origin point, and also have a boolean trigger when it is hit with the hammer.
+    [SerializeField] float deadTime = 1.0f;
 
-    public bool isHammered = false;
-    Rigidbody rb;
-    [SerializeField] Vector3 originPosition;
-    [SerializeField] float hammerForce = 5f;
+    private bool _deadTimeActive = false;
 
-    private void Start()
+    [SerializeField] UnityEvent onPressed, onReleased;
+
+    private void OnTriggerEnter(Collider other)
     {
-        // Set the origin position of the button
-        rb = GetComponent<Rigidbody>();
-        originPosition = transform.position;
-    }
-
-    private void Update()
-    {
-        // If the button is hammered, then move the button down
-        if (!isHammered)
+        if (other.tag == "Button" && !_deadTimeActive)
         {
-            rb.Move(originPosition, transform.rotation);    
+            onPressed?.Invoke();
+            Debug.Log("Button pressed");
         }
     }
 
-    public void HammerButton()
+    private void OnTriggerExit(Collider other)
     {
-        // Set the button to be hammered
-        isHammered = !isHammered;
-        rb.AddForce(-Vector3.up * hammerForce, ForceMode.Impulse);
+        if (other.tag == "Button" && !_deadTimeActive)
+        {
+            onReleased?.Invoke();
+            Debug.Log("Button released");
+            StartCoroutine(WaitForDeadTime());
+        }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private IEnumerator WaitForDeadTime()
     {
-        // If the button is hit with the hammer, then hammer the button
-        if (collision.gameObject.CompareTag("Hammer"))
-        {
-            HammerButton();
-        }
+        _deadTimeActive = true;
+        yield return new WaitForSeconds(deadTime);
+        _deadTimeActive = false;
+    }
+
+    public void GoToScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 
 }
