@@ -884,7 +884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPoint: {fileID: 1363266397}
   endPoint: {fileID: 339325588}
-  custObj: {fileID: 1148540285}
+  custObj: {fileID: 5694805953530543562, guid: 965776969fe420b418d1ac71177da3ac, type: 3}
   orderList:
   - {fileID: 11400000, guid: f9b38f0eb14172243b6b00220802d57b, type: 2}
   - {fileID: 11400000, guid: 8c362405b73d6134a9dd42078be5601f, type: 2}
@@ -1637,7 +1637,7 @@ Transform:
   m_GameObject: {fileID: 339325588}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.182, y: 0, z: 2.078}
+  m_LocalPosition: {x: 9.936, y: 0, z: 2.078}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5049,11 +5049,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 965776969fe420b418d1ac71177da3ac, type: 3}
---- !u!1 &1148540285 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5694805953530543562, guid: 965776969fe420b418d1ac71177da3ac, type: 3}
-  m_PrefabInstance: {fileID: 1148540284}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1158861625
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
@@ -9,6 +13,7 @@ public class MortarSystem : MonoBehaviour
 
     [SerializeField] private LayerMask crystalLayer;
     [SerializeField] private GameObject crystalBitsPrefab;
+    [SerializeField] private string[] exclusionTags;
     [SerializeField] private float crystalGrindTime = 10f;
     [SerializeField] private int maxCrystalBits = 100;
     [SerializeField] private float crystalBitsRate = 0.1f;
@@ -72,7 +77,7 @@ public class MortarSystem : MonoBehaviour
             isPestleColliding = true;
         }
 
-        if (other.transform.GetComponentInParent<XRGrabInteractable>())
+        if (other.transform.GetComponentInParent<XRGrabInteractable>() && !exclusionTags.Contains(other.tag))
         {
             Vector3 baseScale = other.transform.parent.lossyScale;
             other.transform.parent.parent = transform.parent;
@@ -88,7 +93,7 @@ public class MortarSystem : MonoBehaviour
             isPestleColliding = false;
         }
 
-        if(other.transform.GetComponentInParent<XRGrabInteractable>())
+        if(other.transform.GetComponentInParent<XRGrabInteractable>() && !exclusionTags.Contains(other.tag))
         {
             Vector3 baseScale = other.transform.parent.lossyScale;
             other.transform.parent.parent = null;
