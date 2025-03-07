@@ -559,9 +559,8 @@ MonoBehaviour:
   RealChannelSettings: []
   Plugins: []
   MasterBanks:
-  - Master
-  Banks:
   - Music
+  Banks:
   - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
