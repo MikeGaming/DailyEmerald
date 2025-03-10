@@ -54,6 +54,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _GrungeTexture:
+        m_Texture: {fileID: 2800000, guid: 790cf7178e8bf6449a387706695f392f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 30, y: 30}
@@ -106,6 +110,7 @@ Material:
     - _AmbientIntensity: 0.05
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
+    - _Brightness: 5
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -117,9 +122,13 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
+    - _FresnelIntensity: 10
+    - _FresnelPower: 5
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _GradientOrigin: 0
+    - _GradientSpread: 0
     - _HueChange: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
@@ -142,20 +151,25 @@ Material:
     - _TOGGLECROSSHATCH: 1
     - _TOGGLEGRADIENT: 0
     - _TOGGLESPECULAR: 1
+    - _WORLDPOSITION: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 0.7882353, b: 0.6745098, a: 1}
     - _BottomColor: {r: 1, g: 0.90748876, b: 0, a: 1}
+    - _BottomColour: {r: 1, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 0.7882353, b: 0.6745098, a: 1}
     - _ColorMultiplier: {r: 1, g: 1, b: 1, a: 1}
     - _CrosshatchTiling: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _MainColor: {r: 0.23112857, g: 0.7509433, b: 0.077928, a: 1}
+    - _GradientDirection: {r: 0, g: 1, b: 0, a: 0}
+    - _MainColor: {r: 0.20018752, g: 0.5924529, b: 0.08383759, a: 1}
     - _ScreenColorRange: {r: 1.14, g: 2.39, b: 0, a: 0}
+    - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Tiling: {r: 10, g: 10, b: 0, a: 0}
+    - _TopColour: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &8025862953603446624

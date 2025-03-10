@@ -98,7 +98,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 4f5ada3d8f1ee044fa9db8395a2e1412, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 4a3857a41f6c62b41a4b39953d054f8a, type: 2}
+      objectReference: {fileID: 2100000, guid: 995d11e75b66fb84b9ee4de7676e8946, type: 2}
     - target: {fileID: 919132149155446097, guid: 4f5ada3d8f1ee044fa9db8395a2e1412, type: 3}
       propertyPath: m_Name
       value: Blade_SimpleSword

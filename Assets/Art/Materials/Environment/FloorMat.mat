@@ -28,12 +28,20 @@ Material:
         m_Texture: {fileID: 2800000, guid: 3f7861550a0a6504789ae3c8dd900513, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _GrungeTexture:
+        m_Texture: {fileID: 2800000, guid: 790cf7178e8bf6449a387706695f392f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_3429c6f4baa9409a91e8c14c90d5081c_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 790cf7178e8bf6449a387706695f392f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -50,10 +58,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Brightness: 10
     - _CrosshatchTile: 15
     - _FresnelIntensity: 0
     - _FresnelMultiply: 0
     - _FresnelPower: 3.5
+    - _GradientOrigin: 0
+    - _GradientSmoothness: 0
+    - _GradientSpread: 0
     - _HueChange: 0
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -64,13 +76,18 @@ Material:
     - _TOGGLECROSSHATCH: 0
     - _TOGGLEGRADIENT: 0
     - _TOGGLESPECULAR: 0
+    - _WORLDPOSITION: 0
     m_Colors:
     - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
-    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BottomColour: {r: 1, g: 0, b: 0, a: 1}
+    - _GradientAxis: {r: 0, g: 0, b: 0, a: 0}
+    - _GradientDirection: {r: 0, g: 0, b: 0, a: 0}
+    - _MainColor: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
     - _ScreenColorRange: {r: 0, g: 1, b: 0, a: 0}
     - _ShadowColor: {r: 0.08, g: 0.058947366, b: 0.03368421, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
-    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Tiling: {r: 0.05, g: 1, b: 0, a: 0}
+    - _TopColour: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &8025862953603446624

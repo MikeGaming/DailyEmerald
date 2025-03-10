@@ -13,7 +13,6 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _TOGGLECROSSHATCH
-  - _TOGGLEGRADIENT
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
@@ -54,6 +53,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _GrungeTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 30, y: 30}
@@ -86,6 +89,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Triplanar_3429c6f4baa9409a91e8c14c90d5081c_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 790cf7178e8bf6449a387706695f392f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -106,6 +113,7 @@ Material:
     - _AmbientIntensity: 0.05
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
+    - _Brightness: 1
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -122,6 +130,9 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _GradientOrigin: 0
+    - _GradientSmoothness: 0
+    - _GradientSpread: 0
     - _HueChange: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
@@ -142,23 +153,27 @@ Material:
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _TOGGLECROSSHATCH: 1
-    - _TOGGLEGRADIENT: 1
+    - _TOGGLEGRADIENT: 0
     - _TOGGLESPECULAR: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 0.7882353, b: 0.6745098, a: 1}
     - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BottomColour: {r: 1, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 0.7882353, b: 0.6745098, a: 1}
     - _ColorMultiplier: {r: 1, g: 1, b: 1, a: 1}
     - _CrosshatchTiling: {r: 1, g: 1, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GradientAxis: {r: 0, g: 0, b: 0, a: 0}
+    - _GradientDirection: {r: 0, g: 0, b: 0, a: 0}
     - _MainColor: {r: 1, g: 0.9829079, b: 0, a: 1}
     - _ScreenColorRange: {r: -1.49, g: 2.11, b: 0, a: 0}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _TopColour: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &8025862953603446624
