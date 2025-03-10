@@ -12,6 +12,7 @@ TagManager:
   - Pestle
   - CrystalBit
   - Button
+  - Pickaxe
   layers:
   - Default
   - TransparentFX
