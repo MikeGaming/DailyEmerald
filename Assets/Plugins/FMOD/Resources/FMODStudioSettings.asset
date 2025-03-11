@@ -559,9 +559,9 @@ MonoBehaviour:
   RealChannelSettings: []
   Plugins: []
   MasterBanks:
-  - DONTUSETHIS
-  - Music
   - SFX
+  - Music
+  - DONTUSETHIS
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
