@@ -145,6 +145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2800090733666685351}
+  - component: {fileID: 7457795599995511137}
   m_Layer: 10
   m_Name: CrystalBits
   m_TagString: CrystalBit
@@ -168,3 +169,16 @@ Transform:
   - {fileID: 9193482405385947952}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7457795599995511137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8893704923185182839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8de1b4c031726469c54d89ebff402f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToDestroy: {fileID: 497319189283360633}

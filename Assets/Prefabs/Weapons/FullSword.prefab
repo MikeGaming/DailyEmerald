@@ -157,13 +157,69 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 551067469218202285, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: ShapeModule.m_MeshRenderer
+      value: 
+      objectReference: {fileID: 6637542821624280617}
+    - target: {fileID: 1000372535803486818, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: ShapeModule.m_MeshRenderer
+      value: 
+      objectReference: {fileID: 6637542821624280617}
+    - target: {fileID: 1000372535803486818, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: ShapeModule.randomPositionAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1101449548344803733, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: ShapeModule.m_MeshRenderer
+      value: 
+      objectReference: {fileID: 6637542821624280617}
+    - target: {fileID: 1553643067790573701, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: ShapeModule.placementMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553643067790573701, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: ShapeModule.m_MeshRenderer
+      value: 
+      objectReference: {fileID: 6637542821624280617}
+    - target: {fileID: 1553643067790573701, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: ShapeModule.m_MeshSpawn.mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553643067790573701, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: ShapeModule.m_MeshNormalOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553643067790573701, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: ShapeModule.randomPositionAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113922247005296485, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: ShapeModule.m_MeshRenderer
+      value: 
+      objectReference: {fileID: 6637542821624280617}
+    - target: {fileID: 4155887315872221939, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: ShapeModule.m_MeshRenderer
+      value: 
+      objectReference: {fileID: 6637542821624280617}
     - target: {fileID: 4805542657682646828, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
       propertyPath: m_Name
       value: FullSword
       objectReference: {fileID: 0}
+    - target: {fileID: 5535158416604997057, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6567516010403399645, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7381218759568838121, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
       propertyPath: centerOfMass.y
       value: -0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319621340702420612, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -9,6 +9,8 @@ public class ShopItem : MonoBehaviour
     private Enums.MaterialType material;
     [SerializeField]
     private Enums.MagicType magic;
+    [SerializeField]
+    private GameObject[] magicParticles; //0 = flame, 1 = frost, 2 = lightning
 
     private float itemRatio;
     private float magicRatio;
@@ -45,14 +47,18 @@ public class ShopItem : MonoBehaviour
             if (magicAmount.x > magicAmount.y && magicAmount.x > magicAmount.z)
             {
                 SetMagic(Enums.MagicType.FLAME);
+                magicParticles[0].SetActive(true);
             }
             else if (magicAmount.y > magicAmount.x && magicAmount.y > magicAmount.z)
             {
                 SetMagic(Enums.MagicType.FROST);
+                magicParticles[1].SetActive(true);
+
             }
             else if (magicAmount.z > magicAmount.x && magicAmount.z > magicAmount.y)
             {
                 SetMagic(Enums.MagicType.LIGHTNING);
+                magicParticles[2].SetActive(true);
             }
             fullOfMagic = true;
         }

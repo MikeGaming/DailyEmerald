@@ -99,6 +99,11 @@ public class MortarSystem : MonoBehaviour
             other.transform.parent.parent = null;
             other.transform.parent.localScale = baseScale;
         }
+
+        if (other.CompareTag("CrystalBit"))
+        {
+            other.GetComponentInParent<DeathOverTime>().StartDeath(30f);
+        }
     }
 
 

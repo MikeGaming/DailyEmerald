@@ -343,6 +343,7 @@ MonoBehaviour:
   textObj: {fileID: 3243065753602315204}
   startPoint: {fileID: 0}
   orderPoint: {fileID: 0}
+  orderPending: 0
   order: {fileID: 0}
 --- !u!65 &5810199533606284274
 BoxCollider:
@@ -591,7 +592,7 @@ MonoBehaviour:
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 14
+  m_fontSizeMin: 0
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1

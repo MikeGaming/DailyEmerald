@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
   m_Name: IronSword
   m_EditorClassIdentifier: 
-  customerOrderText: I would like a plain Iron Sword please! No magic!
+  customerOrderText: A sword, simple and unadorned, to carry into the depths of the
+    earth where the dwarven forges lie. Let it be pure iron, for the dwarves respect
+    strength over finery.
   acceptedItems:
     orderItems:
     - item: 0
