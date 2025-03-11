@@ -26,7 +26,8 @@ public class OreDeposit : MonoBehaviour
             if (currentState != 4)
             {
                 lastHitTime = Time.realtimeSinceStartup;
-                Instantiate(orePrefab, oreSpawnPoint.position, oreSpawnPoint.rotation);
+                GameObject temp = Instantiate(orePrefab, oreSpawnPoint.position, oreSpawnPoint.rotation);
+                temp.transform.localScale = Random.Range(.25f, 1f) * Vector3.one;
                 ChangeState(true);
             }
         }

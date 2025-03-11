@@ -68,7 +68,7 @@ public class ShopItem : MonoBehaviour
     {
         if (collision.gameObject.tag == "CrystalBit" && !fullOfMagic)
         {
-            switch (collision.gameObject.GetComponentInChildren<MeshRenderer>().material.name.Replace(" (Instance)","")) {
+            switch (collision.gameObject.GetComponent<MeshRenderer>().material.name.Replace(" (Instance)","")) {
                 case "Flame":
                     magicAmount += Vector3.right;
                     break;

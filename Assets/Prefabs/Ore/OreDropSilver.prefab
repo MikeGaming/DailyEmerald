@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4384372607359981820, guid: 701f7b77f0837f44dab13cd4786fab1a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f369c71add261fd42ae855698fc20dd7, type: 2}
     - target: {fileID: 8481271640393203815, guid: 701f7b77f0837f44dab13cd4786fab1a, type: 3}
       propertyPath: m_Name
       value: OreDropSilver
