@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 //when object enters trigger it gets stored
 //each object is worth 1 metal
@@ -16,7 +17,7 @@ public class Oven : MonoBehaviour
     private List<GameObject> objsInsideOven = new List<GameObject>();
 
     //index for each ore is the int representation of Enums.MaterialType
-    private int[] oreCounts;
+    private int[] oreCounts = new int[Enum.GetNames(typeof(Enums.MaterialType)).Length];
 
     private Enums.MaterialType meltMaterial;
 
@@ -35,7 +36,9 @@ public class Oven : MonoBehaviour
     //melt objects
     public void Melt()
     {
-        if (doorTrans.position.y! < 1.2f) return;
+        Debug.Log("MeltTest");
+        if (doorTrans.position.y > 1.2f) return;
+        Debug.Log("MeltTest2");
         CountMeltables();
 
         //one-liner for finding largest value in array (thanks stack overflow)

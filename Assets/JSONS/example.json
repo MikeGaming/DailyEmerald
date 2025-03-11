@@ -1,0 +1,108 @@
+{
+    "Order1":{
+        "CustomerOrderText": "I crave a plain iron sword, wrought by mortal hands, untainted by magic. Just steel and strength.",
+        "OrderWeapons":{
+            "Item1": {
+                "Item": "Sword",
+                "CostRatio": 1
+            }, 
+            "Item2": {
+                "Item": "Axe",
+                "CostRatio": 0.75
+            }, 
+            "Item3": {
+                "Item": "Mace",
+                "CostRatio": 0.5
+            }, 
+            "Item4": {
+                "Item": "Spear",
+                "CostRatio": 0.25
+            }
+        },
+        "OrderEnchantments":{
+            "Item1":{
+                "Item": "None",
+                "CostRatio": 1
+            },
+            "Item2":{
+                "Item": "Flame",
+                "CostRatio": 0
+            },
+            "Item3":{
+                "Item": "Frost",
+                "CostRatio": 0
+            },
+            "Item4":{
+                "Item": "Lightning",
+                "CostRatio": 0
+            }
+        },
+        "OrderMaterials":{
+            "Item1":{
+                "Item": "Iron",
+                "CostRatio": 1
+            },
+            "Item2":{
+                "Item": "Silver",
+                "CostRatio": 0.66
+            },
+            "Item3":{
+                "Item": "Gold",
+                "CostRatio": 0.33
+            }
+        }
+    },
+    "Order2":{
+        "CustomerOrderText": "I seek to fell a great tree that stands upon the mirrored surface of a lake, heavily guarded by werewolves.",
+        "OrderWeapons":{
+            "Item1": {
+                "Item": "Sword",
+                "CostRatio": 0.75
+            }, 
+            "Item2": {
+                "Item": "Axe",
+                "CostRatio": 1
+            }, 
+            "Item3": {
+                "Item": "Mace",
+                "CostRatio": 0.25
+            }, 
+            "Item4": {
+                "Item": "Spear",
+                "CostRatio": 0.5
+            }
+        },
+        "OrderEnchantments":{
+            "Item1":{
+                "Item": "None",
+                "CostRatio": 0
+            },
+            "Item2":{
+                "Item": "Flame",
+                "CostRatio": 0
+            },
+            "Item3":{
+                "Item": "Frost",
+                "CostRatio": 1
+            },
+            "Item4":{
+                "Item": "Lightning",
+                "CostRatio": 0
+            }
+        },
+        "OrderMaterials":{
+            "Item1":{
+                "Item": "Iron",
+                "CostRatio": 0.66
+            },
+            "Item2":{
+                "Item": "Silver",
+                "CostRatio": 1
+            },
+            "Item3":{
+                "Item": "Gold",
+                "CostRatio": 0.33
+            }
+        }
+    }
+}

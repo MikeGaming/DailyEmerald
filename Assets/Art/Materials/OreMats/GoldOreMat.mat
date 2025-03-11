@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: OreMat
+  m_Name: GoldOreMat
   m_Shader: {fileID: -6465566751694194690, guid: 5b7961c505422d34ba32dc3bea58ff2a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -82,7 +82,7 @@ Material:
     - _BottomColour: {r: 1, g: 0, b: 0, a: 1}
     - _GradientAxis: {r: 0, g: 0, b: 0, a: 0}
     - _GradientDirection: {r: 0, g: 0, b: 0, a: 0}
-    - _MainColor: {r: 0.4772161, g: 0.6603774, b: 0.62226903, a: 1}
+    - _MainColor: {r: 0.6062984, g: 0.6075471, b: 0.16392305, a: 1}
     - _ScreenColorRange: {r: 0, g: 1, b: 0, a: 0}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}

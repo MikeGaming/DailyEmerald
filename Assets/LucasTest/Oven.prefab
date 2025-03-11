@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 767647169120536303}
   - component: {fileID: 9203442745439273868}
   - component: {fileID: 8305147811428916119}
+  - component: {fileID: 195609741580299161}
   m_Layer: 0
   m_Name: Oven
   m_TagString: Untagged
@@ -68,7 +69,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 650fc0b12bcf3d14f804fbd9e7450edf, type: 2}
+  - {fileID: 2100000, guid: 0e502f053c09a354782ca9367e4ab078, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -167,3 +168,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorTrans: {fileID: 0}
+--- !u!65 &195609741580299161
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6761601005618646178}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.020000001, y: 0.016591514, z: 0.0112866545}
+  m_Center: {x: 0, y: -0.0013512317, z: 0.0142993415}

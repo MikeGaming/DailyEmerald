@@ -7,7 +7,9 @@ public class Enums
     public enum ItemType
     {
         SWORD,
-        AXE
+        AXE,
+        MACE,
+        SPEAR
     }
 
     public enum MaterialType
@@ -20,8 +22,8 @@ public class Enums
     public enum MagicType
     {
         NONE,
-        //RED,
-        //BLUE,
-        //GREEN
+        FLAME,
+        FROST,
+        LIGHTNING
     }
 }

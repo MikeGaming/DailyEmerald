@@ -31,6 +31,4 @@ MonoBehaviour:
       costRatio: 0.5
     - material: 2
       costRatio: 0.75
-    - material: 2
-      costRatio: 0.75
   maxCoin: 10

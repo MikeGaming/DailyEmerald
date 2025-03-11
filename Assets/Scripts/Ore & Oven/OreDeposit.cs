@@ -17,10 +17,12 @@ public class OreDeposit : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        
         if (collision.gameObject.tag == "Pickaxe")
         {
+            Debug.Log("skibidi bop2");
             if (lastHitTime + hitCooldown > Time.realtimeSinceStartup) return;
-
+            Debug.Log("skibidi bop");
             if (currentState != 4)
             {
                 lastHitTime = Time.realtimeSinceStartup;
