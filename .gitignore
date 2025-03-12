@@ -95,3 +95,4 @@ fmod_editor.log
 /[Aa]ssets/StreamingAssets/**/*.bank
 /[Aa]ssets/StreamingAssets/**/*.bank.meta
 UserSettings/Layouts/default-6000.dwlt
+/UserSettings
