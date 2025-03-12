@@ -69,6 +69,7 @@ Material:
     - _GradientSmoothness: 0
     - _GradientSpread: 2.42
     - _HueChange: 0
+    - _LightColourIntensity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ShadowPower: 0.75

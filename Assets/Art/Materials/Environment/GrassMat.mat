@@ -7,14 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SmeltingStationMat
+  m_Name: GrassMat
   m_Shader: {fileID: -6465566751694194690, guid: 5b7961c505422d34ba32dc3bea58ff2a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _TOGGLECROSSHATCH
-  - _TOGGLEGRADIENT
-  - _WORLDPOSITION
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -61,16 +59,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Brightness: 3.5
+    - _Brightness: 2.5
     - _CrosshatchTile: 15
-    - _FresnelIntensity: 10
+    - _FresnelIntensity: 0
     - _FresnelMultiply: 0
     - _FresnelPower: 3.5
-    - _GradientOrigin: 0
+    - _GradientOrigin: 1.1
     - _GradientSmoothness: 0
-    - _GradientSpread: 2.42
+    - _GradientSpread: 5
     - _HueChange: 0
-    - _LightColorIntensity: 1
     - _LightColourIntensity: 0
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -79,20 +76,20 @@ Material:
     - _ShadowScrollSpeed: 1
     - _SpecularStep: 0
     - _TOGGLECROSSHATCH: 1
-    - _TOGGLEGRADIENT: 1
+    - _TOGGLEGRADIENT: 0
     - _TOGGLESPECULAR: 0
-    - _WORLDPOSITION: 1
+    - _WORLDPOSITION: 0
     m_Colors:
     - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
-    - _BottomColour: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+    - _BottomColour: {r: 0.40000004, g: 0.23529413, b: 0.20000002, a: 1}
     - _GradientAxis: {r: 0, g: 0, b: 0, a: 0}
     - _GradientDirection: {r: 0, g: 1, b: 0, a: 0}
-    - _MainColor: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
+    - _MainColor: {r: 0.12602077, g: 0.34509805, b: 0.09411764, a: 1}
     - _ScreenColorRange: {r: 0, g: 1, b: 0, a: 0}
-    - _ShadowColor: {r: 0.08, g: 0.058947366, b: 0.03368421, a: 1}
+    - _ShadowColor: {r: 0.059849985, g: 0.20754719, b: 0.041901033, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
-    - _TopColour: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+    - _TopColour: {r: 0.12748969, g: 0.4, b: 0.0980392, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &8025862953603446624

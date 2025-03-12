@@ -60,7 +60,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Brightness: 3.03
+    - _Brightness: 5
     - _CrosshatchTile: 15
     - _FresnelIntensity: 10
     - _FresnelMultiply: 0
@@ -69,6 +69,7 @@ Material:
     - _GradientSmoothness: 0
     - _GradientSpread: 2.42
     - _HueChange: 0
+    - _LightColourIntensity: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ShadowPower: 0.75
@@ -86,7 +87,7 @@ Material:
     - _GradientDirection: {r: 0, g: 1, b: 0, a: 0}
     - _MainColor: {r: 0.15, g: 0.15, b: 0.15, a: 1}
     - _ScreenColorRange: {r: 0, g: 1, b: 0, a: 0}
-    - _ShadowColor: {r: 0.08, g: 0.058947366, b: 0.03368421, a: 1}
+    - _ShadowColor: {r: 0.18490559, g: 0.18490559, b: 0.18490559, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
     - _TopColour: {r: 0.4, g: 0.4, b: 0.4, a: 1}
