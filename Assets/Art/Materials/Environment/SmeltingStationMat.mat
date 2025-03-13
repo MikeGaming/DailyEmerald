@@ -69,6 +69,7 @@ Material:
     - _GradientOrigin: 0
     - _GradientSmoothness: 0
     - _GradientSpread: 2.42
+    - _GrungeTiling: 10
     - _HueChange: 0
     - _LightColorIntensity: 1
     - _LightColourIntensity: 0

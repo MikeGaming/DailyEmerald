@@ -687,17 +687,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1166026692523176120, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
-      propertyPath: m_CurrentTrackingState
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 1349762266259824076, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
       propertyPath: m_Name
       value: Custom XR Origin Rig
-      objectReference: {fileID: 0}
-    - target: {fileID: 1349762266259824076, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4933778259784593427, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -738,30 +730,6 @@ PrefabInstance:
     - target: {fileID: 4933778259784593427, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5039694050704526154, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 9e248f128b016034190adb820f58dd1a, type: 2}
-    - target: {fileID: 5039694050704526154, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: dedca8670332edd41bf3d848feb7b5be, type: 2}
-    - target: {fileID: 5398100228163402885, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
-      propertyPath: m_CurrentTrackingState
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7512079004564412184, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 9e248f128b016034190adb820f58dd1a, type: 2}
-    - target: {fileID: 7512079004564412184, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: dedca8670332edd41bf3d848feb7b5be, type: 2}
-    - target: {fileID: 9044431254991083941, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
-      propertyPath: m_RaycastMask.m_Bits
-      value: 33
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

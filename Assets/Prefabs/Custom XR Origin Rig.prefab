@@ -762,7 +762,7 @@ MonoBehaviour:
   m_LiveConeCastDebugVisuals: 0
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 2147483681
+    m_Bits: 33
   m_RaycastTriggerInteraction: 1
   m_RaycastSnapVolumeInteraction: 1
   m_HitClosestOnly: 1
@@ -5416,6 +5416,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 566653920873713942}
     m_Modifications:
+    - target: {fileID: 675062380429585261, guid: b3375fdf8e767dc4484bd311f31a210d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9e248f128b016034190adb820f58dd1a, type: 2}
+    - target: {fileID: 675062380429585261, guid: b3375fdf8e767dc4484bd311f31a210d, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dedca8670332edd41bf3d848feb7b5be, type: 2}
     - target: {fileID: 7491624674106753207, guid: b3375fdf8e767dc4484bd311f31a210d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5522,6 +5530,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: RightHand
       objectReference: {fileID: 0}
+    - target: {fileID: 2888843248640776569, guid: e9b54f887804bda42b41ecfdb4d8e53f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9e248f128b016034190adb820f58dd1a, type: 2}
+    - target: {fileID: 2888843248640776569, guid: e9b54f887804bda42b41ecfdb4d8e53f, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dedca8670332edd41bf3d848feb7b5be, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
