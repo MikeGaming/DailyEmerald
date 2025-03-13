@@ -4949,8 +4949,8 @@ MonoBehaviour:
       Data4: 248506706
     Path: event:/HammerBonk
   Event: 
-  EventPlayTrigger: 3
-  EventStopTrigger: 2
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0

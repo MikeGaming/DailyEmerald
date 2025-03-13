@@ -13,7 +13,6 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _TOGGLECROSSHATCH
-  - _WORLDPOSITION
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -69,6 +68,7 @@ Material:
     - _GradientSmoothness: 0
     - _GradientSpread: 2.42
     - _HueChange: 0
+    - _LightColorIntensity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ShadowPower: 0.75
@@ -78,7 +78,7 @@ Material:
     - _TOGGLECROSSHATCH: 1
     - _TOGGLEGRADIENT: 0
     - _TOGGLESPECULAR: 0
-    - _WORLDPOSITION: 1
+    - _WORLDPOSITION: 0
     m_Colors:
     - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
     - _BottomColour: {r: 0.6, g: 0.6, b: 0.6, a: 1}
