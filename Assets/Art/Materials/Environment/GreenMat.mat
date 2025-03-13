@@ -61,13 +61,14 @@ Material:
     m_Floats:
     - _Brightness: 2.5
     - _CrosshatchTile: 15
-    - _FresnelIntensity: 10
+    - _FresnelIntensity: 0
     - _FresnelMultiply: 0
     - _FresnelPower: 3.5
     - _GradientOrigin: 1.1
     - _GradientSmoothness: 0
     - _GradientSpread: 5
     - _HueChange: 0
+    - _LightColorIntensity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ShadowPower: 0.75
