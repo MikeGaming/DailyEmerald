@@ -4581,6 +4581,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1729617409}
     m_Modifications:
+    - target: {fileID: 1017083080760779020, guid: 965776969fe420b418d1ac71177da3ac, type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5694805953530543562, guid: 965776969fe420b418d1ac71177da3ac, type: 3}
       propertyPath: m_Name
       value: Customer
