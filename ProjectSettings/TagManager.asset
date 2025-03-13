@@ -13,6 +13,10 @@ TagManager:
   - CrystalBit
   - Button
   - Pickaxe
+  - Wood
+  - Metal
+  - Blade
+  - Stone
   layers:
   - Default
   - TransparentFX

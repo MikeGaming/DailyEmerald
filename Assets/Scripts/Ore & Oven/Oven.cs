@@ -13,6 +13,7 @@ using System;
 public class Oven : MonoBehaviour
 {
     [SerializeField] private Transform doorTrans;
+    public bool melted;
 
     private List<GameObject> objsInsideOven = new List<GameObject>();
 
@@ -49,6 +50,7 @@ public class Oven : MonoBehaviour
         //TO-DO:
         //send data to bucket
         //trigger animation through pipes
+        melted = true;
         //play sound
     }
 
