@@ -13,7 +13,6 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _TOGGLECROSSHATCH
-  - _WORLDPOSITION
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -62,13 +61,14 @@ Material:
     m_Floats:
     - _Brightness: 5
     - _CrosshatchTile: 15
-    - _FresnelIntensity: 10
+    - _FresnelIntensity: 0
     - _FresnelMultiply: 0
     - _FresnelPower: 3.5
     - _GradientOrigin: 0
     - _GradientSmoothness: 0
     - _GradientSpread: 2.42
     - _HueChange: 0
+    - _LightColorIntensity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ShadowPower: 0.75
@@ -78,13 +78,13 @@ Material:
     - _TOGGLECROSSHATCH: 1
     - _TOGGLEGRADIENT: 0
     - _TOGGLESPECULAR: 0
-    - _WORLDPOSITION: 1
+    - _WORLDPOSITION: 0
     m_Colors:
     - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
     - _BottomColour: {r: 0.6, g: 0.6, b: 0.6, a: 1}
     - _GradientAxis: {r: 0, g: 0, b: 0, a: 0}
     - _GradientDirection: {r: 0, g: 1, b: 0, a: 0}
-    - _MainColor: {r: 0.6, g: 0.53581405, b: 0.24279074, a: 1}
+    - _MainColor: {r: 0.4867924, g: 0.4281714, b: 0.1533855, a: 1}
     - _ScreenColorRange: {r: 0, g: 1, b: 0, a: 0}
     - _ShadowColor: {r: 0.08, g: 0.058947366, b: 0.03368421, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
