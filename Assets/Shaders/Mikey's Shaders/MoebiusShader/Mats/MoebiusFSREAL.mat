@@ -71,7 +71,7 @@ Material:
     - _COLORS: 1
     - _ColorStrength: 0
     - _ColorThickness: 0.91
-    - _ColorThreshold: 0.25
+    - _ColorThreshold: 0.5
     - _DepthMultiply: 1
     - _DepthStrength: 5
     - _DepthThickness: 1
@@ -79,11 +79,11 @@ Material:
     - _DepthThreshold_1: 0.11
     - _FresnelPower: 5
     - _GrazingAngelModulationFactor: 100
-    - _GrazingAngleMaskPower: 1
+    - _GrazingAngleMaskPower: 1.04
     - _MaxDepthCO: 2000
     - _MaxDepthDO: 2000
     - _MaxDepthNO: 2000
-    - _MaxThicknessCO: 0.5
+    - _MaxThicknessCO: 1
     - _MaxThicknessDO: 1
     - _MaxThicknessNO: 1
     - _MinThicknessCO: 0.19
