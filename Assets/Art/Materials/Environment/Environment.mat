@@ -69,6 +69,7 @@ Material:
     - _GradientOrigin: 2.85
     - _GradientSmoothness: 0
     - _GradientSpread: 5.77
+    - _GrungeTiling: 10
     - _HueChange: 0
     - _LightColorIntensity: 1
     - _QueueControl: 0
@@ -83,15 +84,15 @@ Material:
     - _WORLDPOSITION: 1
     m_Colors:
     - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
-    - _BottomColour: {r: 0.4, g: 0.21571818, b: 0.120400004, a: 1}
+    - _BottomColour: {r: 0.14716971, g: 0.14716971, b: 0.14716971, a: 1}
     - _GradientAxis: {r: 0, g: 0, b: 0, a: 0}
     - _GradientDirection: {r: 0, g: 1, b: 0, a: 0}
     - _MainColor: {r: 0.4, g: 0.31944, b: 0.2728, a: 1}
     - _ScreenColorRange: {r: 0, g: 1, b: 0, a: 0}
-    - _ShadowColor: {r: 0.08, g: 0.058947366, b: 0.03368421, a: 1}
+    - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
-    - _TopColour: {r: 0.4, g: 0.2803155, b: 0.2192, a: 1}
+    - _TopColour: {r: 0.2830189, g: 0.24524008, b: 0.21733715, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &8025862953603446624
