@@ -1405,6 +1405,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7239164110073755436, guid: 1c052ae8f4d452b43a90fae69210004f, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2227,7 +2231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: fillTime
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: moveTime
@@ -2235,15 +2239,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: fadeDelay
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: fillDelay
-      value: 27
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: moveDelay
-      value: 27
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: movement.x
@@ -5458,20 +5462,24 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
+      propertyPath: fillTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: moveTime
-      value: 5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: fadeDelay
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: fillDelay
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: moveDelay
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: movement.x
@@ -5630,7 +5638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: fillTime
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: moveTime
@@ -5638,15 +5646,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: fadeDelay
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: fillDelay
-      value: 20
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: moveDelay
-      value: 20
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: movement.x
@@ -7961,20 +7969,24 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
+      propertyPath: fillTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: moveTime
-      value: 5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: fadeDelay
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: fillDelay
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: moveDelay
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13305,7 +13317,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -13731,7 +13743,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -13772,7 +13784,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -14982,7 +14994,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -15027,7 +15039,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -16117,7 +16129,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -16199,7 +16211,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -16301,7 +16313,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -16974,7 +16986,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 650fc0b12bcf3d14f804fbd9e7450edf, type: 2}
+  - {fileID: 2100000, guid: 4ccbbd2d9942cbb4f8efc4ed9baa04a8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17200,7 +17212,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -17317,7 +17329,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -17874,7 +17886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8059381164053329353, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.0673
+      value: 18.052
       objectReference: {fileID: 0}
     - target: {fileID: 8059381164053329353, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17921,20 +17933,24 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
+      propertyPath: fillTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: moveTime
-      value: 5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: fadeDelay
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: fillDelay
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: moveDelay
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18652,7 +18668,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -19012,7 +19028,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -19339,7 +19355,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -19917,7 +19933,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -20631,7 +20647,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -20776,7 +20792,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -20826,6 +20842,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 640245892}
     m_Modifications:
+    - target: {fileID: 1286441221021075125, guid: 66e47cd83f52ab5469afbc50d2d91c31, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: bfad536970283dc47b3e11b1e606f9f6, type: 2}
+    - target: {fileID: 1456265712836529789, guid: 66e47cd83f52ab5469afbc50d2d91c31, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: bfad536970283dc47b3e11b1e606f9f6, type: 2}
     - target: {fileID: 2934181254838191728, guid: 66e47cd83f52ab5469afbc50d2d91c31, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.100248
@@ -20866,6 +20890,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4299596654369509041, guid: 66e47cd83f52ab5469afbc50d2d91c31, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: bfad536970283dc47b3e11b1e606f9f6, type: 2}
     - target: {fileID: 7288953029919953015, guid: 66e47cd83f52ab5469afbc50d2d91c31, type: 3}
       propertyPath: CollisionTag
       value: Untagged
@@ -21715,7 +21743,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -21782,7 +21810,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -22006,7 +22034,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30

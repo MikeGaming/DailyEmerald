@@ -8,6 +8,7 @@ public class CenterOfMass : MonoBehaviour
     private void Start()
     {
         _rb = GetComponent<Rigidbody>();
+        _rb.automaticCenterOfMass = false;
         _rb.centerOfMass = centerOfMass;
     }
 

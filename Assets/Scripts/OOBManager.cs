@@ -11,23 +11,30 @@ public class OOBManager : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         // Reset velocity of object and send it along a curve towards the landing point
-        if (other.transform.GetComponentInParent<Rigidbody>())
+        if (other.attachedRigidbody)
         {
-            Rigidbody rb = other.transform.GetComponentInParent<Rigidbody>();
-            rb.linearVelocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
-            StartCoroutine(MoveObject(rb.transform, landingPoint.position, 1f));
+            StartCoroutine(MoveObject(other.attachedRigidbody, landingPoint.position, 1f, 2f));
         }
     }
 
-    private IEnumerator MoveObject(Transform objectToMove, Vector3 toPosition, float duration)
+    private IEnumerator MoveObject(Rigidbody objectToMove, Vector3 toPosition, float duration, float moveDelay)
     {
-        float counter = 0;
+        Vector3 initialScale = objectToMove.transform.localScale;
+        yield return new WaitForSeconds(moveDelay);
         Vector3 startPos = objectToMove.position;
-        while (counter < duration)
+        // scale object size down to zero over time before moving it
+        for(float counter = 0; counter < 2f; counter += Time.deltaTime)
         {
-            counter += Time.deltaTime;
-            objectToMove.position = Vector3.Lerp(startPos, toPosition, counter / duration);
+            objectToMove.transform.localScale = Vector3.Lerp(initialScale, Vector3.zero, counter / 2f);
+            yield return null;
+        }
+        yield return new WaitForSeconds(2f);
+        objectToMove.linearVelocity = Vector3.zero;
+        objectToMove.angularVelocity = Vector3.zero;
+        for (float counter = 0; counter < duration; counter+= Time.deltaTime)
+        {
+            objectToMove.MovePosition(toPosition);
+            objectToMove.transform.localScale = initialScale;
             yield return null;
         }
     }
