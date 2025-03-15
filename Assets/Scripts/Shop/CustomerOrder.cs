@@ -25,6 +25,12 @@ public class CustomerOrder : ScriptableObject
 [System.Serializable]
 public class CustomerOrderItemDictItem
 {
+    public CustomerOrderItemDictItem(Enums.ItemType itemCon, float costCon)
+    {
+        item = itemCon;
+        costRatio = costCon;
+    }
+
     public Enums.ItemType item;
     [Range(0.0f, 1f)]
     public float costRatio;
@@ -33,7 +39,7 @@ public class CustomerOrderItemDictItem
 [System.Serializable]
 public class CustomerOrderItemDict
 {
-    public CustomerOrderItemDictItem[] orderItems;
+    public List<CustomerOrderItemDictItem> orderItems = new List<CustomerOrderItemDictItem>();
     public Dictionary<Enums.ItemType, float> dict = new Dictionary<Enums.ItemType, float>();
 
     public void DictionarizeSelf()
@@ -48,6 +54,12 @@ public class CustomerOrderItemDict
 [System.Serializable]
 public class CustomerOrderMagicDictItem
 {
+    public CustomerOrderMagicDictItem(Enums.MagicType itemCon, float costCon)
+    {
+        magic = itemCon;
+        costRatio = costCon;
+    }
+
     public Enums.MagicType magic;
     [Range(0.0f, 1f)]
     public float costRatio;
@@ -56,7 +68,7 @@ public class CustomerOrderMagicDictItem
 [System.Serializable]
 public class CustomerOrderMagicDict
 {
-    public CustomerOrderMagicDictItem[] orderItems;
+    public List<CustomerOrderMagicDictItem> orderItems = new List<CustomerOrderMagicDictItem>();
     public Dictionary<Enums.MagicType, float> dict = new Dictionary<Enums.MagicType, float>();
 
     public void DictionarizeSelf()
@@ -70,6 +82,12 @@ public class CustomerOrderMagicDict
 [System.Serializable]
 public class CustomerOrderMaterialDictItem
 {
+    public CustomerOrderMaterialDictItem(Enums.MaterialType itemCon, float costCon)
+    {
+        material = itemCon;
+        costRatio = costCon;
+    }
+
     public Enums.MaterialType material;
     [Range(0.0f, 1f)]
     public float costRatio;
@@ -78,7 +96,7 @@ public class CustomerOrderMaterialDictItem
 [System.Serializable]
 public class CustomerOrderMaterialDict
 {
-    public CustomerOrderMaterialDictItem[] orderItems;
+    public List<CustomerOrderMaterialDictItem> orderItems = new List<CustomerOrderMaterialDictItem>();
     public Dictionary<Enums.MaterialType, float> dict = new Dictionary<Enums.MaterialType, float>();
 
     public void DictionarizeSelf()
