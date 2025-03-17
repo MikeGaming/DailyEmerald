@@ -6,7 +6,9 @@ public class LavaAnimation : MonoBehaviour
     [SerializeField] float fadeTime, fadeDelay;
     [SerializeField] Vector3 movement;
     MeshRenderer meshRenderer;
-    [SerializeField] Oven oven;
+    [SerializeField] LavaAnimation nextAnim;
+    [SerializeField] bool isLastAnim;
+    public bool canStart;
     float time;
 
     Vector3 startPos, endPos;
@@ -20,7 +22,7 @@ public class LavaAnimation : MonoBehaviour
 
     private void Update()
     {
-        if (oven.melted)
+        if (canStart)
         {
             time += Time.deltaTime;
             // Fill "_Fill" property of the shader to 1 after fillDelay seconds, over the course of fillTime seconds
@@ -30,11 +32,32 @@ public class LavaAnimation : MonoBehaviour
             float move = Mathf.Clamp01((time - moveDelay) / moveTime);
             transform.position = Vector3.Lerp(startPos, endPos, move);
             // Fill the "_Fill" property of the shader to 0 after fadeDelay seconds, over the course of fadeTime seconds
+
+            if (time > fillDelay + fillTime)
+            {
+                if (nextAnim != null) nextAnim.canStart = true;
+            }
+
             if (time > fadeDelay)
             {
                 float fade = Mathf.Clamp01((time - fadeDelay) / fadeTime);
 
                 meshRenderer.material.SetFloat("_Fill", 1 - fade);
+            }
+
+            if (time > fadeDelay + fadeTime)
+            {
+                if (isLastAnim)
+                {
+                    time = 0;
+                    canStart = false;
+                    // run final code here
+                }
+                else
+                {
+                    time = 0;
+                    canStart = false;
+                }
             }
 
         }
