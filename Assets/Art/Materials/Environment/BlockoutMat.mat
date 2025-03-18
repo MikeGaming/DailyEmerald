@@ -132,7 +132,9 @@ Material:
     - _GradientOrigin: 0
     - _GradientSmoothness: 0
     - _GradientSpread: 0
+    - _GrungeTiling: 10
     - _HueChange: 0
+    - _LightColorIntensity: 1
     - _LightColourIntensity: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
@@ -166,6 +168,7 @@ Material:
     - _ColorMultiplier: {r: 1, g: 1, b: 1, a: 1}
     - _CrosshatchTiling: {r: 1, g: 1, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Emissive: {r: 0, g: 0, b: 0, a: 0}
     - _GradientAxis: {r: 0, g: 0, b: 0, a: 0}
     - _GradientDirection: {r: 0, g: 0, b: 0, a: 0}
     - _MainColor: {r: 0, g: 0, b: 0, a: 1}

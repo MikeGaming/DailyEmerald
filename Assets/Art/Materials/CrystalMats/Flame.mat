@@ -54,7 +54,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GrungeTexture:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 790cf7178e8bf6449a387706695f392f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -133,7 +133,9 @@ Material:
     - _GradientOrigin: 0
     - _GradientSmoothness: 0
     - _GradientSpread: 0
+    - _GrungeTiling: 10
     - _HueChange: 0
+    - _LightColorIntensity: 1
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -155,6 +157,7 @@ Material:
     - _TOGGLECROSSHATCH: 1
     - _TOGGLEGRADIENT: 0
     - _TOGGLESPECULAR: 0
+    - _WORLDPOSITION: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
@@ -165,6 +168,7 @@ Material:
     - _ColorMultiplier: {r: 1, g: 1, b: 1, a: 1}
     - _CrosshatchTiling: {r: 1, g: 1, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Emissive: {r: 0, g: 0, b: 0, a: 1}
     - _GradientAxis: {r: 0, g: 0, b: 0, a: 0}
     - _GradientDirection: {r: 0, g: 0, b: 0, a: 0}
     - _MainColor: {r: 1, g: 0.08674806, b: 0, a: 1}
