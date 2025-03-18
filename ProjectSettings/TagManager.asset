@@ -17,6 +17,10 @@ TagManager:
   - Metal
   - Blade
   - Stone
+  - Axe
+  - WoodBit
+  - Hand
+  - WoodStationTree
   layers:
   - Default
   - TransparentFX

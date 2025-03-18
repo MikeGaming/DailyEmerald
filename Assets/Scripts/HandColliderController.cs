@@ -16,26 +16,41 @@ public class HandColliderController : MonoBehaviour
         
     }
 
-    private void OnTriggerStay(Collider other)
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    if(other.transform.parent)
+    //    {
+    //        other.transform.parent.TryGetComponent<XRGrabInteractable>(out XRGrabInteractable grabInteractable);
+    //        if(grabInteractable)
+    //        {
+    //            if (grabInteractable.isGrabbed)
+    //            {
+    //                handCollider.enabled = false;
+    //                Debug.Log(other.name);
+    //            }
+    //        }
+    //    }
+    //}
+
+    private void OnCollisionStay(Collision collision)
     {
-        if(other.transform.parent)
+        if (collision.transform.parent)
         {
-            other.transform.parent.TryGetComponent<XRGrabInteractable>(out XRGrabInteractable grabInteractable);
-            if(grabInteractable)
+            collision.transform.parent.TryGetComponent<XRGrabInteractable>(out XRGrabInteractable grabInteractable);
+            if (grabInteractable)
             {
                 if (grabInteractable.isGrabbed)
                 {
                     handCollider.enabled = false;
-                    Debug.Log(other.name);
+                    Debug.Log(collision.transform.name);
                 }
             }
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnCollisionExit(Collision collision)
     {
-
-            handCollider.enabled = true;
+        handCollider.enabled = true;
     }
 
 
