@@ -4,6 +4,7 @@ public class WoodCutting : MonoBehaviour
 {
 
     [SerializeField] GameObject woodPiecePrefab;
+    [SerializeField] Transform spawnPoint;
     [SerializeField] float growRate = 0.5f;
     float time;
     bool isReady;
@@ -20,7 +21,7 @@ public class WoodCutting : MonoBehaviour
         if (collision.gameObject.CompareTag("Axe") && isReady)
         {
             isReady = false;
-            Instantiate(woodPiecePrefab, transform.position, Quaternion.identity);
+            Instantiate(woodPiecePrefab, spawnPoint.position, Quaternion.identity);
             transform.localScale = new Vector3(transform.localScale.x, initialYScale * 0.5f, transform.localScale.z);
         }
     }
