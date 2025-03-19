@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
+  m_Name: Order21
+  m_EditorClassIdentifier: 
+  customerOrderText: "The Clockwork Monks\xE2\u20AC\u2122 temple is overrun by magnetized
+    scarabs. Forge me a lightning-charged mace to disrupt their metal carapaces.
+    Iron conducts best; gold would be sacrilege."
+  acceptedItems:
+    orderItems:
+    - item: 2
+      costRatio: 1
+    - item: 1
+      costRatio: 0.5
+    - item: 0
+      costRatio: 0.4
+    - item: 3
+      costRatio: 0.6
+  acceptedMagics:
+    orderItems:
+    - magic: 0
+      costRatio: 0
+    - magic: 1
+      costRatio: 0.2
+    - magic: 2
+      costRatio: 0.1
+    - magic: 3
+      costRatio: 1
+  acceptedMaterials:
+    orderItems:
+    - material: 0
+      costRatio: 1
+    - material: 1
+      costRatio: 0.4
+    - material: 2
+      costRatio: 0
+  maxCoin: 0

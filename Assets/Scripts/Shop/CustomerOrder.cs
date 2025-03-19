@@ -6,9 +6,9 @@ public class CustomerOrder : ScriptableObject
 {
     [TextArea(4, 8)]
     public string customerOrderText;
-    public CustomerOrderItemDict acceptedItems;
-    public CustomerOrderMagicDict acceptedMagics;
-    public CustomerOrderMaterialDict acceptedMaterials;
+    public CustomerOrderItemDict acceptedItems = new CustomerOrderItemDict();
+    public CustomerOrderMagicDict acceptedMagics = new CustomerOrderMagicDict();
+    public CustomerOrderMaterialDict acceptedMaterials = new CustomerOrderMaterialDict();
 
     public int maxCoin;
 

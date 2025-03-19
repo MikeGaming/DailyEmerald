@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
+  m_Name: Order25
+  m_EditorClassIdentifier: 
+  customerOrderText: "The Thunderspine Mercenaries ride war-lizards into battle.
+    Forge lightning-lances to channel their mounts\xE2\u20AC\u2122 fury. Let every
+    thrust crackle like a storm\xE2\u20AC\u201Dsilver for conductivity, no subtlety."
+  acceptedItems:
+    orderItems:
+    - item: 3
+      costRatio: 1
+    - item: 0
+      costRatio: 0.3
+    - item: 1
+      costRatio: 0.2
+    - item: 2
+      costRatio: 0.1
+  acceptedMagics:
+    orderItems:
+    - magic: 0
+      costRatio: 0
+    - magic: 1
+      costRatio: 0.2
+    - magic: 2
+      costRatio: 0
+    - magic: 3
+      costRatio: 1
+  acceptedMaterials:
+    orderItems:
+    - material: 0
+      costRatio: 0.5
+    - material: 1
+      costRatio: 1
+    - material: 2
+      costRatio: 0.3
+  maxCoin: 0

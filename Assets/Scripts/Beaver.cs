@@ -9,8 +9,10 @@ public class Beaver : MonoBehaviour
     [SerializeField] float carveTime = 3f;
     [SerializeField] GameObject[] handleTypePrefabs;
     [SerializeField] GameObject[] handleTypeUIs;
+    [SerializeField] float delay = 0.25f;
     int handleTypeIndex = 0;
     public bool isCarving;
+    float lastTime;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,9 +20,10 @@ public class Beaver : MonoBehaviour
         {
             StartCoroutine(WoodCarve(other));
         }
-        if (other.CompareTag("Axe") && !isCarving)
+        if (other.CompareTag("Axe") && !isCarving && lastTime + delay < Time.realtimeSinceStartup)
         {
             Debug.Log("orange juice");
+            lastTime = Time.realtimeSinceStartup;
             handleTypeUIs[handleTypeIndex].SetActive(false);
             handleTypeIndex = (handleTypeIndex + 1) % handleTypePrefabs.Length;
             handleTypeUIs[handleTypeIndex].SetActive(true);
