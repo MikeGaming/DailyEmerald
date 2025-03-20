@@ -358,6 +358,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8629791039205708473, guid: ac94bcabfa522944a86d4b0b1178d71f, type: 3}
   m_PrefabInstance: {fileID: 25292093}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &35619442 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2931946627994266408, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
+  m_PrefabInstance: {fileID: 105714491}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a07ef133a37d140a87cdf1f1c75fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &105714491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -371,9 +382,13 @@ PrefabInstance:
       value: Custom XR Origin Rig
       objectReference: {fileID: 0}
     - target: {fileID: 2121526306409747044, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
+      propertyPath: m_StartingGroupMembers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121526306409747044, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
       propertyPath: 'm_StartingGroupMembers.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1308094451}
     - target: {fileID: 2931946627994266408, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -422,10 +437,34 @@ PrefabInstance:
       propertyPath: m_Target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5718132936630675939, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
+      propertyPath: m_LineOriginTransform
+      value: 
+      objectReference: {fileID: 1627093483}
+    - target: {fileID: 5718132936630675939, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
+      propertyPath: m_StopLineAtSelection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718132936630675939, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
+      propertyPath: m_SnapEndpointIfAvailable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718132936630675939, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
+      propertyPath: m_StopLineAtFirstRaycastHit
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8180397708126917289, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1763878886}
+    - target: {fileID: 8429798332998550038, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
+      propertyPath: m_StartingGroupMembers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429798332998550038, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
+      propertyPath: 'm_StartingGroupMembers.Array.data[0]'
+      value: 
+      objectReference: {fileID: 35619442}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6078,6 +6117,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1196458893914741822, guid: 033ad77331af052438906ce7d951922a, type: 3}
   m_PrefabInstance: {fileID: 1290307390}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1308094451 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8180397708126917289, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
+  m_PrefabInstance: {fileID: 105714491}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a07ef133a37d140a87cdf1f1c75fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1343777168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6954,6 +7004,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609480760}
   m_CullTransparentMesh: 1
+--- !u!4 &1627093483 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6067775296749281700, guid: d3608864b9c4d3542b02ebed8a36d25d, type: 3}
+  m_PrefabInstance: {fileID: 105714491}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1630110045
 GameObject:
   m_ObjectHideFlags: 0
