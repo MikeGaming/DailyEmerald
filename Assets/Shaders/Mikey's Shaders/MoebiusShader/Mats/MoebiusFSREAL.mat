@@ -92,7 +92,7 @@ Material:
     - _NormalMultiply: 1.5
     - _NormalStrength: 10
     - _NormalThickness: 0.2
-    - _NormalThreshold: 0.5
+    - _NormalThreshold: 1
     - _PerturbationFactor: 1
     - _ShadePower: 0.5
     - _ShadeStrength: 0

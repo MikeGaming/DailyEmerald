@@ -41,7 +41,7 @@ public class ShopItem : MonoBehaviour
 
     private void Update()
     {
-        if((magicAmount.x >= 10 || magicAmount.y >= 10 || magicAmount.z >= 10) && !fullOfMagic)
+        if((magicAmount.x >= 40 || magicAmount.y >= 40 || magicAmount.z >= 40) && !fullOfMagic)
         {
             // Whichever magic type is the highest, that's the one that will be used
             if (magicAmount.x > magicAmount.y && magicAmount.x > magicAmount.z)
