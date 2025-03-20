@@ -13,6 +13,7 @@ public class JSONImporter : EditorWindow
     {
         string path = EditorUtility.OpenFolderPanel("JSON Containing File", "", "");
         string[] files = Directory.GetFiles(path);
+
         
         foreach(string file in files)
         {
@@ -41,9 +42,9 @@ public class JSONImporter : EditorWindow
                 //List<CustomerOrderItemDictItem> dict = new();
                 //dict.Add(new CustomerOrderItemDictItem(GetItemEnumFromName(currentOrder.OrderWeapons.Item1.Item), currentOrder.OrderWeapons.Item1.CostRatio));
 
-                orderScriptableObject.acceptedItems.orderItems = new();
+                //orderScriptableObject.acceptedItems.orderItems = new();
 
-                //orderScriptableObject.acceptedItems.orderItems.Add(new CustomerOrderItemDictItem(GetItemEnumFromName(currentOrder.OrderWeapons.Item1.Item), currentOrder.OrderWeapons.Item1.CostRatio));
+                orderScriptableObject.acceptedItems.orderItems.Add(new CustomerOrderItemDictItem(GetItemEnumFromName(currentOrder.OrderWeapons.Item1.Item), currentOrder.OrderWeapons.Item1.CostRatio));
                 orderScriptableObject.acceptedItems.orderItems.Add(new CustomerOrderItemDictItem(GetItemEnumFromName(currentOrder.OrderWeapons.Item2.Item), currentOrder.OrderWeapons.Item2.CostRatio));
                 orderScriptableObject.acceptedItems.orderItems.Add(new CustomerOrderItemDictItem(GetItemEnumFromName(currentOrder.OrderWeapons.Item3.Item), currentOrder.OrderWeapons.Item3.CostRatio));
                 orderScriptableObject.acceptedItems.orderItems.Add(new CustomerOrderItemDictItem(GetItemEnumFromName(currentOrder.OrderWeapons.Item4.Item), currentOrder.OrderWeapons.Item4.CostRatio));
@@ -66,7 +67,7 @@ public class JSONImporter : EditorWindow
                 orderScriptableObject.acceptedMaterials.DictionarizeSelf();
 
                 //create scriptable object in proper folder
-                AssetDatabase.CreateAsset(orderScriptableObject, "Assets/Scripts/Shop/OrderScriptableObjects/" + file.Substring(0, file.Length - 5) + ".asset");
+                AssetDatabase.CreateAsset(orderScriptableObject, "Assets/Scripts/Shop/OrderScriptableObjects/" + currentFileName.Substring(0, currentFileName.Length - 5) + ".asset");
                 AssetDatabase.SaveAssets();
             }
         }
@@ -110,11 +111,11 @@ public class JSONImporter : EditorWindow
     {
         switch (name.ToLower())
         {
-            case "flame":
+            case "iron":
                 return Enums.MaterialType.IRON;
-            case "frost":
+            case "gold":
                 return Enums.MaterialType.GOLD;
-            case "lightning":
+            case "silver":
                 return Enums.MaterialType.SILVER;
             default:
                 Debug.LogError("JSON IMPORTER ERROR: OrderMaterials has Invalid Entry in " + currentFileName);
