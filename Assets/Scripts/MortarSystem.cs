@@ -51,6 +51,10 @@ public class MortarSystem : MonoBehaviour
             timer += Time.deltaTime;
             // scale crystals[0] down by lerping over a set period of time
             crystalList[0].transform.localScale = Vector3.Lerp(crystalList[0].transform.localScale, Vector3.zero, Time.deltaTime / crystalGrindTime);
+            if (timer >= crystalBitsRate / 3)
+            {
+
+            }
             if (timer >= crystalBitsRate)
             {
                 GameObject temp = Instantiate(crystalBitsPrefab, crystalList[0].transform.position, Quaternion.identity, transform.parent);

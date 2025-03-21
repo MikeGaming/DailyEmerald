@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
@@ -5,6 +6,8 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 public class HandColliderController : MonoBehaviour
 {
     MeshCollider handCollider;
+    [SerializeField] NearFarInteractor nearFarInteractor;
+    bool triggered;
 
     void Start()
     {
@@ -13,45 +16,22 @@ public class HandColliderController : MonoBehaviour
 
     private void Update()
     {
-        
-    }
-
-    //private void OnTriggerStay(Collider other)
-    //{
-    //    if(other.transform.parent)
-    //    {
-    //        other.transform.parent.TryGetComponent<XRGrabInteractable>(out XRGrabInteractable grabInteractable);
-    //        if(grabInteractable)
-    //        {
-    //            if (grabInteractable.isGrabbed)
-    //            {
-    //                handCollider.enabled = false;
-    //                Debug.Log(other.name);
-    //            }
-    //        }
-    //    }
-    //}
-
-    private void OnCollisionStay(Collision collision)
-    {
-        if (collision.transform.parent)
+        if(nearFarInteractor.hasSelection)
         {
-            collision.transform.parent.TryGetComponent<XRGrabInteractable>(out XRGrabInteractable grabInteractable);
-            if (grabInteractable)
-            {
-                if (grabInteractable.isGrabbed)
-                {
-                    handCollider.enabled = false;
-                    Debug.Log(collision.transform.name);
-                }
-            }
+            handCollider.enabled = false;
+            triggered = true;
+        }
+        
+        if (!nearFarInteractor.hasSelection && triggered)
+        {
+            triggered = false;
+            StartCoroutine(ReenableCollision());
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private IEnumerator ReenableCollision()
     {
+        yield return new WaitForSeconds(0.5f);
         handCollider.enabled = true;
     }
-
-
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1488546985039437582}
   - component: {fileID: 7632434673546377581}
   - component: {fileID: 4384372607359981820}
-  - component: {fileID: 8172811857618094935}
+  - component: {fileID: 8457814632286917083}
   m_Layer: 0
   m_Name: Orechunk
   m_TagString: Untagged
@@ -87,14 +87,14 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &8172811857618094935
-SphereCollider:
+--- !u!65 &8457814632286917083
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317128236684924600}
-  m_Material: {fileID: 13400000, guid: 83fc0cac71c2c284aba0f106be663d97, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -106,7 +106,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.0013736048
+  m_Size: {x: 0.001736774, y: 0.0016525481, z: 0.0017642031}
   m_Center: {x: -5.820741e-11, y: -1.215379e-16, z: 0.0000000037252899}
 --- !u!1001 &1429552100110715623
 PrefabInstance:

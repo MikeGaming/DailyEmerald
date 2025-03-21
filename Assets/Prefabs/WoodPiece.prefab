@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   woodPiecePrefab: {fileID: 0}
+  spawnPoint: {fileID: 0}
   growRate: 0.5
 --- !u!54 &864933083315932964
 Rigidbody:
