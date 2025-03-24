@@ -36,6 +36,7 @@ public class HammerParticles : MonoBehaviour
 
             case "Stone":
             case "Oven":
+            case "Pestle":
                 emitter.SetParameter("HammeredMaterial", 2);
                 break;
 
@@ -47,13 +48,23 @@ public class HammerParticles : MonoBehaviour
                 emitter.SetParameter("HammeredMaterial", 4);
                 break;
 
-            case "Crystal":
-            case "CrystalBit":
+            case "LightningCrystal":
+            case "LightningCrystalBit":
                 emitter.SetParameter("HammeredMaterial", 5);
                 break;
 
-            case "Money":
+            case "FlameCrystal":
+            case "FlameCrystalBit":
                 emitter.SetParameter("HammeredMaterial", 6);
+                break;
+
+            case "FrostCrystal":
+            case "FrostCrystalBit":
+                emitter.SetParameter("HammeredMaterial", 7);
+                break;
+
+            case "Money":
+                emitter.SetParameter("HammeredMaterial", 8);
                 break;
         }
     }

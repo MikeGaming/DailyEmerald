@@ -38,7 +38,7 @@ public class MortarSystem : MonoBehaviour
 
         foreach (Collider crystal in crystals)
         {
-            if (crystal.CompareTag("Crystal"))
+            if (crystal.CompareTag("LightningCrystal") || crystal.CompareTag("FlameCrystal") || crystal.CompareTag("FrostCrystal"))
             {
                 crystalList.Add(crystal);
             }
@@ -59,6 +59,18 @@ public class MortarSystem : MonoBehaviour
             {
                 GameObject temp = Instantiate(crystalBitsPrefab, crystalList[0].transform.position, Quaternion.identity, transform.parent);
                 temp.transform.localScale = Vector3.one;
+                if (crystalList[0].CompareTag("LightningCrystal"))
+                {
+                    temp.GetComponentInChildren<Transform>().tag = "LightningCrystalBit";
+                }
+                else if (crystalList[0].CompareTag("FlameCrystal"))
+                {
+                    temp.GetComponentInChildren<Transform>().tag = "FlameCrystalBit";
+                }
+                else if (crystalList[0].CompareTag("FrostCrystal"))
+                {
+                    temp.GetComponentInChildren<Transform>().tag = "FrostCrystalBit";
+                }
                 temp.GetComponentInChildren<MeshRenderer>().material = crystalList[0].GetComponent<MeshRenderer>().material;
                 timer = 0;
                 counter++;
@@ -102,6 +114,11 @@ public class MortarSystem : MonoBehaviour
             Vector3 baseScale = other.transform.parent.lossyScale;
             other.transform.parent.parent = null;
             other.transform.parent.localScale = baseScale;
+        }
+
+        if (other.CompareTag("LightningCrystalBit") || other.CompareTag("FlameCrystalBit") || other.CompareTag("FrostCrystalBit"))
+        {
+            other.GetComponent<DeathOverTime>().StartDeath(30f);
         }
 
 

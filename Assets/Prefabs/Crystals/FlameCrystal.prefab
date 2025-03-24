@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2159084204903298222}
   m_Layer: 0
   m_Name: CrystalModel
-  m_TagString: Crystal
+  m_TagString: FlameCrystal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
