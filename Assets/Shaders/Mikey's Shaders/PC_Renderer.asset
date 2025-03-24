@@ -1,5 +1,26 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6963367469051223169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1614fc811f8f184697d9bee70ab9fe5, type: 3}
+  m_Name: DecalRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_Settings:
+    technique: 0
+    maxDrawDistance: 1000
+    decalLayers: 0
+    dBufferSettings:
+      surfaceData: 0
+    screenSpaceSettings:
+      normalBlend: 2
 --- !u!114 &-4711229868518852815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,10 +86,11 @@ MonoBehaviour:
     probeSamplingDebugTexture: {fileID: 2800000, guid: 24ec0e140fb444a44ab96ee80844e18e, type: 3}
     probeVolumeBlendStatesCS: {fileID: 7200000, guid: b9a23f869c4fd45f19c5ada54dd82176, type: 3}
   m_RendererFeatures:
+  - {fileID: -6963367469051223169}
   - {fileID: -4711229868518852815}
   - {fileID: -2916845261613433459}
   - {fileID: 5702668461997444653}
-  m_RendererFeatureMap: 3137b94f65599ebe8dfdbf4cb04885d72d4e2e8dc0f2234f
+  m_RendererFeatureMap: 7fe3b02e2e265d9f3137b94f65599ebe8dfdbf4cb04885d72d4e2e8dc0f2234f
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 0}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
@@ -81,7 +103,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_DefaultStencilState:
     overrideStencilState: 0
-    stencilReference: 1
+    stencilReference: 0
     stencilCompareFunction: 3
     passOperation: 2
     failOperation: 0
