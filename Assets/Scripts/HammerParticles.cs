@@ -44,7 +44,7 @@ public class HammerParticles : MonoBehaviour
                 emitter.SetParameter("HammeredMaterial", 3);
                 break;
 
-            case "Customer":
+            case "CustomerSound":
                 emitter.SetParameter("HammeredMaterial", 4);
                 break;
 
