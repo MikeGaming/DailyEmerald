@@ -7,11 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FloorMat
+  m_Name: Pipes
   m_Shader: {fileID: -6465566751694194690, guid: 5b7961c505422d34ba32dc3bea58ff2a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _TOGGLECROSSHATCH
+  - _WORLDPOSITION
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -58,40 +60,39 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Brightness: 10
+    - _Brightness: 3.5
     - _CrosshatchTile: 15
-    - _FresnelIntensity: 0
+    - _FresnelIntensity: 10
     - _FresnelMultiply: 0
     - _FresnelPower: 3.5
-    - _GradientOrigin: 0
+    - _GradientOrigin: 2.85
     - _GradientSmoothness: 0
-    - _GradientSpread: 0
+    - _GradientSpread: 5.77
     - _GrungeTiling: 10
     - _HueChange: 0
     - _LightColorIntensity: 1
-    - _LightColourIntensity: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ShadowPower: 0.75
     - _ShadowScroll: 0
     - _ShadowScrollSpeed: 1
     - _SpecularStep: 0
-    - _TOGGLECROSSHATCH: 0
+    - _TOGGLECROSSHATCH: 1
     - _TOGGLEGRADIENT: 0
     - _TOGGLESPECULAR: 0
-    - _WORLDPOSITION: 0
+    - _WORLDPOSITION: 1
     m_Colors:
     - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
-    - _BottomColour: {r: 1, g: 0, b: 0, a: 1}
+    - _BottomColour: {r: 0.4117647, g: 0.3137255, b: 0.18431373, a: 1}
     - _Emissive: {r: 0, g: 0, b: 0, a: 0}
     - _GradientAxis: {r: 0, g: 0, b: 0, a: 0}
-    - _GradientDirection: {r: 0, g: 0, b: 0, a: 0}
-    - _MainColor: {r: 0.23018861, g: 0.19698916, b: 0.16634384, a: 1}
+    - _GradientDirection: {r: 0, g: 1, b: 0, a: 0}
+    - _MainColor: {r: 0.335849, g: 0.23781875, b: 0.17679597, a: 1}
     - _ScreenColorRange: {r: 0, g: 1, b: 0, a: 0}
-    - _ShadowColor: {r: 0.08, g: 0.058947366, b: 0.03368421, a: 1}
+    - _ShadowColor: {r: 0.2603773, g: 0.18791379, b: 0.1154503, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
-    - _Tiling: {r: 0.05, g: 1, b: 0, a: 0}
-    - _TopColour: {r: 1, g: 1, b: 1, a: 1}
+    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _TopColour: {r: 0.3584906, g: 0.23585273, b: 0.1968316, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &8025862953603446624

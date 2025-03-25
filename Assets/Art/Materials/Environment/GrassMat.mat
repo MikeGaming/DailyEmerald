@@ -67,7 +67,9 @@ Material:
     - _GradientOrigin: 1.1
     - _GradientSmoothness: 0
     - _GradientSpread: 5
+    - _GrungeTiling: 10
     - _HueChange: 0
+    - _LightColorIntensity: 1
     - _LightColourIntensity: 0
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -82,6 +84,7 @@ Material:
     m_Colors:
     - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
     - _BottomColour: {r: 0.40000004, g: 0.23529413, b: 0.20000002, a: 1}
+    - _Emissive: {r: 0, g: 0, b: 0, a: 0}
     - _GradientAxis: {r: 0, g: 0, b: 0, a: 0}
     - _GradientDirection: {r: 0, g: 1, b: 0, a: 0}
     - _MainColor: {r: 0.12602077, g: 0.34509805, b: 0.09411764, a: 1}
