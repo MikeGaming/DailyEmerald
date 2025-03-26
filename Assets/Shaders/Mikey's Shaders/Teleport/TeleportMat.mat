@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6647638245871080139
+--- !u!114 &-7634763100652296527
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PortalEffect
-  m_Shader: {fileID: -6465566751694194690, guid: a3250464452330b41aff18b22e3bcdf0, type: 3}
+  m_Name: TeleportMat
+  m_Shader: {fileID: -6465566751694194690, guid: d3618eb49c86423488605a314fb57fb4, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -37,10 +37,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _SampleTexture2D_93d1c360f52e4a3494d78023bc7e18ef_Texture_1_Texture2D:
-        m_Texture: {fileID: 8600000, guid: 505cc8af309f13949a46b93c5641a5b5, type: 2}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -55,13 +51,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _NoiseScale: 2.82
+    - _Centre: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Refraction: 0.01
-    - _RefractionPower: 1
-    - _TextureSpeed: 0.31
-    - _TwirlStrength: 9.11
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
