@@ -98,7 +98,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 4f5ada3d8f1ee044fa9db8395a2e1412, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 995d11e75b66fb84b9ee4de7676e8946, type: 2}
+      objectReference: {fileID: -6478536213147159724, guid: 589e0f8de50e4d2499a49d959c2aa95b, type: 3}
+    - target: {fileID: -5754084199372789682, guid: 4f5ada3d8f1ee044fa9db8395a2e1412, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 5768575504416873104, guid: 589e0f8de50e4d2499a49d959c2aa95b, type: 3}
     - target: {fileID: 919132149155446097, guid: 4f5ada3d8f1ee044fa9db8395a2e1412, type: 3}
       propertyPath: m_Name
       value: Blade_SimpleSword
@@ -137,7 +141,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: -8197304807375812786, guid: 4f5ada3d8f1ee044fa9db8395a2e1412, type: 3}
+  m_Mesh: {fileID: 5768575504416873104, guid: 589e0f8de50e4d2499a49d959c2aa95b, type: 3}
 --- !u!4 &773342848162006694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4f5ada3d8f1ee044fa9db8395a2e1412, type: 3}

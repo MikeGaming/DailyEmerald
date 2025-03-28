@@ -59,7 +59,7 @@ PrefabInstance:
     - target: {fileID: 4384372607359981820, guid: 701f7b77f0837f44dab13cd4786fab1a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1a64f679d066dcf49a3bf8e69e32c0d0, type: 2}
+      objectReference: {fileID: 2100000, guid: c031cfd6b31dc204eb23c54a31fbd68e, type: 2}
     - target: {fileID: 8481271640393203815, guid: 701f7b77f0837f44dab13cd4786fab1a, type: 3}
       propertyPath: m_Name
       value: OreDropGold

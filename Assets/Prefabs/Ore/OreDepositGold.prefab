@@ -12,53 +12,57 @@ PrefabInstance:
       propertyPath: m_Name
       value: OreDepositGold
       objectReference: {fileID: 0}
+    - target: {fileID: 362571965159779196, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
+      propertyPath: m_TagString
+      value: Stone
+      objectReference: {fileID: 0}
     - target: {fileID: 1013755693820471981, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1a64f679d066dcf49a3bf8e69e32c0d0, type: 2}
+      objectReference: {fileID: 2100000, guid: c031cfd6b31dc204eb23c54a31fbd68e, type: 2}
     - target: {fileID: 1021221014246253758, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1a64f679d066dcf49a3bf8e69e32c0d0, type: 2}
+      objectReference: {fileID: 2100000, guid: c031cfd6b31dc204eb23c54a31fbd68e, type: 2}
     - target: {fileID: 2890535991130360900, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1a64f679d066dcf49a3bf8e69e32c0d0, type: 2}
+      objectReference: {fileID: 2100000, guid: c031cfd6b31dc204eb23c54a31fbd68e, type: 2}
     - target: {fileID: 4781339431320640890, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1a64f679d066dcf49a3bf8e69e32c0d0, type: 2}
+      objectReference: {fileID: 2100000, guid: c031cfd6b31dc204eb23c54a31fbd68e, type: 2}
     - target: {fileID: 6108657158340192101, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1a64f679d066dcf49a3bf8e69e32c0d0, type: 2}
+      objectReference: {fileID: 2100000, guid: c031cfd6b31dc204eb23c54a31fbd68e, type: 2}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 14.97
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.11
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.784
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.36755282
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.9300026
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -70,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -136.87
       objectReference: {fileID: 0}
     - target: {fileID: 7515641837599042768, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: oreType

@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 1343435021918740882}
   - component: {fileID: 4959883872590689040}
   - component: {fileID: 3809531824288074280}
-  - component: {fileID: 3313252885863145926}
-  - component: {fileID: 4220167977437692473}
-  - component: {fileID: 8567604774621988653}
-  - component: {fileID: 975151308049028016}
+  - component: {fileID: 6418353882169077528}
+  - component: {fileID: 5489386968297116664}
+  - component: {fileID: 6146233145222425829}
+  - component: {fileID: 209372983623584233}
   m_Layer: 0
-  m_Name: Final_SimpleSword
+  m_Name: Axe
   m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6120760520822689673}
-  m_Mesh: {fileID: 420557312217043743, guid: 413d4241427dccc458f0e5c305245b29, type: 3}
+  m_Mesh: {fileID: -8287839383430266118, guid: 220d1751ecd7ec04db2ff9067115814f, type: 3}
 --- !u!23 &4959883872590689040
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -69,7 +69,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 995d11e75b66fb84b9ee4de7676e8946, type: 2}
+  - {fileID: -6629797300637803691, guid: 220d1751ecd7ec04db2ff9067115814f, type: 3}
+  - {fileID: -6922793697723135513, guid: 220d1751ecd7ec04db2ff9067115814f, type: 3}
+  - {fileID: -2813467912831258332, guid: 220d1751ecd7ec04db2ff9067115814f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -116,15 +118,15 @@ MonoBehaviour:
     maxNumVerticesPerCH: 64
     minVolumePerCH: 0.0001
   m_colliders:
-  - {fileID: 3313252885863145926}
-  - {fileID: 4220167977437692473}
-  - {fileID: 8567604774621988653}
-  - {fileID: 975151308049028016}
+  - {fileID: 6418353882169077528}
+  - {fileID: 5489386968297116664}
+  - {fileID: 6146233145222425829}
+  - {fileID: 209372983623584233}
   m_isTrigger: 0
   m_material: {fileID: 0}
   m_showColliders: 0
-  m_colliderAsset: {fileID: 11400000, guid: e977b5647638efe4788621fc85a13569, type: 2}
---- !u!64 &3313252885863145926
+  m_colliderAsset: {fileID: 11400000, guid: 11b16e9bfaaebff4fb0327a60db03c47, type: 2}
+--- !u!64 &6418353882169077528
 MeshCollider:
   m_ObjectHideFlags: 10
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,8 +147,8 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4588997693176505728, guid: e977b5647638efe4788621fc85a13569, type: 2}
---- !u!64 &4220167977437692473
+  m_Mesh: {fileID: -7253289731326489374, guid: 11b16e9bfaaebff4fb0327a60db03c47, type: 2}
+--- !u!64 &5489386968297116664
 MeshCollider:
   m_ObjectHideFlags: 10
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,8 +169,8 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 2053241859392960704, guid: e977b5647638efe4788621fc85a13569, type: 2}
---- !u!64 &8567604774621988653
+  m_Mesh: {fileID: -7567604800829850187, guid: 11b16e9bfaaebff4fb0327a60db03c47, type: 2}
+--- !u!64 &6146233145222425829
 MeshCollider:
   m_ObjectHideFlags: 10
   m_CorrespondingSourceObject: {fileID: 0}
@@ -189,8 +191,8 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 9091265934061102428, guid: e977b5647638efe4788621fc85a13569, type: 2}
---- !u!64 &975151308049028016
+  m_Mesh: {fileID: -4203583356447157149, guid: 11b16e9bfaaebff4fb0327a60db03c47, type: 2}
+--- !u!64 &209372983623584233
 MeshCollider:
   m_ObjectHideFlags: 10
   m_CorrespondingSourceObject: {fileID: 0}
@@ -211,7 +213,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1168437003780830241, guid: e977b5647638efe4788621fc85a13569, type: 2}
+  m_Mesh: {fileID: 3782968118770227006, guid: 11b16e9bfaaebff4fb0327a60db03c47, type: 2}
 --- !u!1001 &958053245170378046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -470,11 +472,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7381218759568838121, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
       propertyPath: centerOfMass.y
-      value: 0.18
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 7381218759568838121, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
       propertyPath: centerOfMass.z
-      value: 0.18
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 8319621340702420612, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
       propertyPath: m_Name

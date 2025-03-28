@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8695768084956521907}
   - component: {fileID: 5241041596625768035}
   m_Layer: 0
-  m_Name: Hilt_SimpleSword
+  m_Name: Axe
   m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2843823023545948296}
-  m_Mesh: {fileID: 6750482090357550652, guid: 496e08232c5a6c54cbfc33c1403c2195, type: 3}
+  m_Mesh: {fileID: -323136217815958153, guid: 602cbdc2f0fba1f45bfb70f188993072, type: 3}
 --- !u!23 &8695768084956521907
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65,7 +65,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4ccbbd2d9942cbb4f8efc4ed9baa04a8, type: 2}
+  - {fileID: -6922793697723135513, guid: 602cbdc2f0fba1f45bfb70f188993072, type: 3}
+  - {fileID: -2813467912831258332, guid: 602cbdc2f0fba1f45bfb70f188993072, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,7 +109,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 6750482090357550652, guid: 496e08232c5a6c54cbfc33c1403c2195, type: 3}
+  m_Mesh: {fileID: -323136217815958153, guid: 602cbdc2f0fba1f45bfb70f188993072, type: 3}
 --- !u!1001 &4621903221764798584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -160,6 +161,10 @@ PrefabInstance:
     - target: {fileID: 4805542657682646828, guid: f34abec9b32fb7946b535ff13ccd3630, type: 3}
       propertyPath: m_Name
       value: AxeHandle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7381218759568838121, guid: f34abec9b32fb7946b535ff13ccd3630, type: 3}
+      propertyPath: centerOfMass.y
+      value: 0.04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -12,65 +12,69 @@ PrefabInstance:
       propertyPath: m_Name
       value: OreDepositIron
       objectReference: {fileID: 0}
+    - target: {fileID: 362571965159779196, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
+      propertyPath: m_TagString
+      value: Stone
+      objectReference: {fileID: 0}
     - target: {fileID: 1013755693820471981, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f369c71add261fd42ae855698fc20dd7, type: 2}
+      objectReference: {fileID: 2100000, guid: ebaad563e9d0d9140a97fac74050778d, type: 2}
     - target: {fileID: 1021221014246253758, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f369c71add261fd42ae855698fc20dd7, type: 2}
+      objectReference: {fileID: 2100000, guid: ebaad563e9d0d9140a97fac74050778d, type: 2}
     - target: {fileID: 2890535991130360900, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f369c71add261fd42ae855698fc20dd7, type: 2}
+      objectReference: {fileID: 2100000, guid: ebaad563e9d0d9140a97fac74050778d, type: 2}
     - target: {fileID: 4781339431320640890, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f369c71add261fd42ae855698fc20dd7, type: 2}
+      objectReference: {fileID: 2100000, guid: ebaad563e9d0d9140a97fac74050778d, type: 2}
     - target: {fileID: 6108657158340192101, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f369c71add261fd42ae855698fc20dd7, type: 2}
+      objectReference: {fileID: 2100000, guid: ebaad563e9d0d9140a97fac74050778d, type: 2}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 14.224411
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.805
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.62
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7771391
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.19543435
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.22767389
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.5531951
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -2.973
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 34.81
       objectReference: {fileID: 0}
     - target: {fileID: 6113132443998045910, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -71.821
       objectReference: {fileID: 0}
     - target: {fileID: 7515641837599042768, guid: 62ddceb578536024b8cc985aa4cc930c, type: 3}
       propertyPath: orePrefab
