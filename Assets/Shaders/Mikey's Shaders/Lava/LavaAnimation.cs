@@ -9,7 +9,11 @@ public class LavaAnimation : MonoBehaviour
     [SerializeField] LavaAnimation nextAnim;
     [SerializeField] bool isLastAnim;
     public bool canStart;
-    float time;
+    float time, lavaTimer;
+    int lavaCount;
+
+    [SerializeField] Transform lavaSpawnPoint;
+    [SerializeField] GameObject lavaPrefab;
 
     Vector3 startPos, endPos;
 
@@ -51,12 +55,26 @@ public class LavaAnimation : MonoBehaviour
                 {
                     time = 0;
                     canStart = false;
-                    // run final code here
                 }
                 else
                 {
                     time = 0;
                     canStart = false;
+                }
+            }
+
+            if (isLastAnim)
+            {
+                if (lavaTimer >= 0.5f && lavaCount <= 50)
+                {
+                    GameObject temp = Instantiate(lavaPrefab, lavaSpawnPoint.position, Quaternion.identity);
+                    temp.transform.parent = lavaSpawnPoint;
+                    lavaTimer = 0;
+                    lavaCount++;
+                }
+                else
+                {
+                    lavaTimer += Time.deltaTime;
                 }
             }
 
