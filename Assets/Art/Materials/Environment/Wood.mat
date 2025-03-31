@@ -61,7 +61,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Brightness: 3.5
-    - _CrosshatchTile: 15
+    - _CrosshatchTile: 30
     - _FresnelIntensity: 10
     - _FresnelMultiply: 0
     - _FresnelPower: 3.5

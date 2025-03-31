@@ -4,6 +4,7 @@ public class MusicManager : MonoBehaviour
 {
     [SerializeField, Range(0, 5)] private int intensity = 0;
     FMOD.Studio.EventInstance music;
+    [SerializeField] Timer timer;
 
     private void Start()
     {
