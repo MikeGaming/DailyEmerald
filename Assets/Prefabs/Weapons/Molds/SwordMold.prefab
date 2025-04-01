@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4808332969613582405}
   - component: {fileID: 2907164911571519027}
   m_Layer: 0
-  m_Name: MoldBase
+  m_Name: SwordMold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -5,7 +5,8 @@ public class Timer : MonoBehaviour
     [SerializeField] bool isInfinite;
     [SerializeField] float duration;
     [SerializeField] TMPro.TextMeshProUGUI timerText;
-    float t;
+    [SerializeField] MusicManager music;
+    float t, musicTimer;
     bool isPaused;
     [HideInInspector] public bool timerFinished;
 
@@ -13,6 +14,7 @@ public class Timer : MonoBehaviour
     {
         if (isInfinite) t = 0;
         else t = duration;
+        music.SetIntensity(0);
     }
 
     private void Update()
@@ -20,10 +22,14 @@ public class Timer : MonoBehaviour
         if (isInfinite && !isPaused)
         {
             t += Time.deltaTime;
+            musicTimer += Time.deltaTime;
+            music.SetIntensity(Mathf.FloorToInt(musicTimer / 60));
         }
         else if (!isPaused)
         {
             t -= Time.deltaTime;
+            musicTimer += Time.deltaTime;
+            music.SetIntensity(Mathf.FloorToInt(musicTimer / 60));
         }
 
         if (t <= 0)
@@ -44,7 +50,11 @@ public class Timer : MonoBehaviour
 
     public void ResetTimer()
     {
-        if (isInfinite) t = 0;
+        if (isInfinite)
+        {
+            t = 0;
+            musicTimer = 0;
+        }
         else t = duration;
     }
 

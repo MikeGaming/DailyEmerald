@@ -65,7 +65,7 @@ public class LavaAnimation : MonoBehaviour
 
             if (isLastAnim)
             {
-                if (lavaTimer >= 0.5f && lavaCount <= 50)
+                if (lavaTimer >= 0.25f && lavaCount <= 100)
                 {
                     GameObject temp = Instantiate(lavaPrefab, lavaSpawnPoint.position, Quaternion.identity);
                     temp.transform.parent = lavaSpawnPoint;

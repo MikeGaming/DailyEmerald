@@ -5,12 +5,15 @@ public class MoldObject : MonoBehaviour
 {
     [SerializeField] GameObject lava;
     [SerializeField] GameObject head;
+    [SerializeField] Transform headSpawnPosition;
     Rigidbody rb;
 
-    [HideInInspector] public bool molding;
+    GameObject temp;
+
+    bool molded;
 
     int hits;
-    float time;
+    float fillAmount;
 
     private void Start()
     {
@@ -19,40 +22,39 @@ public class MoldObject : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (rb.GetAccumulatedForce().magnitude >= 1f)
+        if(molded)
         {
-            hits++;
-            if (hits >= 3)
+            if (collision.impulse.magnitude >= 1f)
             {
-                head.SetActive(true);
-                head.transform.parent = null;
-                Destroy(gameObject);
+                hits++;
+                if (hits >= 3)
+                {
+                    temp.transform.parent = null;
+                    temp.GetComponent<Rigidbody>().isKinematic = false;
+                    temp.GetComponent<Rigidbody>().useGravity = true;
+                    //Destroy(gameObject);
+                    molded = false;
+                    hits = 0;
+                    fillAmount = 0;
+                }
             }
         }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Lava"))
+        if (collision.gameObject.CompareTag("Lava") && !molded)
         {
-            StartCoroutine(Mold());
-        }
-    }
+            Destroy(collision.gameObject);
+            fillAmount += 1 / 25f;
+            if(fillAmount >= 1f)
+            {
+                fillAmount = 0;
+                molded = true;
+                temp = Instantiate(head, headSpawnPosition.position, headSpawnPosition.rotation);
+                temp.GetComponent<Rigidbody>().isKinematic = true;
+                temp.GetComponent<Rigidbody>().useGravity = false;
+                temp.GetComponent<MeshRenderer>().material.SetFloat("_Fill", 0);
+            }
+            lava.GetComponent<MeshRenderer>().material.SetFloat("_Fill", Mathf.Clamp01(fillAmount));
 
-    private void Update()
-    {
-        if (molding)
-        {
-            time += Time.deltaTime;
-            lava.GetComponent<MeshRenderer>().material.SetFloat("_Fill", Mathf.Clamp01(time / 2f));
         }
-    }
-
-    private IEnumerator Mold()
-    {
-        molding = true;
-        yield return new WaitForSeconds(2f);
-        molding = false;
     }
 
 }
