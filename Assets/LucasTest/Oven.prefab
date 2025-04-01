@@ -1051,6 +1051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorTrans: {fileID: 7226315272383819554}
   firstAnim: {fileID: 0}
+  meltMaterial: 0
 --- !u!65 &195609741580299161
 BoxCollider:
   m_ObjectHideFlags: 0

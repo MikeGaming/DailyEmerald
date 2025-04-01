@@ -9,6 +9,8 @@ public class SwordBlade : MonoBehaviour
     [SerializeField]
     private GameObject swordFull;
 
+    public Enums.MaterialType materialType;
+
     private int hitCount;
 
     private List<GameObject> handleList = new List<GameObject>();
@@ -55,7 +57,8 @@ public class SwordBlade : MonoBehaviour
 
                 if (hitCount >= 3)
                 {
-                    Instantiate(swordFull, transform.position + new Vector3(0, 0.25f, 0), Quaternion.Euler(0, 0, 0));
+                    GameObject temp = Instantiate(swordFull, transform.position + new Vector3(0, 0.25f, 0), Quaternion.Euler(0, 0, 0));
+                    temp.GetComponent<ShopItem>().material = materialType;
                     Destroy(realHandle);
                     Destroy(this.gameObject);
                 }

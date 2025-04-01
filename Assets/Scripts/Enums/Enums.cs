@@ -24,6 +24,7 @@ public class Enums
         NONE,
         FLAME,
         FROST,
-        LIGHTNING
+        LIGHTNING,
+        URANIUM
     }
 }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5489386968297116664}
   - component: {fileID: 6146233145222425829}
   - component: {fileID: 209372983623584233}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Axe
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -443,12 +443,28 @@ PrefabInstance:
       value: AxeFull
       objectReference: {fileID: 0}
     - target: {fileID: 4805542657682646828, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805542657682646828, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
       propertyPath: m_TagString
       value: Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249293375969303583, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5535158416604997057, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5535158416604997057, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264205675869434008, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6295817113754000029, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
       propertyPath: ShapeModule.enabled
@@ -458,17 +474,37 @@ PrefabInstance:
       propertyPath: EmissionModule.enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6300482526850620790, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6465252826134170357, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
       propertyPath: m_Name
       value: YellowLightning
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465252826134170357, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491309661925817782, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6567516010403399645, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
       propertyPath: m_Name
       value: Lightning
       objectReference: {fileID: 0}
     - target: {fileID: 6567516010403399645, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6567516010403399645, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104818419594437941, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7381218759568838121, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
       propertyPath: centerOfMass.y
@@ -481,6 +517,10 @@ PrefabInstance:
     - target: {fileID: 8319621340702420612, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
       propertyPath: m_Name
       value: Flame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319621340702420612, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8319621340702420612, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
       propertyPath: m_IsActive

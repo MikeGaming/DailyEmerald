@@ -19,6 +19,8 @@ public class Customer : MonoBehaviour
 
     public CustomerOrder order;
 
+    public FlipClockManager scoreManager;
+
     private void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -43,19 +45,19 @@ public class Customer : MonoBehaviour
     public void ServeCustomer(float satisfaction)
     {   
         //TO-DO:
-        //add small wait time after being served
-        //update text based on satisfaction
+        //make goon hold weapon
+        //apply to global score counter
         if(satisfaction != 1)
         {
             Debug.Log("Served Unhappy!");
-            canvasObj.SetActive(false);
-            //walk away
-            navMeshAgent.SetDestination(startPoint.transform.position);
-            Destroy(this.gameObject, 5f);
-            return;
+        }
+        else
+        {
+            Debug.Log("Served Happy!");
         }
 
-        Debug.Log("Served Happy!");
+        scoreManager.AddScore(Mathf.FloorToInt(order.maxCoin * satisfaction));
+
         canvasObj.SetActive(false);
         //walk away
         navMeshAgent.SetDestination(startPoint.transform.position);

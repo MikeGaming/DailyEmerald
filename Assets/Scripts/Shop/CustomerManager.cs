@@ -11,6 +11,9 @@ public class CustomerManager : MonoBehaviour
     [SerializeField]
     private CustomerOrder[] orderList;
 
+    [SerializeField]
+    private FlipClockManager scoreManager;
+
     private Customer currentCust;
 
     private void Update()
@@ -21,6 +24,7 @@ public class CustomerManager : MonoBehaviour
             currentCust.startPoint = startPoint.transform;
             currentCust.orderPoint = endPoint.transform;
             currentCust.order = orderList[Random.Range(0, orderList.Length)];
+            currentCust.scoreManager = scoreManager;
         }
     }
 }

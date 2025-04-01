@@ -355,17 +355,17 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 65536
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 65527
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.4555721, y: 3.887392, z: 1.1592848}
-  m_Center: {x: 0.026548982, y: 1.443696, z: 0.07964203}
+  m_Size: {x: 3.4555721, y: 3.887392, z: 2.696133}
+  m_Center: {x: 0.026548982, y: 1.443696, z: 0.009247005}
 --- !u!195 &5031598049138813863
 NavMeshAgent:
   m_ObjectHideFlags: 0

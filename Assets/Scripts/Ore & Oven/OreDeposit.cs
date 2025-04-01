@@ -4,7 +4,6 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class OreDeposit : MonoBehaviour
 {
-    [SerializeField] private Enums.MaterialType oreType;
     [SerializeField] private GameObject[] objStates;
     [SerializeField] private GameObject orePrefab;
     [SerializeField] private Transform oreSpawnPoint;
@@ -13,7 +12,6 @@ public class OreDeposit : MonoBehaviour
 
     private int currentState;
     private float lastHitTime;
-    private MeshCollider meshCol;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -46,7 +44,6 @@ public class OreDeposit : MonoBehaviour
 
         ResetObjects();
         objStates[currentState].SetActive(true);
-        meshCol.sharedMesh = objStates[currentState].GetComponent<MeshFilter>().sharedMesh;
     }
 
     void ResetObjects()
@@ -70,7 +67,5 @@ public class OreDeposit : MonoBehaviour
     {
         //run Regenerate() every 5 seconds.
         InvokeRepeating(nameof(Regenerate), 2f, 5f);
-
-        meshCol = GetComponent<MeshCollider>();
     }
 }

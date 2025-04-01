@@ -6,18 +6,18 @@ public class ShopItem : MonoBehaviour
     [SerializeField]
     private Enums.ItemType item;
     [SerializeField]
-    private Enums.MaterialType material;
+    public Enums.MaterialType material;
     [SerializeField]
     private Enums.MagicType magic;
     [SerializeField]
-    private GameObject[] magicParticles; //0 = flame, 1 = frost, 2 = lightning
+    private GameObject[] magicParticles; //0 = flame, 1 = frost, 2 = lightning, 3 = uranium
 
     private float itemRatio;
     private float magicRatio;
     private float materialRatio;
     private bool fullOfMagic;
 
-    private Vector3 magicAmount;
+    private Vector4 magicAmount;
 
     private float satisfactionAmount;
 
@@ -70,13 +70,19 @@ public class ShopItem : MonoBehaviour
         {
             switch (collision.gameObject.GetComponent<MeshRenderer>().material.name.Replace(" (Instance)","")) {
                 case "Flame":
-                    magicAmount += Vector3.right;
+                    magicAmount.x += 1;
                     break;
                 case "Frost":
-                    magicAmount += Vector3.up;
+                    magicAmount.y += 1;
                     break;
                 case "Lightning":
-                    magicAmount += Vector3.forward;
+                    magicAmount.z += 1;
+                    break;
+                case "Uranium":
+                    magicAmount.w += 1;
+                    break;
+                default:
+                    Debug.LogError("SHOPITEM ERROR: INVALID MATERIAL WHEN APPLYING MAGIC");
                     break;
             }
             Destroy(collision.gameObject);

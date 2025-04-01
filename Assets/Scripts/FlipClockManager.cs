@@ -10,9 +10,10 @@ public class FlipClockManager : MonoBehaviour
 
     float[] turnSpeeds = { 0, 0, 0 };
 
-    private void Start()
+    public void AddScore(int count)
     {
-        StartCoroutine(TurnWheels(172));
+        score += count;
+        StartCoroutine(TurnWheels());
     }
 
     private void Update()
@@ -26,7 +27,7 @@ public class FlipClockManager : MonoBehaviour
         }
     }
 
-    public IEnumerator TurnWheels(int gold)
+    public IEnumerator TurnWheels()
     {
         isSpinning = true;
         for (int i = 0; i < 3; i++)
@@ -35,7 +36,6 @@ public class FlipClockManager : MonoBehaviour
         }
         yield return new WaitForSeconds(1.5f);
         isSpinning = false;
-        score += gold;
         if (score > 999)
         {
             score = 0;

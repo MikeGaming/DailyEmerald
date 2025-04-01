@@ -20,7 +20,7 @@ public class Oven : MonoBehaviour
     //index for each ore is the int representation of Enums.MaterialType
     private int[] oreCounts = new int[Enum.GetNames(typeof(Enums.MaterialType)).Length];
 
-    private Enums.MaterialType meltMaterial;
+    public Enums.MaterialType meltMaterial;
 
     //add meltable objects to list
     private void OnTriggerEnter(Collider other)
