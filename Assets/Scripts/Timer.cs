@@ -10,11 +10,16 @@ public class Timer : MonoBehaviour
     bool isPaused;
     [HideInInspector] public bool timerFinished;
 
+    [Header("Tutorial")]
+    [SerializeField] private bool isTutorial;
+
     private void Start()
     {
         if (isInfinite) t = 0;
         else t = duration;
         music.SetIntensity(0);
+
+        isPaused = isTutorial;
     }
 
     private void Update()
