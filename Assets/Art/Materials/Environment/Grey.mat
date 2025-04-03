@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Environment
+  m_Name: Grey
   m_Shader: {fileID: -6465566751694194690, guid: 5b7961c505422d34ba32dc3bea58ff2a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -88,9 +88,9 @@ Material:
     - _Emissive: {r: 0, g: 0, b: 0, a: 0}
     - _GradientAxis: {r: 0, g: 0, b: 0, a: 0}
     - _GradientDirection: {r: 0, g: 1, b: 0, a: 0}
-    - _MainColor: {r: 0.49296904, g: 0.51432085, b: 0.5471698, a: 1}
+    - _MainColor: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 1}
     - _ScreenColorRange: {r: 0, g: 1, b: 0, a: 0}
-    - _ShadowColor: {r: 0.16470589, g: 0.22461629, b: 0.29411766, a: 1}
+    - _ShadowColor: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
     - _TopColour: {r: 1, g: 1, b: 1, a: 1}
