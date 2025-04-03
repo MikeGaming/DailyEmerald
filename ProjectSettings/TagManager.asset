@@ -29,6 +29,7 @@ TagManager:
   - Crystal
   - CustomerSound
   - Lava
+  - Head
   layers:
   - Default
   - TransparentFX

@@ -9719,6 +9719,10 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4824161218380735429, guid: df33cdc1b9ead8d4caf5df579c6459d8, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 7378388847840201344, guid: df33cdc1b9ead8d4caf5df579c6459d8, type: 3}
       propertyPath: m_Name
       value: CrystalBase

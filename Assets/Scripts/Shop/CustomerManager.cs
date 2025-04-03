@@ -43,4 +43,10 @@ public class CustomerManager : MonoBehaviour
             currentCust.scoreManager = scoreManager;
         }
     }
+
+    public void EndGame()
+    {
+        isTutorial = true;
+        currentCust.ServeCustomer(0);
+    }
 }

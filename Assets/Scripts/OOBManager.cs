@@ -11,7 +11,7 @@ public class OOBManager : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         // Reset velocity of object and send it along a curve towards the landing point
-        if (other.attachedRigidbody && !other.CompareTag("WoodBit"))
+        if (other.attachedRigidbody && !other.CompareTag("WoodBit") && !other.CompareTag("Head"))
         {
             StartCoroutine(MoveObject(other.attachedRigidbody, landingPoint.position, 1f, 2f));
         }

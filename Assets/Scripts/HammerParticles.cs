@@ -26,6 +26,7 @@ public class HammerParticles : MonoBehaviour
         {
             case "Metal":
             case "Blade":
+            case "Head":
                 emitter.SetParameter("HammeredMaterial", 0);
                 break;
 

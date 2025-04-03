@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class MoldObject : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class MoldObject : MonoBehaviour
     {
         if(molded)
         {
-            if (collision.impulse.magnitude >= 1f)
+            if (collision.impulse.magnitude >= 100f)
             {
                 hits++;
                 if (hits >= 3)
@@ -32,7 +33,8 @@ public class MoldObject : MonoBehaviour
                     temp.transform.parent = null;
                     temp.GetComponent<Rigidbody>().isKinematic = false;
                     temp.GetComponent<Rigidbody>().useGravity = true;
-                    //Destroy(gameObject);
+                    temp.GetComponent<XRGrabInteractable>().enabled = true;
+                    temp.GetComponentInChildren<MeshCollider>().enabled = true;
                     molded = false;
                     hits = 0;
                     fillAmount = 0;
@@ -48,9 +50,12 @@ public class MoldObject : MonoBehaviour
                 fillAmount = 0;
                 molded = true;
                 temp = Instantiate(head, headSpawnPosition.position, headSpawnPosition.rotation);
+                temp.transform.parent = gameObject.transform;
                 temp.GetComponent<Rigidbody>().isKinematic = true;
                 temp.GetComponent<Rigidbody>().useGravity = false;
-                temp.GetComponent<MeshRenderer>().material.SetFloat("_Fill", 0);
+                temp.GetComponentInChildren<MeshCollider>().enabled = false;
+                temp.GetComponentInChildren<MeshRenderer>().material.SetFloat("_Fill", 0);
+                temp.GetComponent<XRGrabInteractable>().enabled = false;
             }
             lava.GetComponent<MeshRenderer>().material.SetFloat("_Fill", Mathf.Clamp01(fillAmount));
 
