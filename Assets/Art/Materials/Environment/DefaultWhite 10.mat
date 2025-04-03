@@ -85,12 +85,12 @@ Material:
     m_Colors:
     - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
     - _BottomColour: {r: 1, g: 1, b: 1, a: 1}
-    - _Emissive: {r: 0, g: 0, b: 0, a: 0}
+    - _Emissive: {r: 0.7019608, g: 0.39215687, b: 0.4598247, a: 1}
     - _GradientAxis: {r: 0, g: 0, b: 0, a: 0}
     - _GradientDirection: {r: 0, g: 1, b: 0, a: 0}
-    - _MainColor: {r: 0.90588236, g: 0.30799997, b: 0.61258173, a: 1}
+    - _MainColor: {r: 0.97735846, g: 0.30796006, b: 0.37858462, a: 1}
     - _ScreenColorRange: {r: 0, g: 1, b: 0, a: 0}
-    - _ShadowColor: {r: 0.36200002, g: 0.17081386, b: 0.26797405, a: 1}
+    - _ShadowColor: {r: 0.6377357, g: 0.22617412, b: 0.09024553, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
     - _TopColour: {r: 1, g: 1, b: 1, a: 1}
