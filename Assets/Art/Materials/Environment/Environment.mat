@@ -74,7 +74,7 @@ Material:
     - _LightColorIntensity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _ShadowPower: 0.75
+    - _ShadowPower: 0.7
     - _ShadowScroll: 0
     - _ShadowScrollSpeed: 1
     - _SpecularStep: 0
@@ -84,7 +84,7 @@ Material:
     - _WORLDPOSITION: 1
     m_Colors:
     - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
-    - _BottomColour: {r: 1, g: 1, b: 1, a: 1}
+    - _BottomColour: {r: 0.5245282, g: 0.5215592, b: 0.5215592, a: 1}
     - _Emissive: {r: 0, g: 0, b: 0, a: 0}
     - _GradientAxis: {r: 0, g: 0, b: 0, a: 0}
     - _GradientDirection: {r: 0, g: 1, b: 0, a: 0}
@@ -93,7 +93,7 @@ Material:
     - _ShadowColor: {r: 0.16470589, g: 0.22461629, b: 0.29411766, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
-    - _TopColour: {r: 1, g: 1, b: 1, a: 1}
+    - _TopColour: {r: 0.56169015, g: 0.5428622, b: 0.735849, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &8025862953603446624
