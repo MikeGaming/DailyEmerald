@@ -29,13 +29,13 @@ public class Timer : MonoBehaviour
         {
             t += Time.deltaTime;
             musicTimer += Time.deltaTime;
-            music.SetIntensity(Mathf.FloorToInt(musicTimer / 60));
+            music.SetIntensity(musicTimer / 60);
         }
         else if (!isPaused)
         {
             t -= Time.deltaTime;
             musicTimer += Time.deltaTime;
-            music.SetIntensity(Mathf.FloorToInt(musicTimer / 60));
+            music.SetIntensity(musicTimer / 60);
         }
 
         if (t <= 0 && !timerFinished)

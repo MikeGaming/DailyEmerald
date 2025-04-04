@@ -30,11 +30,18 @@ public class Customer : MonoBehaviour
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.SetDestination(orderPoint.position);
+        // set hue in HSV of _MainColor to random value
+        GetComponentInChildren<MeshRenderer>().materials[1].SetColor("_MainColor",
+            Color.HSVToRGB(Random.Range(0f, 1f), .8f, .9f));
     }
 
     private void Update()
     {
-        if(!navMeshAgent.pathPending && Mathf.Abs(Vector3.Distance(transform.position, orderPoint.position)) < 1f)
+
+        // animate customer bobbing up and down slightly with some smoothed out noise added
+        transform.transform.position = new Vector3(transform.position.x, Mathf.Sin(Time.time * 2) * 0.1f, transform.position.z);
+
+        if (!navMeshAgent.pathPending && Mathf.Abs(Vector3.Distance(transform.position, orderPoint.position)) < 1f)
         {
             if(!orderPending) Order();
         }

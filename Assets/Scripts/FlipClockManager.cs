@@ -4,16 +4,23 @@ using UnityEngine;
 public class FlipClockManager : MonoBehaviour
 {
     [SerializeField] GameObject[] wheels;
+    FMODUnity.StudioEventEmitter fmodEmitter;
 
     int score;
     bool isSpinning;
 
     float[] turnSpeeds = { 0, 0, 0 };
 
+    private void Start()
+    {
+        fmodEmitter = GetComponent<FMODUnity.StudioEventEmitter>();
+    }
+
     public void AddScore(int count)
     {
         score += count;
         StartCoroutine(TurnWheels());
+        fmodEmitter.Play();
     }
 
     private void Update()

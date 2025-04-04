@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
-    [SerializeField, Range(0, 4)] private int intensity = 0;
+    private float time = 0;
     FMOD.Studio.EventInstance music;
 
     private void Start()
@@ -13,11 +13,30 @@ public class MusicManager : MonoBehaviour
 
     private void Update()
     {
-        music.setParameterByName("Intensity", intensity / 2);
+        if (time > 0)
+        {
+            music.setParameterByName("Intensity", 0);
+        }
+        else if (time > 2.75f)
+        {
+            music.setParameterByName("Intensity", 1);
+        }
+        else if (time > 3.4f)
+        {
+            music.setParameterByName("Intensity", 2);
+        }
+        else if (time > 4.4f)
+        {
+            music.setParameterByName("Intensity", 3);
+        }
+        else if (time > 8.5)
+        {
+            music.setParameterByName("Intensity", 4);
+        }
     }
 
-    public void SetIntensity(int intensity)
+    public void SetIntensity(float intensity)
     {
-        this.intensity = intensity;
+        this.time = intensity;
     }
 }

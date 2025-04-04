@@ -9695,6 +9695,7 @@ GameObject:
   - component: {fileID: 846605620790259568}
   - component: {fileID: 515455110759234166}
   - component: {fileID: 4667381557521309515}
+  - component: {fileID: 1252637703918669468}
   m_Layer: 9
   m_Name: ParticleBase
   m_TagString: Untagged
@@ -14520,6 +14521,37 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &1252637703918669468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2614338270958275002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 301966967
+      Data2: 1331489955
+      Data3: 1835434153
+      Data4: 657994145
+    Path: event:/FlameCrystalLoop
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1.0728426
+  OverrideMaxDistance: 7.842668
 --- !u!1 &7202910327388134557
 GameObject:
   m_ObjectHideFlags: 0
