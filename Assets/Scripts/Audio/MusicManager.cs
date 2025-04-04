@@ -13,23 +13,23 @@ public class MusicManager : MonoBehaviour
 
     private void Update()
     {
-        if (time > 0)
+        if (time < 2.75)
         {
             music.setParameterByName("Intensity", 0);
         }
-        else if (time > 2.75f)
+        else if (time < 3.4f)
         {
             music.setParameterByName("Intensity", 1);
         }
-        else if (time > 3.4f)
+        else if (time < 4.4f)
         {
             music.setParameterByName("Intensity", 2);
         }
-        else if (time > 4.4f)
+        else if (time < 8.5f)
         {
             music.setParameterByName("Intensity", 3);
         }
-        else if (time > 8.5)
+        else if (time < 10f)
         {
             music.setParameterByName("Intensity", 4);
         }
