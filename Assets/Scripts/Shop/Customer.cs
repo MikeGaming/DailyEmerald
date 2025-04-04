@@ -15,9 +15,13 @@ public class Customer : MonoBehaviour
     public Transform startPoint;
     public Transform orderPoint;
 
+    float custSatisfaction;
+
     private NavMeshAgent navMeshAgent;
     public bool orderPending;
 
+    bool waiting, waited;
+    float t;
     public CustomerOrder order;
 
     public FlipClockManager scoreManager;
@@ -34,6 +38,26 @@ public class Customer : MonoBehaviour
         {
             if(!orderPending) Order();
         }
+
+        if (waiting)
+        {
+            t += Time.deltaTime;
+
+            if(t > 3f)
+            {
+                waiting = false;
+
+                scoreManager.AddScore(Mathf.FloorToInt(order.maxCoin * custSatisfaction));
+
+                canvasObj.SetActive(false);
+                //walk away
+                navMeshAgent.SetDestination(startPoint.transform.position);
+
+                Destroy(this.gameObject, 5f);
+                t = 0;
+            }
+        }
+
     }
 
     private void Order()
@@ -67,7 +91,7 @@ public class Customer : MonoBehaviour
         satisfactionText[3, 1] = "This is perfect, thank you!";
         satisfactionText[3, 2] = "This is exactly what I wanted, thank you!";
     }
-    public IEnumerator ServeCustomer(float satisfaction)
+    public void ServeCustomer(float satisfaction)
     {
         //TO-DO:
         //make goon hold weapon
@@ -90,14 +114,8 @@ public class Customer : MonoBehaviour
         {
             textObj.SetText(satisfactionText[3, Random.Range(0, 3)]);
         }
+        custSatisfaction = satisfaction;
+        waiting = true;
 
-        yield return new WaitForSeconds(2f);
-
-        scoreManager.AddScore(Mathf.FloorToInt(order.maxCoin * satisfaction));
-
-        canvasObj.SetActive(false);
-        //walk away
-        navMeshAgent.SetDestination(startPoint.transform.position);
-        Destroy(this.gameObject, 5f);
     }
 }

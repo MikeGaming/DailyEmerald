@@ -247,6 +247,10 @@ MonoBehaviour:
   lava: {fileID: 8805853237134978382}
   head: {fileID: 6020564447568469540, guid: 2b4c99e300c0b2943987c0d1004f5f85, type: 3}
   headSpawnPosition: {fileID: 5371934810095543532}
+  mats:
+  - {fileID: 2100000, guid: 35ee1919524ea904faae8e0e05453719, type: 2}
+  - {fileID: 2100000, guid: db1abce0590c9654f84b39294680c6df, type: 2}
+  - {fileID: 2100000, guid: f96b63dfed545c2449a9dd618a790465, type: 2}
 --- !u!1 &8419786453532344890
 GameObject:
   m_ObjectHideFlags: 0

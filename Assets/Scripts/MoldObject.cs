@@ -7,6 +7,8 @@ public class MoldObject : MonoBehaviour
     [SerializeField] GameObject lava;
     [SerializeField] GameObject head;
     [SerializeField] Transform headSpawnPosition;
+
+    [SerializeField] Material[] mats;
     Rigidbody rb;
 
     GameObject temp;
@@ -50,6 +52,29 @@ public class MoldObject : MonoBehaviour
                 fillAmount = 0;
                 molded = true;
                 temp = Instantiate(head, headSpawnPosition.position, headSpawnPosition.rotation);
+                switch (collision.gameObject.GetComponent<LavaBall>().materialType)
+                {
+                    case Enums.MaterialType.IRON:
+                        temp.GetComponentInChildren<MeshRenderer>().material = mats[0];
+                        temp.GetComponent<SwordBlade>().mat = mats[0];
+                        break;
+
+                    case Enums.MaterialType.GOLD:
+                        temp.GetComponentInChildren<MeshRenderer>().material = mats[1];
+                        temp.GetComponent<SwordBlade>().mat = mats[1];
+                        break;
+
+                    case Enums.MaterialType.SILVER:
+                        temp.GetComponentInChildren<MeshRenderer>().material = mats[2];
+                        temp.GetComponent<SwordBlade>().mat = mats[2];
+                        break;
+
+                    default:
+                        temp.GetComponentInChildren<MeshRenderer>().material = mats[0];
+                        temp.GetComponent<SwordBlade>().mat = mats[0];
+                        break;
+                }
+                temp.GetComponent<SwordBlade>().materialType = collision.gameObject.GetComponent<LavaBall>().materialType;
                 temp.transform.parent = gameObject.transform;
                 temp.GetComponent<Rigidbody>().isKinematic = true;
                 temp.GetComponent<Rigidbody>().useGravity = false;

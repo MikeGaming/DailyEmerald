@@ -12,7 +12,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _TOGGLECROSSHATCH
+  - _TOGGLESPECULAR
   - _WORLDPOSITION
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -64,7 +64,7 @@ Material:
     - _CrosshatchTile: 30
     - _FresnelIntensity: 10
     - _FresnelMultiply: 0
-    - _FresnelPower: 3.5
+    - _FresnelPower: 5
     - _GradientOrigin: 2.85
     - _GradientSmoothness: 0
     - _GradientSpread: 5.77
@@ -74,18 +74,18 @@ Material:
     - _LightColorIntensity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _ShadowPower: 0.6
+    - _ShadowPower: 0
     - _ShadowScroll: 0
     - _ShadowScrollSpeed: 1
     - _SpecularStep: 0
-    - _TOGGLECROSSHATCH: 1
+    - _TOGGLECROSSHATCH: 0
     - _TOGGLEGRADIENT: 0
-    - _TOGGLESPECULAR: 0
+    - _TOGGLESPECULAR: 1
     - _WORLDPOSITION: 1
     m_Colors:
     - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
     - _BottomColour: {r: 1, g: 1, b: 1, a: 1}
-    - _Emissive: {r: 0.7019608, g: 0.39215687, b: 0.4598247, a: 1}
+    - _Emissive: {r: 0.8867924, g: 0.3998932, b: 0.3998932, a: 1}
     - _GradientAxis: {r: 0, g: 0, b: 0, a: 0}
     - _GradientDirection: {r: 0, g: 1, b: 0, a: 0}
     - _MainColor: {r: 0.97735846, g: 0.30796006, b: 0.37858462, a: 1}

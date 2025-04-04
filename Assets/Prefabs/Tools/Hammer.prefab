@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 754288895843887588}
   - component: {fileID: 3067010674835912466}
   - component: {fileID: 7288953029919953015}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Particle System
   m_TagString: Hammer
   m_Icon: {fileID: 0}

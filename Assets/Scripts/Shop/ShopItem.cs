@@ -34,7 +34,7 @@ public class ShopItem : MonoBehaviour
             CustomerOrder custOrder = other.GetComponent<Customer>().order;
             SetCostRatios(custOrder);
 
-            StartCoroutine(other.GetComponent<Customer>().ServeCustomer(satisfactionAmount));
+            other.GetComponent<Customer>().ServeCustomer(satisfactionAmount);
             Destroy(this.gameObject);
         }
     }

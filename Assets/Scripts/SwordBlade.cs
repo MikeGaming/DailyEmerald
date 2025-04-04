@@ -9,6 +9,8 @@ public class SwordBlade : MonoBehaviour
     [SerializeField]
     private GameObject swordFull;
 
+    [HideInInspector] public Material mat;
+
     public Enums.MaterialType materialType;
 
     private int hitCount;
@@ -59,6 +61,7 @@ public class SwordBlade : MonoBehaviour
                 {
                     GameObject temp = Instantiate(swordFull, transform.position + new Vector3(0, 0.25f, 0), Quaternion.Euler(0, 0, 0));
                     temp.GetComponent<ShopItem>().material = materialType;
+                    temp.GetComponentInChildren<MeshRenderer>().materials[2] = mat;
                     Destroy(realHandle);
                     Destroy(this.gameObject);
                 }
