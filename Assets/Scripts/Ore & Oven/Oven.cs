@@ -43,6 +43,7 @@ public class Oven : MonoBehaviour
     public void Melt()
     {
         if (lastPullTime + 45f > Time.realtimeSinceStartup) return;
+        if (objsInsideOven.Count == 0) return;
 
         if (doorTrans.position.y > 1.2f) return;
         CountMeltables();
