@@ -15121,7 +15121,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2831681537484328256}
-  m_Mesh: {fileID: 4746319076196673038, guid: c6140bc23b03a1f489a2f0b0cfaa1ba9, type: 3}
+  m_Mesh: {fileID: 4746319076196673038, guid: fae550081bdae9e40ad3827c5fac24b7, type: 3}
 --- !u!23 &4184845875307971723
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25767,10 +25767,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorTrans: {fileID: 7226315272383819554}
   firstAnim: {fileID: 0}
-  dragon: {fileID: 3628251693996231338}
-  fireParticles: {fileID: 5243936184274265243}
-  fireParticles2: {fileID: 7088773198514005628}
-  fireParticles3: {fileID: 8621519509932896078}
   meltMaterial: 0
 --- !u!65 &195609741580299161
 BoxCollider:
