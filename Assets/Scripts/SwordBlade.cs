@@ -61,7 +61,6 @@ public class SwordBlade : MonoBehaviour
                 if (hitCount >= 3)
                 {
                     GameObject temp = Instantiate(swordFull, transform.position + new Vector3(0, 0.25f, 0), Quaternion.Euler(0, 0, 0));
-                    temp.transform.GetChild(0).GetComponent<MeshRenderer>().material = GetComponent<MeshRenderer>().material;
                     temp.GetComponent<ShopItem>().material = materialType;
                     temp.GetComponentInChildren<MeshRenderer>().materials[matIndex] = mat;
                     Destroy(realHandle);
