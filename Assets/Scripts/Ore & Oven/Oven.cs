@@ -25,7 +25,7 @@ public class Oven : MonoBehaviour
 
     public Enums.MaterialType meltMaterial;
 
-    private float lastPullTime;
+    private float lastPullTime = -45f;
 
     //add meltable objects to list
     private void OnTriggerEnter(Collider other)
@@ -42,10 +42,12 @@ public class Oven : MonoBehaviour
     //melt objects
     public void Melt()
     {
-        if (lastPullTime + 45f > Time.realtimeSinceStartup) return;
+        Debug.Log("Melt called");
         if (objsInsideOven.Count == 0) return;
-
-        if (doorTrans.position.y > 1.2f) return;
+        Debug.Log("Melt called, objects inside oven passed");
+        if (lastPullTime + 45f > Time.realtimeSinceStartup) return;
+        lastPullTime = Time.realtimeSinceStartup;
+        Debug.Log("Melt called, last pull time passed");
         CountMeltables();
 
         //one-liner for finding largest value in array (thanks stack overflow)
