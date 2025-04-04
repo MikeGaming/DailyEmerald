@@ -1913,7 +1913,7 @@ PrefabInstance:
     - target: {fileID: 483490396732368943, guid: 1c052ae8f4d452b43a90fae69210004f, type: 3}
       propertyPath: 'm_Colliders.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 228889682}
     - target: {fileID: 4675085947334254185, guid: 1c052ae8f4d452b43a90fae69210004f, type: 3}
       propertyPath: m_Name
       value: VR Lever
@@ -1926,6 +1926,11 @@ PrefabInstance:
 --- !u!4 &228889679 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 285635079312006259, guid: 1c052ae8f4d452b43a90fae69210004f, type: 3}
+  m_PrefabInstance: {fileID: 228889678}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &228889682 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 7874530880150230908, guid: 1c052ae8f4d452b43a90fae69210004f, type: 3}
   m_PrefabInstance: {fileID: 228889678}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &232645440
