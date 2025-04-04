@@ -70,6 +70,7 @@ Material:
     - _GradientSpread: 5.77
     - _GrungeTiling: 10
     - _HueChange: 0
+    - _ISGREYSCALE: 0
     - _LightColorIntensity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -87,7 +88,7 @@ Material:
     - _Emissive: {r: 0, g: 0, b: 0, a: 0}
     - _GradientAxis: {r: 0, g: 0, b: 0, a: 0}
     - _GradientDirection: {r: 0, g: 1, b: 0, a: 0}
-    - _MainColor: {r: 0.17930368, g: 0.49400002, b: 0.22687408, a: 1}
+    - _MainColor: {r: 0.3218298, g: 0.690566, b: 0.37659255, a: 1}
     - _ScreenColorRange: {r: 0, g: 1, b: 0, a: 0}
     - _ShadowColor: {r: 0.1509879, g: 0.2735849, b: 0.21042886, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
