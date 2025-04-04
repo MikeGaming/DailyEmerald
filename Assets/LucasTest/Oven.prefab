@@ -5036,8 +5036,8 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  isGrabbed: 0
   m_AttachTransform: {fileID: 0}
+  isGrabbed: 0
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
@@ -25767,6 +25767,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorTrans: {fileID: 7226315272383819554}
   firstAnim: {fileID: 0}
+  dragon: {fileID: 0}
+  fireParticles: {fileID: 0}
+  fireParticles2: {fileID: 0}
+  fireParticles3: {fileID: 0}
   meltMaterial: 0
 --- !u!65 &195609741580299161
 BoxCollider:

@@ -15,12 +15,17 @@ public class Oven : MonoBehaviour
     [SerializeField] private Transform doorTrans;
     [SerializeField] private LavaAnimation firstAnim;
 
+    [SerializeField] private Animator dragon;
+    [SerializeField] private ParticleSystem fireParticles, fireParticles2, fireParticles3;
+
     private List<GameObject> objsInsideOven = new List<GameObject>();
 
     //index for each ore is the int representation of Enums.MaterialType
     private int[] oreCounts = new int[Enum.GetNames(typeof(Enums.MaterialType)).Length];
 
     public Enums.MaterialType meltMaterial;
+
+    private float lastPullTime;
 
     //add meltable objects to list
     private void OnTriggerEnter(Collider other)
@@ -37,15 +42,20 @@ public class Oven : MonoBehaviour
     //melt objects
     public void Melt()
     {
-        Debug.Log("MeltTest");
+        if (lastPullTime + 45f > Time.realtimeSinceStartup) return;
+
         if (doorTrans.position.y > 1.2f) return;
-        Debug.Log("MeltTest2");
         CountMeltables();
 
         //one-liner for finding largest value in array (thanks stack overflow)
         (int number, int index) = oreCounts.Select((n, i) => (n, i)).Max();
 
-        Debug.Log((Enums.MaterialType) index);
+        meltMaterial = (Enums.MaterialType) index;
+
+        //dragon.SetTrigger("Melt");
+        //fireParticles.Play();
+        //fireParticles2.Play();
+        //fireParticles3.Play();
 
         //TO-DO:
         //play sound
