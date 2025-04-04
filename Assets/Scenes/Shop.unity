@@ -20686,10 +20686,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 646538032528300840, guid: 9b78da22ae8ca9e4583d6c8a75b75280, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 184ff27932dc2e440bff6077b0b7a185, type: 2}
     - target: {fileID: 6761601005618646178, guid: 9b78da22ae8ca9e4583d6c8a75b75280, type: 3}
       propertyPath: m_Name
       value: Oven (1)
@@ -46872,8 +46868,8 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  m_AttachTransform: {fileID: 0}
   isGrabbed: 0
+  m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
