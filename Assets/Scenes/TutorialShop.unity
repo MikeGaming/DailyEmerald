@@ -14123,8 +14123,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5f35c848028dfbc4f9af32a73ebacdf1, type: 2}
   - {fileID: 11400000, guid: cff087b709596e64c9b788d70877308a, type: 2}
   scoreManager: {fileID: 1842731192}
-  isTutorial: 0
-  tutorialOrder: {fileID: 0}
+  isTutorial: 1
+  tutorialOrder: {fileID: 11400000, guid: e24fbde9ae246c04d845b8c34fe8e647, type: 2}
 --- !u!4 &640502052
 Transform:
   m_ObjectHideFlags: 0
@@ -27968,6 +27968,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2119613389}
     - target: {fileID: 7186101358461148095, guid: 22d83535f4c60a74885b48865f7af190, type: 3}
+      propertyPath: isTutorial
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186101358461148095, guid: 22d83535f4c60a74885b48865f7af190, type: 3}
       propertyPath: customerManager
       value: 
       objectReference: {fileID: 640502051}
@@ -32603,10 +32607,22 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 144f578f0656cf84296bb4af1d7e9637, type: 2}
+    - target: {fileID: -8593567125644204049, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: -8525132868058048624, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: -8384481785487446333, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 2fe07e90f9a7d544aaaa7cf43f8cb4c2, type: 2}
+    - target: {fileID: -8366756076137728943, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: -8253854986242502192, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32615,6 +32631,18 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: -7825181706440797545, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: -7789577492266010914, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: -7625159673802488652, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: -7292089207302373445, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32627,6 +32655,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: -7008256549926440013, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: -6830811000139809376, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32655,6 +32687,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: -5956252432334752897, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: -5762326499655230834, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32663,14 +32699,34 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: -5415120796057021107, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: -5281125901187393469, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 144f578f0656cf84296bb4af1d7e9637, type: 2}
+    - target: {fileID: -5156547267135723053, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: -5109357220262260214, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 144f578f0656cf84296bb4af1d7e9637, type: 2}
+    - target: {fileID: -5043880172166755896, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: -4748020174520673027, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: -4591281293864404919, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: -4455466965671168866, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.11315997
@@ -32683,6 +32739,18 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: -4157427878470385057, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: -3638576392642526254, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: -3593480953808922326, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: -3485307840129147756, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32691,9 +32759,21 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: -3428792854878958098, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: -3289622368089652331, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.11315997
+      objectReference: {fileID: 0}
+    - target: {fileID: -3144527536239628366, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: -3125417904694112836, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
       objectReference: {fileID: 0}
     - target: {fileID: -3068993638688753682, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -32703,6 +32783,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: -3045888385473763215, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: -3036661575806082063, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32711,6 +32795,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: -2875116398507221549, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: -2542679692195494094, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32735,9 +32823,21 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: -2119033430725408378, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: -1631392705431737406, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.431
+      objectReference: {fileID: 0}
+    - target: {fileID: -1529263176306920320, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: -1187194865777041702, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
       objectReference: {fileID: 0}
     - target: {fileID: -1181585788187419046, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -32747,6 +32847,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 144f578f0656cf84296bb4af1d7e9637, type: 2}
+    - target: {fileID: -964802437829164157, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: -847630498536363022, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: -831680225791512094, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -32755,10 +32863,34 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: -652456371433656303, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: -398976827575970286, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: -301144753572583391, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: -139377850691507599, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: -14654551878586978, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: 132765951770441986, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 144f578f0656cf84296bb4af1d7e9637, type: 2}
+    - target: {fileID: 156903647396294987, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: 509302121412714985, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32771,6 +32903,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: 911932106837961219, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: m_Name
       value: UpdatedBooksnCandles
@@ -32787,10 +32923,18 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 144f578f0656cf84296bb4af1d7e9637, type: 2}
+    - target: {fileID: 1481581285363803824, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: 1551084866499787988, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 144f578f0656cf84296bb4af1d7e9637, type: 2}
+    - target: {fileID: 1824370077791236842, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: 2648105077314050689, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32803,6 +32947,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 144f578f0656cf84296bb4af1d7e9637, type: 2}
+    - target: {fileID: 2715413120118151929, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: 3007610733892388960, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32815,6 +32963,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 2fe07e90f9a7d544aaaa7cf43f8cb4c2, type: 2}
+    - target: {fileID: 3623232139526296452, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: 4004857803492767045, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32831,10 +32983,34 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: 4512983026563353272, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597019744432849206, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718098456169989684, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: 4841261444417368995, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 2fe07e90f9a7d544aaaa7cf43f8cb4c2, type: 2}
+    - target: {fileID: 4929158079545527920, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: 4988292073290695140, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073205207813493009, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: 5124667415073709150, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32847,6 +33023,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 2fe07e90f9a7d544aaaa7cf43f8cb4c2, type: 2}
+    - target: {fileID: 5470068085646581446, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: 5530950779668113938, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32859,6 +33039,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: 6050517038460883744, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: 6188105759374975338, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32879,10 +33063,26 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: 7139171531658215851, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208050929057583524, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282256290380855613, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: 7412438745058729521, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 2fe07e90f9a7d544aaaa7cf43f8cb4c2, type: 2}
+    - target: {fileID: 7449284649317401868, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: 7532959906417010768, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32891,6 +33091,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: 7842719095313239951, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: 8132628884405352992, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32899,6 +33103,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7f2f9c769f6b44b4cbe81520241ecebf, type: 2}
+    - target: {fileID: 8152568929066634612, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     - target: {fileID: 8700130406229703007, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32911,6 +33119,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 4f612a7616a559845908312fab54c17c, type: 2}
+    - target: {fileID: 9001002564228899785, guid: ae367ff8a07fde8428245e97f07a6976, type: 3}
+      propertyPath: m_TagString
+      value: ShelfObj
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

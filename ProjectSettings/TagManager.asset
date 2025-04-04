@@ -30,6 +30,7 @@ TagManager:
   - CustomerSound
   - Lava
   - Head
+  - ShelfObj
   layers:
   - Default
   - TransparentFX
