@@ -41,7 +41,8 @@ public class Timer : MonoBehaviour
         if (t <= 0 && !timerFinished)
         {
             timerFinished = true;
-
+            t = 0;
+            isPaused = true;
             customerManager.EndGame();
         }
 

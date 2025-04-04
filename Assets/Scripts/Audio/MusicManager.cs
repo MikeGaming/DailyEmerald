@@ -21,7 +21,7 @@ public class MusicManager : MonoBehaviour
         {
             music.setParameterByName("Intensity", 1);
         }
-        else if (time < 4.4f)
+        else if (time < 4.3f)
         {
             music.setParameterByName("Intensity", 2);
         }
@@ -29,7 +29,7 @@ public class MusicManager : MonoBehaviour
         {
             music.setParameterByName("Intensity", 3);
         }
-        else if (time < 10f)
+        else if (time < 9.7f)
         {
             music.setParameterByName("Intensity", 4);
         }
