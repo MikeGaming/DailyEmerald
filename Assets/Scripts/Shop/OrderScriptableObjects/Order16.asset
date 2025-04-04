@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
   m_Name: Order16
   m_EditorClassIdentifier: 
-  customerOrderText: "The Thorned Peasant Revolt needs spears\xE2\u20AC\u201Dcrude,
-    unmagicked iron to pierce the enchanted armor of the Sorcerer-King\xE2\u20AC\u2122s
-    tax collectors. Let our rage be the only enchantment."
+  customerOrderText: The Thorned Peasant Revolt needs crude spears to pierce the
+    anti-magic armor of the Sorcerer-King's tax collectors.
   acceptedItems:
     orderItems:
     - item: 3
@@ -40,7 +39,7 @@ MonoBehaviour:
     - material: 0
       costRatio: 1
     - material: 1
-      costRatio: 0.1
-    - material: 2
       costRatio: 0
-  maxCoin: 0
+    - material: 2
+      costRatio: 0.4
+  maxCoin: 20

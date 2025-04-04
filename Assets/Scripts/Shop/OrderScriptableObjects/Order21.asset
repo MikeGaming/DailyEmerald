@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
   m_Name: Order21
   m_EditorClassIdentifier: 
-  customerOrderText: "The Clockwork Monks\xE2\u20AC\u2122 temple is overrun by magnetized
-    scarabs. Forge me a lightning-charged mace to disrupt their metal carapaces.
-    Iron conducts best; gold would be sacrilege."
+  customerOrderText: The Clockwork Monk's temple is overrun by magnetized scarabs.
+    Forge me a lightning-charged mace that can conduct electricity to disrupt their
+    metal carapaces.
   acceptedItems:
     orderItems:
     - item: 2
@@ -38,9 +38,9 @@ MonoBehaviour:
   acceptedMaterials:
     orderItems:
     - material: 0
-      costRatio: 1
+      costRatio: 0.9
     - material: 1
-      costRatio: 0.4
+      costRatio: 1
     - material: 2
-      costRatio: 0
-  maxCoin: 0
+      costRatio: 0.75
+  maxCoin: 35

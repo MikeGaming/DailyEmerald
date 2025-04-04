@@ -795,7 +795,7 @@ GameObject:
   - component: {fileID: 456511879}
   - component: {fileID: 456511878}
   - component: {fileID: 456511877}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1488,7 +1488,7 @@ GameObject:
   - component: {fileID: 629547277}
   - component: {fileID: 629547276}
   - component: {fileID: 629547275}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6576,6 +6576,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkLoc: {fileID: 112173429}
+  ignoreLayer:
+    serializedVersion: 2
+    m_Bits: 131072
 --- !u!4 &2130416884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3080881247339012262, guid: fcc99ff5afd79cc49a80298abf91968e, type: 3}

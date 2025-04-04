@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Order3
   m_EditorClassIdentifier: 
   customerOrderText: My sky-trading caravan needs blades light enough to wield from
-    gryphon-back, yet deadly as a monsoon wind. Let lightning dance along its edge
-    to strike those who'd plunder our cloudsilk.
+    gryphon-back, yet show off our immense wealth. Let lightning dance along its
+    edge to strike those who'd plunder our cloudsilk.
   acceptedItems:
     orderItems:
     - item: 0
@@ -43,4 +43,4 @@ MonoBehaviour:
       costRatio: 0.6
     - material: 2
       costRatio: 1
-  maxCoin: 0
+  maxCoin: 40

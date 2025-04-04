@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
   m_Name: Order10
   m_EditorClassIdentifier: 
-  customerOrderText: "The Guild of Glasshearts demands a ceremonial sword\xE2\u20AC\u201Dgolden,
-    pristine, and utterly fragile. Let it spark with lightning during their oath-rituals,
-    then shatter if vows are broken."
+  customerOrderText: The Guild of Glasshearts demands a ceremonial sword. Golden,
+    pristine, and utterly fragile. Let it spark with lightning during their oath
+    rituals and shatter if vows are broken.
   acceptedItems:
     orderItems:
     - item: 0
@@ -30,9 +30,9 @@ MonoBehaviour:
     - magic: 0
       costRatio: 0.1
     - magic: 1
-      costRatio: 0.2
+      costRatio: 0
     - magic: 2
-      costRatio: 0.1
+      costRatio: 0
     - magic: 3
       costRatio: 1
   acceptedMaterials:
@@ -43,4 +43,4 @@ MonoBehaviour:
       costRatio: 0.3
     - material: 2
       costRatio: 1
-  maxCoin: 0
+  maxCoin: 40

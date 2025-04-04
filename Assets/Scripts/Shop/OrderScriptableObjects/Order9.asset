@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
   m_Name: Order9
   m_EditorClassIdentifier: 
-  customerOrderText: "The Duskwardens ride spectral steeds. Their lances pierce souls,
-    so I need a spear of cold iron to anchor them to this plane\xE2\u20AC\u201Dno
-    magic, just the weight of mortality."
+  customerOrderText: I need a spear of pure silver to anchor the Duskwardens to this
+    plane. No magic, just the weight of mortality.
   acceptedItems:
     orderItems:
     - item: 3
@@ -38,9 +37,9 @@ MonoBehaviour:
   acceptedMaterials:
     orderItems:
     - material: 0
-      costRatio: 1
-    - material: 1
       costRatio: 0.6
+    - material: 1
+      costRatio: 1
     - material: 2
-      costRatio: 0
-  maxCoin: 0
+      costRatio: 0.2
+  maxCoin: 35

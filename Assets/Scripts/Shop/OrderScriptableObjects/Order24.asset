@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
   m_Name: Order24
   m_EditorClassIdentifier: 
-  customerOrderText: "The Drowned Oracle\xE2\u20AC\u2122s visions speak of a flame-axe
-    to cleanse the Coral Plague. Silver to purify, fire to burn the rot. No subtlety\xE2\u20AC\u201Donly
-    a conflagration will save our reef-city."
+  customerOrderText: This big-ass werewolf just broke into my home, and I need an
+    axe to defeat him. I don't need anything fancy, just something to pierce his
+    skin!
   acceptedItems:
     orderItems:
     - item: 1
@@ -28,9 +28,9 @@ MonoBehaviour:
   acceptedMagics:
     orderItems:
     - magic: 0
-      costRatio: 0
-    - magic: 1
       costRatio: 1
+    - magic: 1
+      costRatio: 0
     - magic: 2
       costRatio: 0
     - magic: 3
@@ -38,9 +38,9 @@ MonoBehaviour:
   acceptedMaterials:
     orderItems:
     - material: 0
-      costRatio: 0.4
+      costRatio: 0
     - material: 1
       costRatio: 1
     - material: 2
-      costRatio: 0.2
-  maxCoin: 0
+      costRatio: 0
+  maxCoin: 25

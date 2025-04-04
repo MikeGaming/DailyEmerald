@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
   m_Name: Order23
   m_EditorClassIdentifier: 
-  customerOrderText: "The Feywild\xE2\u20AC\u2122s Summer Court demands a golden
-    sword dripping with frost\xE2\u20AC\u201Dto spite their Winter rivals. Let it
-    weep ice in their sunlit halls, a petty insult forged in steel."
+  customerOrderText: The Feywild's Summer Court demands a golden sword dripping with
+    frost to spite their Winter rivals.
   acceptedItems:
     orderItems:
     - item: 0
@@ -43,4 +42,4 @@ MonoBehaviour:
       costRatio: 0.3
     - material: 2
       costRatio: 1
-  maxCoin: 0
+  maxCoin: 40

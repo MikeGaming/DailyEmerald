@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Order4
   m_EditorClassIdentifier: 
   customerOrderText: The volcanic temple's guardians wield armor of living obsidian.
-    Craft me a mace heavy enough to shatter stone skin, its head glowing white-hot
-    to cauterize their molten blood.
+    Craft me a simple mace, heavy enough to shatter stone skin. Ensure its head glows
+    white-hot to cauterize their molten blood.
   acceptedItems:
     orderItems:
     - item: 0
@@ -43,4 +43,4 @@ MonoBehaviour:
       costRatio: 0.5
     - material: 2
       costRatio: 0.2
-  maxCoin: 0
+  maxCoin: 30

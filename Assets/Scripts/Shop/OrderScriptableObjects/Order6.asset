@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Order6
   m_EditorClassIdentifier: 
   customerOrderText: For the Moonlit Duel of Truths, I need a silver sword that weeps
-    frost - not for killing, but to preserve my opponent's last breath in ice should
+    frost. Not for aggression, but to preserve my opponent's last breath in ice should
     I strike true.
   acceptedItems:
     orderItems:
@@ -43,4 +43,4 @@ MonoBehaviour:
       costRatio: 1
     - material: 2
       costRatio: 0.8
-  maxCoin: 0
+  maxCoin: 35

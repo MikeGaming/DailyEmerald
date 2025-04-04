@@ -12,35 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
   m_Name: Order17
   m_EditorClassIdentifier: 
-  customerOrderText: "I hunt the Veilwood\xE2\u20AC\u2122s shadow-stags\xE2\u20AC\u201Dtheir
-    hides repel magic. Forge me a frost-imbued axe to freeze their hooves mid-flight.
-    Silver for purity, frost for stillness."
+  customerOrderText: 'I hunt the shadow-stags in the Veilwood forest. Forge me a
+    simple weapon to execute them from a safe distance away from their deadly magic-resistant
+    antlers. '
   acceptedItems:
     orderItems:
     - item: 1
-      costRatio: 1
+      costRatio: 0.1
     - item: 0
-      costRatio: 0.5
-    - item: 2
-      costRatio: 0.3
-    - item: 3
       costRatio: 0.6
+    - item: 2
+      costRatio: 0.1
+    - item: 3
+      costRatio: 1
   acceptedMagics:
     orderItems:
     - magic: 0
-      costRatio: 0
-    - magic: 1
-      costRatio: 0.1
-    - magic: 2
       costRatio: 1
+    - magic: 1
+      costRatio: 0
+    - magic: 2
+      costRatio: 0
     - magic: 3
-      costRatio: 0.2
+      costRatio: 0
   acceptedMaterials:
     orderItems:
     - material: 0
-      costRatio: 0.3
-    - material: 1
       costRatio: 1
+    - material: 1
+      costRatio: 0
     - material: 2
-      costRatio: 0.4
-  maxCoin: 0
+      costRatio: 0.6
+  maxCoin: 20

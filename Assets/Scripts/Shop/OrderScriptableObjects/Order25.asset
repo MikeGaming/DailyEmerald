@@ -12,35 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
   m_Name: Order25
   m_EditorClassIdentifier: 
-  customerOrderText: "The Thunderspine Mercenaries ride war-lizards into battle.
-    Forge lightning-lances to channel their mounts\xE2\u20AC\u2122 fury. Let every
-    thrust crackle like a storm\xE2\u20AC\u201Dsilver for conductivity, no subtlety."
+  customerOrderText: The Thunderspine Mercenaries ride war-lizards into battle. Forge
+    me an axe to exploit the lizard's natural weakness to copper. Make sure it is
+    cool to the touch, I like my lizard meat frozen.
   acceptedItems:
     orderItems:
     - item: 3
-      costRatio: 1
+      costRatio: 0.4
     - item: 0
-      costRatio: 0.3
+      costRatio: 0.7
     - item: 1
-      costRatio: 0.2
+      costRatio: 1
     - item: 2
-      costRatio: 0.1
+      costRatio: 0.3
   acceptedMagics:
     orderItems:
     - magic: 0
       costRatio: 0
     - magic: 1
-      costRatio: 0.2
-    - magic: 2
       costRatio: 0
-    - magic: 3
+    - magic: 2
       costRatio: 1
+    - magic: 3
+      costRatio: 0
   acceptedMaterials:
     orderItems:
     - material: 0
-      costRatio: 0.5
-    - material: 1
       costRatio: 1
+    - material: 1
+      costRatio: 0.1
     - material: 2
-      costRatio: 0.3
-  maxCoin: 0
+      costRatio: 0.1
+  maxCoin: 30

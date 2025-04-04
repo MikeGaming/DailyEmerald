@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
   m_Name: Order19
   m_EditorClassIdentifier: 
-  customerOrderText: "The Rimefang Yetis bleed molten ice. Forge me a spearhead of
-    iron, wrapped in frost to match their hearts. No flame\xE2\u20AC\u201Danger their
-    kind, and the glaciers themselves will hunt you."
+  customerOrderText: The Rimefang Yetis bleed bone-chilling ice. Forge me a shining
+    weapon that will let me fight them from a distance. Ensure it can cauterize their
+    wounds after each blow.
   acceptedItems:
     orderItems:
     - item: 3
@@ -30,17 +30,17 @@ MonoBehaviour:
     - magic: 0
       costRatio: 0
     - magic: 1
-      costRatio: 0
-    - magic: 2
       costRatio: 1
+    - magic: 2
+      costRatio: 0
     - magic: 3
-      costRatio: 0.3
+      costRatio: 0
   acceptedMaterials:
     orderItems:
     - material: 0
-      costRatio: 1
+      costRatio: 0.4
     - material: 1
-      costRatio: 0.5
+      costRatio: 1
     - material: 2
-      costRatio: 0
-  maxCoin: 0
+      costRatio: 0.6
+  maxCoin: 35

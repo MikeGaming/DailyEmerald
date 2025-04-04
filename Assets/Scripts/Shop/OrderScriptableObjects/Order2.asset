@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Order2
   m_EditorClassIdentifier: 
   customerOrderText: The coral-reef kraken has taken three of my crew. Forge me a
-    spear that won't rust in saltwater nor slip from bloodied hands. Let its bite
-    freeze the beast's writhing limbs.
+    spear that will shine bright as it pierces the heart of that wretched beast.
+    Let its bite freeze the beast's writhing limbs.
   acceptedItems:
     orderItems:
     - item: 0
@@ -43,4 +43,4 @@ MonoBehaviour:
       costRatio: 1
     - material: 2
       costRatio: 0.1
-  maxCoin: 0
+  maxCoin: 35

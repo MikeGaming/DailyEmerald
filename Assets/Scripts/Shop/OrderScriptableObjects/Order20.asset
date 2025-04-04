@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
   m_Name: Order20
   m_EditorClassIdentifier: 
-  customerOrderText: "The Suncursed nomads ride through desert nights. They seek
-    swords that glow with stored daylight\xE2\u20AC\u201Dflame without heat, to ward
-    off sand phantoms. Silver for reflection, fire for false dawn."
+  customerOrderText: The Suncursed nomads ride through desert nights. They seek swords
+    that shine with daylight's energies. Gold will be of no use for their moonlit
+    battles.
   acceptedItems:
     orderItems:
     - item: 0
@@ -28,9 +28,9 @@ MonoBehaviour:
   acceptedMagics:
     orderItems:
     - magic: 0
-      costRatio: 0
-    - magic: 1
       costRatio: 1
+    - magic: 1
+      costRatio: 0.25
     - magic: 2
       costRatio: 0
     - magic: 3
@@ -43,4 +43,4 @@ MonoBehaviour:
       costRatio: 1
     - material: 2
       costRatio: 0.7
-  maxCoin: 0
+  maxCoin: 25

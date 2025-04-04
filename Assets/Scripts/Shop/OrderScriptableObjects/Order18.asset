@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
   m_Name: Order18
   m_EditorClassIdentifier: 
-  customerOrderText: "The Celestial Bards duel with maces that hum with lightning\xE2\u20AC\u201Deach
-    strike composes a thunderous symphony. Gold for resonance, but keep the edge
-    blunt; we seek art, not death."
+  customerOrderText: The Celestial Bards duel with maces that hum with lightning.
+    Each strike composes a thunderous symphony. Create me a gilded weapon of similar
+    capabilities.
   acceptedItems:
     orderItems:
     - item: 2
@@ -43,4 +43,4 @@ MonoBehaviour:
       costRatio: 0.4
     - material: 2
       costRatio: 1
-  maxCoin: 0
+  maxCoin: 40

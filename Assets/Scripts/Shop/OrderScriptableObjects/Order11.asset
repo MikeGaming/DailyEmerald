@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
   m_Name: Order11
   m_EditorClassIdentifier: 
-  customerOrderText: "Deepwyrms boil the swamps. Forge me a spear that hisses with
-    frost to harden their mud-armor, then pierce it. No gaudy metals\xE2\u20AC\u201Diron
-    to endure acidic blood."
+  customerOrderText: Forge me a spear that will freeze a Deepwyrm's mud armor, then
+    pierce it! Only pure copper can endure their acidic blood.
   acceptedItems:
     orderItems:
     - item: 3
@@ -28,7 +27,7 @@ MonoBehaviour:
   acceptedMagics:
     orderItems:
     - magic: 0
-      costRatio: 0.1
+      costRatio: 0
     - magic: 1
       costRatio: 0
     - magic: 2
@@ -40,7 +39,7 @@ MonoBehaviour:
     - material: 0
       costRatio: 1
     - material: 1
-      costRatio: 0.6
+      costRatio: 0
     - material: 2
       costRatio: 0
-  maxCoin: 0
+  maxCoin: 30

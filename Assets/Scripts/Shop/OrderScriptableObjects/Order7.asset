@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e2802b4affa5149a677d590458fac8, type: 3}
   m_Name: Order7
   m_EditorClassIdentifier: 
-  customerOrderText: "The Luminous Heretics drown their sins in shadow. Forge me
-    an axe that splits darkness itself\xE2\u20AC\u201Dits edge must blaze like captured
-    sunlight to purge their false prophets. No subtlety, only fire."
+  customerOrderText: The Luminous Heretics drown their sins in shadow. Forge me an
+    axe that'll shine in even the darkest depths. Its edge must blaze like captured
+    sunlight to purge their false prophets.
   acceptedItems:
     orderItems:
     - item: 1
@@ -38,9 +38,9 @@ MonoBehaviour:
   acceptedMaterials:
     orderItems:
     - material: 0
-      costRatio: 0.8
+      costRatio: 0.3
     - material: 1
       costRatio: 1
     - material: 2
-      costRatio: 0.3
-  maxCoin: 0
+      costRatio: 0.7
+  maxCoin: 35
