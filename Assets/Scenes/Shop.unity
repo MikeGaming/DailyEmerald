@@ -3069,6 +3069,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
+      propertyPath: lavaParent
+      value: 
+      objectReference: {fileID: 1229441686}
+    - target: {fileID: 8062780877122881201, guid: 72bfc072b70184849b900247ae43d860, type: 3}
       propertyPath: lavaPrefab
       value: 
       objectReference: {fileID: 1739844965389082133, guid: 48c32f6f3296755479d2c6ccc6f00e10, type: 3}

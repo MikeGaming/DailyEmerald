@@ -45,18 +45,20 @@ public class Oven : MonoBehaviour
         //one-liner for finding largest value in array (thanks stack overflow)
         (int number, int index) = oreCounts.Select((n, i) => (n, i)).Max();
 
-        meltMaterial = (Enums.MaterialType) index;
+        Debug.Log((Enums.MaterialType) index);
 
         //TO-DO:
-        //send data to bucket
-        //trigger animation through pipes
-        firstAnim.canStart = true;
         //play sound
+        firstAnim.canStart = true;
     }
 
     private void CountMeltables()
     {
-        foreach(GameObject obj in objsInsideOven)
+        oreCounts[0] = 0;
+        oreCounts[1] = 0;
+        oreCounts[2] = 0;
+
+        foreach (GameObject obj in objsInsideOven)
         {
             Meltable meltComp = obj.GetComponentInParent<Meltable>();
 

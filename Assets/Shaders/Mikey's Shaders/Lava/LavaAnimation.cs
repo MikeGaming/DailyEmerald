@@ -12,6 +12,8 @@ public class LavaAnimation : MonoBehaviour
     float time, lavaTimer;
     int lavaCount;
 
+    [SerializeField] private GameObject lavaParent;
+
     [SerializeField] Transform lavaSpawnPoint;
     [SerializeField] GameObject lavaPrefab;
     [SerializeField] Oven oven;
@@ -66,10 +68,11 @@ public class LavaAnimation : MonoBehaviour
 
             if (isLastAnim)
             {
-                if (lavaTimer >= 0.25f && lavaCount <= 100)
+                if (lavaTimer >= 0.25f && lavaParent.transform.childCount < 100)
                 {
-                    GameObject temp = Instantiate(lavaPrefab, lavaSpawnPoint.position, Quaternion.identity);
+                    GameObject temp = Instantiate(lavaPrefab, lavaSpawnPoint.position, Quaternion.identity, lavaParent.transform);
                     temp.GetComponent<LavaBall>().materialType = oven.meltMaterial;
+                    temp.GetComponent<LavaBall>().anim = this;
                     temp.transform.parent = lavaSpawnPoint;
                     lavaTimer = 0;
                     lavaCount++;

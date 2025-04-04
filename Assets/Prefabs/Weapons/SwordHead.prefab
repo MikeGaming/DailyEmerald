@@ -164,6 +164,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6297602757791427710}
     - target: {fileID: -4748650847512098463, guid: e5f7ce40135245c4781dcc15d13825b4, type: 3}
+      propertyPath: matIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4748650847512098463, guid: e5f7ce40135245c4781dcc15d13825b4, type: 3}
       propertyPath: swordFull
       value: 
       objectReference: {fileID: 1949950462697432588, guid: 3977e4dd0bc75c946ba3013a2507a964, type: 3}
