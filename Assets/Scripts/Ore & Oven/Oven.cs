@@ -55,11 +55,11 @@ public class Oven : MonoBehaviour
 
         meltMaterial = (Enums.MaterialType) index;
 
+        dragon.ResetTrigger("Melt");
         dragon.SetTrigger("Melt");
         fireParticles.Play();
         fireParticles2.Play();
         fireParticles3.Play();
-        dragon.ResetTrigger("Melt");
 
         //TO-DO:
         //play sound

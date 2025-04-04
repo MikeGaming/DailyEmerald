@@ -60,6 +60,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: caf1fda848c53f94c88c2a0baa437ab0, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 11bf2a89ee7a7cf43aad19fbb019a846, type: 2}
+    - target: {fileID: -7511558181221131132, guid: caf1fda848c53f94c88c2a0baa437ab0, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 612ba795adb00674490a31c596fc2996, type: 2}
     - target: {fileID: 919132149155446097, guid: caf1fda848c53f94c88c2a0baa437ab0, type: 3}
       propertyPath: m_Name
       value: Handle_Mace
