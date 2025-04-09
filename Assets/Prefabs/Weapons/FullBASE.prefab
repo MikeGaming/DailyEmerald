@@ -43735,3 +43735,7 @@ MonoBehaviour:
   - {fileID: 8319621340702420612}
   - {fileID: 5535158416604997057}
   - {fileID: 6567516010403399645}
+  materials:
+  - {fileID: 2100000, guid: 35ee1919524ea904faae8e0e05453719, type: 2}
+  - {fileID: 2100000, guid: f96b63dfed545c2449a9dd618a790465, type: 2}
+  - {fileID: 2100000, guid: db1abce0590c9654f84b39294680c6df, type: 2}

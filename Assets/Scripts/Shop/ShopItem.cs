@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [System.Serializable]
@@ -12,6 +13,10 @@ public class ShopItem : MonoBehaviour
     [SerializeField]
     private GameObject[] magicParticles; //0 = flame, 1 = frost, 2 = lightning, 3 = uranium
 
+    [SerializeField] private Material[] materials;
+
+    [SerializeField] private int matIndex;
+
     private float itemRatio;
     private float magicRatio;
     private float materialRatio;
@@ -20,6 +25,11 @@ public class ShopItem : MonoBehaviour
     private Vector4 magicAmount;
 
     private float satisfactionAmount;
+
+    public void enumerator()
+    {
+        GetComponentInChildren<MeshRenderer>().materials[matIndex] = materials[(int)material];
+    }
 
     public void SetMagic(Enums.MagicType mag)
     {

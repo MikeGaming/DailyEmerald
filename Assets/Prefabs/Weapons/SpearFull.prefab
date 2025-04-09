@@ -256,6 +256,10 @@ PrefabInstance:
       propertyPath: item
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1279672319430253426, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
+      propertyPath: matIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1553643067790573701, guid: 751d8614ef2642148a55c38aedf81e88, type: 3}
       propertyPath: ShapeModule.placementMode
       value: 2

@@ -56,22 +56,18 @@ public class MoldObject : MonoBehaviour
                 {
                     case Enums.MaterialType.IRON:
                         temp.GetComponentInChildren<MeshRenderer>().material = mats[0];
-                        temp.GetComponent<SwordBlade>().mat = mats[0];
                         break;
 
                     case Enums.MaterialType.GOLD:
                         temp.GetComponentInChildren<MeshRenderer>().material = mats[1];
-                        temp.GetComponent<SwordBlade>().mat = mats[1];
                         break;
 
                     case Enums.MaterialType.SILVER:
                         temp.GetComponentInChildren<MeshRenderer>().material = mats[2];
-                        temp.GetComponent<SwordBlade>().mat = mats[2];
                         break;
 
                     default:
                         temp.GetComponentInChildren<MeshRenderer>().material = mats[0];
-                        temp.GetComponent<SwordBlade>().mat = mats[0];
                         break;
                 }
                 temp.GetComponent<SwordBlade>().materialType = collision.gameObject.GetComponent<LavaBall>().materialType;

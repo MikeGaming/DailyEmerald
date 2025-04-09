@@ -9,7 +9,6 @@ public class SwordBlade : MonoBehaviour
     [SerializeField]
     private GameObject swordFull;
 
-    [HideInInspector] public Material mat;
     [SerializeField] private int matIndex;
 
     public Enums.MaterialType materialType;
@@ -62,7 +61,7 @@ public class SwordBlade : MonoBehaviour
                 {
                     GameObject temp = Instantiate(swordFull, transform.position + new Vector3(0, 0.25f, 0), Quaternion.Euler(0, 0, 0));
                     temp.GetComponent<ShopItem>().material = materialType;
-                    temp.GetComponentInChildren<MeshRenderer>().materials[matIndex] = mat;
+                    temp.GetComponent<ShopItem>().enumerator();
                     Destroy(realHandle);
                     Destroy(this.gameObject);
                 }
