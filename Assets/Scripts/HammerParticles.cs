@@ -15,7 +15,7 @@ public class HammerParticles : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (hammer.isGrabbed)
+        if (hammer.isSelected)
         {
             particle.Emit(50);
             emitter.Play();
