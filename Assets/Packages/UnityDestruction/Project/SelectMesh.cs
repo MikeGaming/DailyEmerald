@@ -27,7 +27,7 @@ namespace Project
             {
                 if (Input.GetKeyDown(keyCode))
                 {
-                    foreach (var chunkGraphManager in FindObjectsOfType<ChunkGraphManager>())
+                    foreach (var chunkGraphManager in FindObjectsByType<ChunkGraphManager>())
                     {
                         DestroyImmediate(chunkGraphManager.gameObject);
                     }

@@ -7,7 +7,7 @@ namespace Project.Scripts.Fractures
 {
     public class ChunkNode : MonoBehaviour
     {
-        public HashSet<ChunkNode> Neighbours = new HashSet<ChunkNode>();
+        [System.NonSerialized] public HashSet<ChunkNode> Neighbours = new HashSet<ChunkNode>();
         public ChunkNode[] NeighboursArray = new ChunkNode[0];
         private Dictionary<Joint, ChunkNode> JointToChunk = new Dictionary<Joint, ChunkNode>();
         private Dictionary<ChunkNode, Joint> ChunkToJoint = new Dictionary<ChunkNode, Joint>();

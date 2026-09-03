@@ -134,6 +134,7 @@ Material:
     - _GradientSpread: 0
     - _GrungeTiling: 10
     - _HueChange: 0
+    - _ISGREYSCALE: 0
     - _LightColorIntensity: 1
     - _LightColourIntensity: 0
     - _Metallic: 0

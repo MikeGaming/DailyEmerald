@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.Rendering.RenderGraphModule;
+using UnityEngine.Rendering.RenderGraphModule.Util;
 using UnityEngine.Rendering.Universal;
 
 /// <summary>
@@ -8,42 +10,36 @@ using UnityEngine.Rendering.Universal;
 internal class ColorBlitPass : ScriptableRenderPass
 {
     ProfilingSampler m_ProfilingSampler = new ProfilingSampler("ColorBlit");
-    RTHandle m_CameraColorTarget;
-    float m_Intensity;
-    RenderTexture m_renderTexture = null;
+    RTHandle m_OutputHandle;
 
     public ColorBlitPass(RenderTexture renderTexture, RenderPassEvent renderEvent)
     {
         renderPassEvent = renderEvent;
-        m_renderTexture = renderTexture;
+        if (renderTexture != null)
+            m_OutputHandle = RTHandles.Alloc(renderTexture, "ColorBlitOutput");
     }
 
-    public void SetTarget(RTHandle colorHandle, float intensity)
+    public override void RecordRenderGraph(RenderGraph renderGraph, ContextContainer frameData)
     {
-        m_CameraColorTarget = colorHandle;
-        m_Intensity = intensity;
-    }
-
-    public override void OnCameraSetup(CommandBuffer cmd, ref RenderingData renderingData)
-    {
-        ConfigureTarget(m_CameraColorTarget);
-    }
-
-    public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
-    {
-        var cameraData = renderingData.cameraData;
-        if (cameraData.camera.cameraType != CameraType.Game)
+        if (m_OutputHandle == null)
             return;
 
-        CommandBuffer cmd = CommandBufferPool.Get();
-        using (new ProfilingScope(cmd, m_ProfilingSampler))
-        {
-            cmd.Blit(m_CameraColorTarget, m_renderTexture);
-        }
-        context.ExecuteCommandBuffer(cmd);
-        cmd.Clear();
+        UniversalResourceData resourceData = frameData.Get<UniversalResourceData>();
+        if (!resourceData.activeColorTexture.IsValid())
+            return;
 
-        CommandBufferPool.Release(cmd);
+        TextureHandle destination = renderGraph.ImportTexture(m_OutputHandle);
+        RenderGraphUtils.BlitMaterialParameters parameters = new(
+            resourceData.activeColorTexture,
+            destination,
+            Blitter.GetBlitMaterial(TextureDimension.Tex2D),
+            0);
+        renderGraph.AddBlitPass(parameters, "ColorBlit");
+    }
+
+    public void Dispose()
+    {
+        m_OutputHandle?.Release();
     }
 }
 
@@ -59,18 +55,9 @@ internal class BlitToTextureRendererFeature : ScriptableRendererFeature
                                     ref RenderingData renderingData)
     {
         if (renderingData.cameraData.cameraType == CameraType.Game)
-            renderer.EnqueuePass(m_RenderPass);
-    }
-
-    public override void SetupRenderPasses(ScriptableRenderer renderer,
-                                        in RenderingData renderingData)
-    {
-        if (renderingData.cameraData.cameraType == CameraType.Game)
         {
-            // Calling ConfigureInput with the ScriptableRenderPassInput.Color argument
-            // ensures that the opaque texture is available to the Render Pass.
             m_RenderPass.ConfigureInput(ScriptableRenderPassInput.Color);
-            m_RenderPass.SetTarget(renderer.cameraColorTargetHandle, m_Intensity);
+            renderer.EnqueuePass(m_RenderPass);
         }
     }
 
@@ -81,6 +68,6 @@ internal class BlitToTextureRendererFeature : ScriptableRendererFeature
 
     protected override void Dispose(bool disposing)
     {
-        //CoreUtils.Destroy(m_Material);
+        m_RenderPass?.Dispose();
     }
 }
