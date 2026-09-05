@@ -40,7 +40,7 @@ public class CustomerOrderItemDictItem
 public class CustomerOrderItemDict
 {
     public List<CustomerOrderItemDictItem> orderItems = new List<CustomerOrderItemDictItem>();
-    public Dictionary<Enums.ItemType, float> dict = new Dictionary<Enums.ItemType, float>();
+    [SerializeField] public Dictionary<Enums.ItemType, float> dict = new Dictionary<Enums.ItemType, float>();
 
     public void DictionarizeSelf()
     {
@@ -69,7 +69,7 @@ public class CustomerOrderMagicDictItem
 public class CustomerOrderMagicDict
 {
     public List<CustomerOrderMagicDictItem> orderItems = new List<CustomerOrderMagicDictItem>();
-    public Dictionary<Enums.MagicType, float> dict = new Dictionary<Enums.MagicType, float>();
+    [SerializeField] public Dictionary<Enums.MagicType, float> dict = new Dictionary<Enums.MagicType, float>();
 
     public void DictionarizeSelf()
     {
@@ -97,7 +97,7 @@ public class CustomerOrderMaterialDictItem
 public class CustomerOrderMaterialDict
 {
     public List<CustomerOrderMaterialDictItem> orderItems = new List<CustomerOrderMaterialDictItem>();
-    public Dictionary<Enums.MaterialType, float> dict = new Dictionary<Enums.MaterialType, float>();
+    [SerializeField] public Dictionary<Enums.MaterialType, float> dict = new Dictionary<Enums.MaterialType, float>();
 
     public void DictionarizeSelf()
     {
