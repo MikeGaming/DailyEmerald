@@ -2,6 +2,9 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 using System;
+using UnityEngine.XR.Interaction.Toolkit.Transformers;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit;
 
 //when object enters trigger it gets stored
 //each object is worth 1 metal
@@ -14,6 +17,10 @@ public class Oven : MonoBehaviour
 {
     [SerializeField] private Transform doorTrans;
     [SerializeField] private LavaAnimation firstAnim;
+    [SerializeField] private Transform topAnchor;
+    [SerializeField] private XRGrabInteractable doorHandleInteractable;
+
+    [SerializeField] private float anchoringDistance = 1f;
 
     [SerializeField] private Animator dragon;
     [SerializeField] private ParticleSystem fireParticles, fireParticles2, fireParticles3;
@@ -24,6 +31,9 @@ public class Oven : MonoBehaviour
     private int[] oreCounts = new int[Enum.GetNames(typeof(Enums.MaterialType)).Length];
 
     public Enums.MaterialType meltMaterial;
+
+    private bool moveToAnchor;
+    private Vector3 handleStartPos;
 
     private float lastPullTime = -45f;
 
@@ -37,6 +47,46 @@ public class Oven : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (other.transform.parent.TryGetComponent<Meltable>(out Meltable meltComp)) objsInsideOven.Remove(other.transform.parent.gameObject);
+    }
+
+    private void OnEnable()
+    {
+        doorHandleInteractable.selectEntered.AddListener(OnHandleGrabbed);
+        doorHandleInteractable.selectExited.AddListener(OnHandleReleased);
+    }
+
+    private void OnDisable()
+    {
+        doorHandleInteractable.selectEntered.RemoveListener(OnHandleGrabbed);
+        doorHandleInteractable.selectExited.RemoveListener(OnHandleReleased);
+    }
+
+    private void OnHandleGrabbed(SelectEnterEventArgs args)
+    {
+        doorTrans.GetComponent<Rigidbody>().isKinematic = false;
+        moveToAnchor = false;
+    }
+
+    private void OnHandleReleased(SelectExitEventArgs args)
+    {
+        if(Mathf.Abs(Vector3.Distance(doorTrans.position, topAnchor.position)) < anchoringDistance && !moveToAnchor)
+        {
+            doorTrans.GetComponent<Rigidbody>().isKinematic = true;
+            moveToAnchor = true;
+            handleStartPos = doorTrans.position;
+        }
+    }
+
+    float t = 0;
+
+    void Update()
+    {
+        if(moveToAnchor)
+        {
+            t += Time.deltaTime;
+            doorTrans.position = Vector3.Lerp(handleStartPos, topAnchor.position, t);
+            moveToAnchor = doorTrans.position != topAnchor.position;
+        }
     }
 
     //melt objects
